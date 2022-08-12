@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\Auth\AuthController;
+use App\Mail\SendEmail;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,3 +19,12 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/send-email', function(){
+    $name = 'Krunal';
+    Mail::to('tojonantenaina08@gmail.com')->send(new SendEmail());
+    
+    return 'Email was sent';
+});
+
+Route::post('/register',[AuthController::class, 'register']);
