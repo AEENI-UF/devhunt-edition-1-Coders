@@ -61,7 +61,7 @@ class EtudiantController extends Controller
                         'password',
                     ];
                     $cellIterator = $row->getCellIterator();
-                    $cellIterator->setIterateOnlyExistingCells(FALSE); // This loops through all cells,
+                    $cellIterator->setIterateOnlyExistingCells(TRUE); // This loops through all cells,
                     //    even if a cell value is not set.
                     // For 'TRUE', we loop through cells
                     //    only when their value is set.
