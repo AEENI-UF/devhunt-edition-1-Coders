@@ -6001,7 +6001,7 @@ var staticRenderFns = [function () {
     attrs: {
       href: ""
     }
-  }, [_vm._v("Système de gestion point d'accès Wifi")])]), _vm._v(" "), _c("p", [_vm._v("\n                           Mise en place d'une gestion de point d'accès Wifi pour \n                           chaque étudiant de l'école grâce à la validation rétroactive\n                           de leur mot de passe.\n                        ")])])]), _vm._v(" "), _c("div", {
+  }, [_vm._v("Système de gestion point d'accès Wifi")])]), _vm._v(" "), _c("p", [_vm._v("\n                            Mise en place d'une gestion de point d'accès\n                            Wifi pour chaque étudiant de l'école grâce à la\n                            validation rétroactive de leur mot de passe.\n                        ")])])]), _vm._v(" "), _c("div", {
     staticClass: "col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0",
     attrs: {
       "data-aos": "zoom-in",
@@ -6017,7 +6017,7 @@ var staticRenderFns = [function () {
     attrs: {
       href: ""
     }
-  }, [_vm._v("Gestion d'une base de données des étudiants")])]), _vm._v(" "), _c("p", [_vm._v("\n                            Création  d'une base de données communes pour tous \n                            les étudiants de chaque niveau confondu.\n                            \n                        ")])])]), _vm._v(" "), _c("div", {
+  }, [_vm._v("Gestion d'une base de données des\n                                étudiants")])]), _vm._v(" "), _c("p", [_vm._v("\n                            Création d'une base de données communes pour\n                            tous les étudiants de chaque niveau confondu.\n                        ")])])]), _vm._v(" "), _c("div", {
     staticClass: "col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0",
     attrs: {
       "data-aos": "zoom-in",
@@ -6033,7 +6033,7 @@ var staticRenderFns = [function () {
     attrs: {
       href: ""
     }
-  }, [_vm._v("Gestion des utilisateurs")])]), _vm._v(" "), _c("p", [_vm._v("\n                            Mise en place d'une page d'acceuil dans laquel chaque\n                            étudiant pourra accéder et se connecter\n                        ")])])]), _vm._v(" "), _c("div", {
+  }, [_vm._v("Gestion des utilisateurs")])]), _vm._v(" "), _c("p", [_vm._v("\n                            Mise en place d'une page d'acceuil dans laquel\n                            chaque étudiant pourra accéder et se connecter\n                        ")])])]), _vm._v(" "), _c("div", {
     staticClass: "col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0",
     attrs: {
       "data-aos": "zoom-in",
@@ -6074,7 +6074,7 @@ var staticRenderFns = [function () {
   }, [_c("h3", [_vm._v("Se connecter sur votre compte")]), _vm._v(" "), _c("a", {
     staticClass: "buy-btn",
     attrs: {
-      href: "#"
+      href: "/authentification/etudiant"
     }
   }, [_vm._v("Se connecter")])])]), _vm._v(" "), _c("div", {
     staticClass: "col-lg-6 mt-4 mt-lg-0",
@@ -6084,10 +6084,10 @@ var staticRenderFns = [function () {
     }
   }, [_c("div", {
     staticClass: "box"
-  }, [_c("h3", [_vm._v("S'inscrire  sur votre compte")]), _vm._v(" "), _c("a", {
+  }, [_c("h3", [_vm._v("S'inscrire sur votre compte")]), _vm._v(" "), _c("a", {
     staticClass: "buy-btn",
     attrs: {
-      href: "#"
+      href: "/authentification/inscription"
     }
   }, [_vm._v("S'inscrire")])])])])])])]);
 }];

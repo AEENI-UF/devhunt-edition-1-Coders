@@ -24,11 +24,15 @@
                             <div class="icon">
                                 <i class="bx bxl-wifi"></i>
                             </div>
-                            <h4><a href="">Système de gestion point d'accès Wifi</a></h4>
+                            <h4>
+                                <a href=""
+                                    >Système de gestion point d'accès Wifi</a
+                                >
+                            </h4>
                             <p>
-                               Mise en place d'une gestion de point d'accès Wifi pour 
-                               chaque étudiant de l'école grâce à la validation rétroactive
-                               de leur mot de passe.
+                                Mise en place d'une gestion de point d'accès
+                                Wifi pour chaque étudiant de l'école grâce à la
+                                validation rétroactive de leur mot de passe.
                             </p>
                         </div>
                     </div>
@@ -39,12 +43,18 @@
                         data-aos-delay="200"
                     >
                         <div class="icon-box">
-                            <div class="icon"><i class="bx bx-database"></i></div>
-                            <h4><a href="">Gestion d'une base de données des étudiants</a></h4>
+                            <div class="icon">
+                                <i class="bx bx-database"></i>
+                            </div>
+                            <h4>
+                                <a href=""
+                                    >Gestion d'une base de données des
+                                    étudiants</a
+                                >
+                            </h4>
                             <p>
-                                Création  d'une base de données communes pour tous 
-                                les étudiants de chaque niveau confondu.
-                                
+                                Création d'une base de données communes pour
+                                tous les étudiants de chaque niveau confondu.
                             </p>
                         </div>
                     </div>
@@ -60,8 +70,8 @@
                             </div>
                             <h4><a href="">Gestion des utilisateurs</a></h4>
                             <p>
-                                Mise en place d'une page d'acceuil dans laquel chaque
-                                étudiant pourra accéder et se connecter
+                                Mise en place d'une page d'acceuil dans laquel
+                                chaque étudiant pourra accéder et se connecter
                             </p>
                         </div>
                     </div>
@@ -88,7 +98,6 @@
             <div class="container" data-aos="fade-up">
                 <div class="section-title">
                     <h2>Comment souscrire</h2>
-                    
                 </div>
 
                 <div class="row">
@@ -100,8 +109,9 @@
                         <div class="box">
                             <h3>Se connecter sur votre compte</h3>
 
-
-                            <a href="#" class="buy-btn">Se connecter</a>
+                            <a href="/authentification/etudiant" class="buy-btn"
+                                >Se connecter</a
+                            >
                         </div>
                     </div>
                     <div
@@ -110,10 +120,13 @@
                         data-aos-delay="300"
                     >
                         <div class="box">
-                            <h3>S'inscrire  sur votre compte</h3>
+                            <h3>S'inscrire sur votre compte</h3>
 
-
-                            <a href="#" class="buy-btn">S'inscrire</a>
+                            <a
+                                href="/authentification/inscription"
+                                class="buy-btn"
+                                >S'inscrire</a
+                            >
                         </div>
                     </div>
                 </div>

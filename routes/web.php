@@ -32,7 +32,7 @@ Route::prefix('/authentification')->group(function () {
     Route::get('/admin', function () {
         return view('auth.admin-login');
     });
-    Route::Get('inscription', function () {
+    Route::get('inscription', function () {
         return 'hello';
         // view('auth.etudiant-register');
     });
