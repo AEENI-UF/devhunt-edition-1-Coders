@@ -19,7 +19,7 @@ class CreateEtudiantsTable extends Migration
             $table->string('prenoms');
             $table->string('date_naiss');
             $table->string('lieu_naiss');
-            $table->string('sexe');
+            $table->string('sexe')->nullable();
             $table->string('adresse');
             $table->string('cin');
             $table->string('tel');

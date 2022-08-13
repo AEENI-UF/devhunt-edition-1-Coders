@@ -40,7 +40,7 @@ Route::prefix('/authentification')->group(function () {
         return view('auth.etudiant-login');
     });
     Route::get('/admin', function () {
-        return view('auth.admin-login');
+        return view('auth.login');
     });
     Route::get('inscription', function () {
         return view('auth.etudiant-register');
