@@ -12,7 +12,9 @@ const routes = new VueRouter({
         },
         {
             path: "/get-started",
-            component: require("./../components/ContentComponent.vue").default,
+            component:
+                require("./../components/client/get-started/GetStartedComponent.vue")
+                    .default,
         },
         {
             path: "/contact",
