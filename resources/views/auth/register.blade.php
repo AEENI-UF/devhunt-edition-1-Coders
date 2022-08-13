@@ -85,7 +85,7 @@
               <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/img1.webp"
                 alt="login form" class="img-fluid" style="border-radius: 1rem 0 0 1rem;" />
             </div>
-            <div class="col-md-6 col-lg-7 d-flex align-items-center">
+            <div class="col-md-6 col-lg-6 d-flex align-items-center">
               <div class="card-body p-4 p-lg-5 text-black">
 
               <form method="POST" action="{{ route('register') }}">
@@ -93,32 +93,32 @@
 
                   <h5 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">S'inscrire dans votre compte</h5>
 
-                  <div class="form-outline mb-5">
+                  <div class="form-outline mb-2">
+                  <label for="name" class="col-md-4 col-form-label text-md-end">{{ __('Name') }}</label>
                     <input id="name" type="name" class="form-control @error('name') is-invalid @enderror"  class="form-control form-control-lg" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus />
-                    <label for="name" class="col-md-4 col-form-label text-md-end">{{ __('Name') }}</label>
+                    
                   </div>
 
 
-                  <div class="form-outline mb-5">
+                  <div class="form-outline mb-2">
+                  <label for="email" class="col-md-4 col-form-label text-md-end">{{ __('Email Address') }}</label>
                     <input id="email" type="email" class="form-control @error('email') is-invalid @enderror"  class="form-control form-control-lg" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus />
-                    <label for="email" class="col-md-4 col-form-label text-md-end">{{ __('Email Address') }}</label>
+                
                   </div>
 
-                  <div class="form-outline mb-5">
+                  <div class="form-outline mb-3">
+                  <label for="password" class="col-md-3 col-form-label text-md-end">{{ __('Password') }}</label>
                     <input id="password" type="password" class="form-control @error('password') is-invalid @enderror"  class="form-control form-control-lg" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus />
-                    <label for="password" class="col-md-4 col-form-label text-md-end">{{ __('Password') }}</label>
+                   
+                    <label for="password-confirm" class="col-md-4 col-form-label text-md-end">{{ __('Confirm Password') }}</label>
+                    <input id="password-confirm" type="password" class="form-control @error('password') is-invalid @enderror"  class="form-control form-control-lg" name="password" value="{{ old('password') }}" required autocomplete="password" autofocus />
                   </div>
 
+                  <div class="pt-2 mb-3">
+                    <button class="btn btn-secondary btn-lg btn-block" type="submit"> {{ __('Register') }}</button>
+                </div>
 
-                  <div class="pt-1 mb-4">
-                    <button class="btn btn-blue btn-lg btn-block" type="submit"> {{ __('Register') }}</button>
-                  </div>
 
-                  <a class="small text-muted" href="#!">Forgot password?</a>
-                  <p class="mb-5 pb-lg-2" style="color: #393f81;">Don't have an account? <a href="#!"
-                      style="color: #393f81;">Register here</a></p>
-                  <a href="#!" class="small text-muted">Terms of use.</a>
-                  <a href="#!" class="small text-muted">Privacy policy</a>
                 </form>
 
 </section>

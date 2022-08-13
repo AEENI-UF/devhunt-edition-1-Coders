@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\Auth\AuthController;
 use App\Mail\SendEmail;
 use Illuminate\Support\Facades\Auth;
@@ -17,13 +18,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 
 // Route::group('/authentification', function () {
@@ -40,10 +41,12 @@ Route::prefix('/authentification')->group(function () {
         return view('auth.etudiant-login');
     });
     Route::get('/admin', function () {
-        return view('auth.admin-login');
+        return view('auth.login');
     });
     Route::get('inscription', function () {
         return view('auth.etudiant-register');
     });
 });
 
+
+Route::get('/dashboard', [DashboardController::class, 'list']);

@@ -14,9 +14,9 @@
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
     <script src="{{ asset('log/js/jquery-3.3.1.min.js')}}"></script>
-    <script src="{{ asset('logjs/popper.min.js')}}"></script>
-    <script src="{{ asset('logjs/bootstrap.min.js')}}"></script>
-    <script src="{{ asset('logjs/main.js')}}"></script>
+    <script src="{{ asset('log/js/popper.min.js')}}"></script>
+    <script src="{{ asset('log/js/bootstrap.min.js')}}"></script>
+    <script src="{{ asset('log/js/main.js')}}"></script>
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
