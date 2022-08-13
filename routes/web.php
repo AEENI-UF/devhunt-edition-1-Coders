@@ -1,5 +1,9 @@
 <?php
 
+use App\Http\Controllers\Auth\AuthController;
+use App\Mail\SendEmail;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Route;
 
 /*
