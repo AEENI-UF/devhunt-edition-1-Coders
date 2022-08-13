@@ -164,19 +164,12 @@ class EtudiantController extends Controller
      */
     public function show($id)
     {
-        //
+        $etudiant = Etudiant::where('matricule',$id)->get();
+
+         return response()->json($etudiant,200);
+
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function edit($id)
-    {
-        //
-    }
 
     /**
      * Update the specified resource in storage.
@@ -187,7 +180,10 @@ class EtudiantController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $etudiant = Etudiant::find($id);
+        $etudiant->update($request->all());
+
+        return response()->json($etudiant,200);
     }
 
     /**
@@ -198,6 +194,9 @@ class EtudiantController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $etudiant = Etudiant::find($id);
+        $etudiant->delete();
+
+        return response()->json($etudiant,200);
     }
 }

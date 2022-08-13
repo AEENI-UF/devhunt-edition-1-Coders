@@ -16,6 +16,7 @@ class CreateNiveauxTable extends Migration
         Schema::create('niveaux', function (Blueprint $table) {
             $table->bigInteger('id_niveau')->autoIncrement();
             $table->String('design_niveau');
+            $table->String('id');
             $table->timestamps();
         });
     }
