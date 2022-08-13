@@ -5570,24 +5570,24 @@ var staticRenderFns = [function () {
     }
   }, [_c("div", {
     staticClass: "section-title"
-  }, [_c("h2", [_vm._v("About Us")])]), _vm._v(" "), _c("div", {
+  }, [_c("h2", [_vm._v("A propos ")])]), _vm._v(" "), _c("div", {
     staticClass: "row content"
   }, [_c("div", {
     staticClass: "col-lg-6"
-  }, [_c("p", [_vm._v("\n                        Lorem ipsum dolor sit amet, consectetur adipiscing\n                        elit, sed do eiusmod tempor incididunt ut labore et\n                        dolore magna aliqua.\n                    ")]), _vm._v(" "), _c("ul", [_c("li", [_c("i", {
+  }, [_c("p", [_vm._v("\n                        L'Ecole Nationale d'informatique possède à peu près 2000 étudiants dans\n                        son effectif actuellement. En tant qu'école nationale de l'innovation dans la digitalisation informatique,\n                        avoir une connexion internet est un atout pour chaque étudiant dans cette école.\n                    ")]), _vm._v(" "), _c("ul", [_c("li", [_c("i", {
     staticClass: "ri-check-double-line"
-  }), _vm._v(" Ullamco\n                            laboris nisi ut aliquip ex ea commodo consequat\n                        ")]), _vm._v(" "), _c("li", [_c("i", {
+  }), _vm._v(" Mettre en place un\n                            point d'accèss WIFI pour permettre à ces étudiants d'avoir internet.\n                        ")]), _vm._v(" "), _c("li", [_c("i", {
     staticClass: "ri-check-double-line"
-  }), _vm._v(" Duis aute\n                            irure dolor in reprehenderit in voluptate velit\n                        ")]), _vm._v(" "), _c("li", [_c("i", {
+  }), _vm._v(" Gérer plus de 2000 étudiants est une tâche\n                            très délicate pour l'administrateur réseau de l'école, que ce soit dans le domaine de\n\n                        ")]), _vm._v(" "), _c("li", [_c("i", {
     staticClass: "ri-check-double-line"
-  }), _vm._v(" Ullamco\n                            laboris nisi ut aliquip ex ea commodo consequat\n                        ")])])]), _vm._v(" "), _c("div", {
+  }), _vm._v(" Création d'une application WEB permettant d'administrer\n                            et répartir l'accès internet pour chaque étudiant de l'école.\n                        ")])])]), _vm._v(" "), _c("div", {
     staticClass: "col-lg-6 pt-4 pt-lg-0"
-  }, [_c("p", [_vm._v("\n                        Ullamco laboris nisi ut aliquip ex ea commodo\n                        consequat. Duis aute irure dolor in reprehenderit in\n                        voluptate velit esse cillum dolore eu fugiat nulla\n                        pariatur. Excepteur sint occaecat cupidatat non\n                        proident, sunt in culpa qui officia deserunt mollit\n                        anim id est laborum.\n                    ")]), _vm._v(" "), _c("a", {
+  }, [_c("p", [_vm._v("\n                        L'école n'a qu'une option: mettre en place un point d'accès WIFI pour permettre à\n                        ces étudiants d'avoir internet.Gérer plus de 2 000 étudiants est une tâche très delicate pour l'administrateur réseau de l'école,\n                        que ce soit dans le domaine de sécurisation ou dans le domaine de gestion d'accès à ce réseau WIFI\n                    ")]), _vm._v(" "), _c("a", {
     staticClass: "btn-learn-more",
     attrs: {
       href: "#"
     }
-  }, [_vm._v("Learn More")])])])])]), _vm._v(" "), _c("section", {
+  }, [_vm._v("En savoir plus")])])])])]), _vm._v(" "), _c("section", {
     staticClass: "why-us section-bg",
     attrs: {
       id: "why-us"
@@ -5718,15 +5718,15 @@ var staticRenderFns = [function () {
     staticClass: "address"
   }, [_c("i", {
     staticClass: "bi bi-geo-alt"
-  }), _vm._v(" "), _c("h4", [_vm._v("Location:")]), _vm._v(" "), _c("p", [_vm._v("A108 Adam Street, New York, NY 535022")])]), _vm._v(" "), _c("div", {
+  }), _vm._v(" "), _c("h4", [_vm._v("Localisation:")]), _vm._v(" "), _c("p", [_vm._v(" Antaninarenina Tanambao BP 1487 , Fianarantsoa, 301")])]), _vm._v(" "), _c("div", {
     staticClass: "email"
   }, [_c("i", {
     staticClass: "bi bi-envelope"
-  }), _vm._v(" "), _c("h4", [_vm._v("Email:")]), _vm._v(" "), _c("p", [_vm._v("info@example.com")])]), _vm._v(" "), _c("div", {
+  }), _vm._v(" "), _c("h4", [_vm._v("Email:")]), _vm._v(" "), _c("p", [_vm._v("eni@eni-univ.fianar.mg")])]), _vm._v(" "), _c("div", {
     staticClass: "phone"
   }, [_c("i", {
     staticClass: "bi bi-phone"
-  }), _vm._v(" "), _c("h4", [_vm._v("Call:")]), _vm._v(" "), _c("p", [_vm._v("+1 5589 55488 55s")])])])]), _vm._v(" "), _c("div", {
+  }), _vm._v(" "), _c("h4", [_vm._v("Contact:")]), _vm._v(" "), _c("p", [_vm._v("034 05 733 36/033 42 302 02")])])])]), _vm._v(" "), _c("div", {
     staticClass: "col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch"
   }, [_c("form", {
     staticClass: "php-email-form",
@@ -5743,7 +5743,7 @@ var staticRenderFns = [function () {
     attrs: {
       "for": "name"
     }
-  }, [_vm._v("Your Name")]), _vm._v(" "), _c("input", {
+  }, [_vm._v("Votre nom")]), _vm._v(" "), _c("input", {
     staticClass: "form-control",
     attrs: {
       type: "text",
@@ -5757,7 +5757,7 @@ var staticRenderFns = [function () {
     attrs: {
       "for": "name"
     }
-  }, [_vm._v("Your Email")]), _vm._v(" "), _c("input", {
+  }, [_vm._v("Votre Email")]), _vm._v(" "), _c("input", {
     staticClass: "form-control",
     attrs: {
       type: "email",
@@ -5771,7 +5771,7 @@ var staticRenderFns = [function () {
     attrs: {
       "for": "name"
     }
-  }, [_vm._v("Subject")]), _vm._v(" "), _c("input", {
+  }, [_vm._v("Objets")]), _vm._v(" "), _c("input", {
     staticClass: "form-control",
     attrs: {
       type: "text",
@@ -5800,13 +5800,13 @@ var staticRenderFns = [function () {
     staticClass: "error-message"
   }), _vm._v(" "), _c("div", {
     staticClass: "sent-message"
-  }, [_vm._v("\n                                Your message has been sent. Thank you!\n                            ")])]), _vm._v(" "), _c("div", {
+  }, [_vm._v("\n                                Votre message a été bien envoyée. Merci à vous!\n                            ")])]), _vm._v(" "), _c("div", {
     staticClass: "text-center"
   }, [_c("button", {
     attrs: {
       type: "submit"
     }
-  }, [_vm._v("Send Message")])])])])])])])]);
+  }, [_vm._v("Envoyez Message")])])])])])])])]);
 }];
 render._withStripped = true;
 
@@ -5848,7 +5848,7 @@ var staticRenderFns = [function () {
     staticClass: "row justify-content-center"
   }, [_c("div", {
     staticClass: "col-lg-6"
-  }, [_c("h4", [_vm._v("Join Our Newsletter")]), _vm._v(" "), _c("p", [_vm._v("\n                        Tamen quem nulla quae legam multos aute sint culpa\n                        legam noster magna\n                    ")]), _vm._v(" "), _c("form", {
+  }, [_c("h4", [_vm._v("Joindre votre lettre d'information ")]), _vm._v(" "), _c("p", [_vm._v("\n                           Ici, vous pouvez joindre ou même rattacher votre lettre d'information\n                           pour y renseigner .\n                       ")]), _vm._v(" "), _c("form", {
     attrs: {
       action: "",
       method: "post"
@@ -5861,7 +5861,7 @@ var staticRenderFns = [function () {
   }), _c("input", {
     attrs: {
       type: "submit",
-      value: "Subscribe"
+      value: "Souscrire"
     }
   })])])])])]), _vm._v(" "), _c("div", {
     staticClass: "footer-top"
@@ -5871,73 +5871,49 @@ var staticRenderFns = [function () {
     staticClass: "row"
   }, [_c("div", {
     staticClass: "col-lg-3 col-md-6 footer-contact"
-  }, [_c("h3", [_vm._v("Arsha")]), _vm._v(" "), _c("p", [_vm._v("\n                        A108 Adam Street "), _c("br"), _vm._v("\n                        New York, NY 535022"), _c("br"), _vm._v("\n                        United States "), _c("br"), _c("br"), _vm._v(" "), _c("strong", [_vm._v("Phone:")]), _vm._v(" +1 5589 55488 55"), _c("br"), _vm._v(" "), _c("strong", [_vm._v("Email:")]), _vm._v(" info@example.com"), _c("br")])]), _vm._v(" "), _c("div", {
+  }, [_c("h3", [_vm._v("ENI")]), _vm._v(" "), _c("p", [_vm._v("\n                           Antaninarenina Tanambao BP 1487  "), _c("br"), _vm._v("\n                           FIANARANTSOA,301 "), _c("br"), _vm._v("\n                           MADAGASCAR "), _c("br"), _c("br"), _vm._v(" "), _c("strong", [_vm._v("Tél:")]), _vm._v(" 034 05 733 36"), _c("br"), _vm._v(" "), _c("strong", [_vm._v("Email:")]), _vm._v(" eni@eni-univ.fianar.mg"), _c("br")])]), _vm._v(" "), _c("div", {
     staticClass: "col-lg-3 col-md-6 footer-links"
-  }, [_c("h4", [_vm._v("Useful Links")]), _vm._v(" "), _c("ul", [_c("li", [_c("i", {
+  }, [_c("h4", [_vm._v("Liens nécessaires")]), _vm._v(" "), _c("ul", [_c("li", [_c("i", {
     staticClass: "bx bx-chevron-right"
   }), _vm._v(" "), _c("a", {
     attrs: {
       href: "#"
     }
-  }, [_vm._v("Home")])]), _vm._v(" "), _c("li", [_c("i", {
+  }, [_vm._v("Accueil")])]), _vm._v(" "), _c("li", [_c("i", {
     staticClass: "bx bx-chevron-right"
   }), _vm._v(" "), _c("a", {
     attrs: {
       href: "#"
     }
-  }, [_vm._v("About us")])]), _vm._v(" "), _c("li", [_c("i", {
+  }, [_vm._v("A propos ")])]), _vm._v(" "), _c("li", [_c("i", {
     staticClass: "bx bx-chevron-right"
   }), _vm._v(" "), _c("a", {
     attrs: {
       href: "#"
     }
-  }, [_vm._v("Services")])]), _vm._v(" "), _c("li", [_c("i", {
-    staticClass: "bx bx-chevron-right"
-  }), _vm._v(" "), _c("a", {
-    attrs: {
-      href: "#"
-    }
-  }, [_vm._v("Terms of service")])]), _vm._v(" "), _c("li", [_c("i", {
-    staticClass: "bx bx-chevron-right"
-  }), _vm._v(" "), _c("a", {
-    attrs: {
-      href: "#"
-    }
-  }, [_vm._v("Privacy policy")])])])]), _vm._v(" "), _c("div", {
+  }, [_vm._v("Contacts")])])])]), _vm._v(" "), _c("div", {
     staticClass: "col-lg-3 col-md-6 footer-links"
-  }, [_c("h4", [_vm._v("Our Services")]), _vm._v(" "), _c("ul", [_c("li", [_c("i", {
+  }, [_c("h4", [_vm._v("Les parcours existants")]), _vm._v(" "), _c("ul", [_c("li", [_c("i", {
     staticClass: "bx bx-chevron-right"
   }), _vm._v(" "), _c("a", {
     attrs: {
       href: "#"
     }
-  }, [_vm._v("Web Design")])]), _vm._v(" "), _c("li", [_c("i", {
+  }, [_vm._v("Génie Logiciel et base de données")])]), _vm._v(" "), _c("li", [_c("i", {
     staticClass: "bx bx-chevron-right"
   }), _vm._v(" "), _c("a", {
     attrs: {
       href: "#"
     }
-  }, [_vm._v("Web Development")])]), _vm._v(" "), _c("li", [_c("i", {
+  }, [_vm._v("Administration et Systèmes Réseaux")])]), _vm._v(" "), _c("li", [_c("i", {
     staticClass: "bx bx-chevron-right"
   }), _vm._v(" "), _c("a", {
     attrs: {
       href: "#"
     }
-  }, [_vm._v("Product Management")])]), _vm._v(" "), _c("li", [_c("i", {
-    staticClass: "bx bx-chevron-right"
-  }), _vm._v(" "), _c("a", {
-    attrs: {
-      href: "#"
-    }
-  }, [_vm._v("Marketing")])]), _vm._v(" "), _c("li", [_c("i", {
-    staticClass: "bx bx-chevron-right"
-  }), _vm._v(" "), _c("a", {
-    attrs: {
-      href: "#"
-    }
-  }, [_vm._v("Graphic Design")])])])]), _vm._v(" "), _c("div", {
+  }, [_vm._v("Informatique Générale")])])])]), _vm._v(" "), _c("div", {
     staticClass: "col-lg-3 col-md-6 footer-links"
-  }, [_c("h4", [_vm._v("Our Social Networks")]), _vm._v(" "), _c("p", [_vm._v("\n                        Cras fermentum odio eu feugiat lide par naso tierra\n                        videa magna derita valies\n                    ")]), _vm._v(" "), _c("div", {
+  }, [_c("h4", [_vm._v("Notre réseaux sociaux")]), _vm._v(" "), _c("p", [_vm._v("\n                           Suivez-nous sur les réseaux sociaux suivants.\n                       ")]), _vm._v(" "), _c("div", {
     staticClass: "social-links mt-3"
   }, [_c("a", {
     staticClass: "twitter",
@@ -5977,12 +5953,14 @@ var staticRenderFns = [function () {
   })])])])])])]), _vm._v(" "), _c("div", {
     staticClass: "container footer-bottom clearfix"
   }, [_c("div", {
+    staticClass: "copyright"
+  }, [_vm._v("\n               © Copyright "), _c("strong", [_c("span", [_vm._v("ENI")])]), _vm._v(". Tout Droit réservé\n           ")]), _vm._v(" "), _c("div", {
     staticClass: "credits"
-  }, [_vm._v("\n            Designed by\n            "), _c("a", {
+  }, [_vm._v("\n               Designé par\n               "), _c("a", {
     attrs: {
       href: "https://bootstrapmade.com/"
     }
-  }, [_vm._v("BootstrapMade")])])])]);
+  }, [_vm._v(" #Team Coders#")])])])]);
 }];
 render._withStripped = true;
 
@@ -6041,12 +6019,12 @@ var staticRenderFns = [function () {
   }, [_c("div", {
     staticClass: "icon"
   }, [_c("i", {
-    staticClass: "bx bxl-dribbble"
+    staticClass: "bx bxl-wifi"
   })]), _vm._v(" "), _c("h4", [_c("a", {
     attrs: {
       href: ""
     }
-  }, [_vm._v("Lorem Ipsum")])]), _vm._v(" "), _c("p", [_vm._v("\n                            Voluptatum deleniti atque corrupti quos dolores\n                            et quas molestias excepturi\n                        ")])])]), _vm._v(" "), _c("div", {
+  }, [_vm._v("Système de gestion point d'accès Wifi")])]), _vm._v(" "), _c("p", [_vm._v("\n                           Mise en place d'une gestion de point d'accès Wifi pour \n                           chaque étudiant de l'école grâce à la validation rétroactive\n                           de leur mot de passe.\n                        ")])])]), _vm._v(" "), _c("div", {
     staticClass: "col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0",
     attrs: {
       "data-aos": "zoom-in",
@@ -6057,12 +6035,12 @@ var staticRenderFns = [function () {
   }, [_c("div", {
     staticClass: "icon"
   }, [_c("i", {
-    staticClass: "bx bx-file"
+    staticClass: "bx bx-database"
   })]), _vm._v(" "), _c("h4", [_c("a", {
     attrs: {
       href: ""
     }
-  }, [_vm._v("Sed ut perspici")])]), _vm._v(" "), _c("p", [_vm._v("\n                            Duis aute irure dolor in reprehenderit in\n                            voluptate velit esse cillum dolore\n                        ")])])]), _vm._v(" "), _c("div", {
+  }, [_vm._v("Gestion d'une base de données des étudiants")])]), _vm._v(" "), _c("p", [_vm._v("\n                            Création  d'une base de données communes pour tous \n                            les étudiants de chaque niveau confondu.\n                            \n                        ")])])]), _vm._v(" "), _c("div", {
     staticClass: "col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0",
     attrs: {
       "data-aos": "zoom-in",
@@ -6073,12 +6051,12 @@ var staticRenderFns = [function () {
   }, [_c("div", {
     staticClass: "icon"
   }, [_c("i", {
-    staticClass: "bx bx-tachometer"
+    staticClass: "bx bx-user"
   })]), _vm._v(" "), _c("h4", [_c("a", {
     attrs: {
       href: ""
     }
-  }, [_vm._v("Magni Dolores")])]), _vm._v(" "), _c("p", [_vm._v("\n                            Excepteur sint occaecat cupidatat non proident,\n                            sunt in culpa qui officia\n                        ")])])]), _vm._v(" "), _c("div", {
+  }, [_vm._v("Gestion des utilisateurs")])]), _vm._v(" "), _c("p", [_vm._v("\n                            Mise en place d'une page d'acceuil dans laquel chaque\n                            étudiant pourra accéder et se connecter\n                        ")])])]), _vm._v(" "), _c("div", {
     staticClass: "col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0",
     attrs: {
       "data-aos": "zoom-in",
@@ -6106,7 +6084,7 @@ var staticRenderFns = [function () {
     }
   }, [_c("div", {
     staticClass: "section-title"
-  }, [_c("h2", [_vm._v("Comment souscrire")]), _vm._v(" "), _c("p", [_vm._v("\n                    Magnam dolores commodi suscipit. Necessitatibus eius\n                    consequatur ex aliquid fuga eum quidem. Sit sint\n                    consectetur velit. Quisquam quos quisquam cupiditate. Et\n                    nemo qui impedit suscipit alias ea. Quia fugiat sit in\n                    iste officiis commodi quidem hic quas.\n                ")])]), _vm._v(" "), _c("div", {
+  }, [_c("h2", [_vm._v("Comment souscrire")])]), _vm._v(" "), _c("div", {
     staticClass: "row"
   }, [_c("div", {
     staticClass: "col-lg-6",
@@ -6116,7 +6094,7 @@ var staticRenderFns = [function () {
     }
   }, [_c("div", {
     staticClass: "box"
-  }, [_c("h3", [_vm._v("Se connecter sur votre compte")]), _vm._v(" "), _c("h4", [_c("sup", [_vm._v("$")]), _vm._v("0"), _c("span", [_vm._v("per month")])]), _vm._v(" "), _c("a", {
+  }, [_c("h3", [_vm._v("Se connecter sur votre compte")]), _vm._v(" "), _c("a", {
     staticClass: "buy-btn",
     attrs: {
       href: "#"
@@ -6129,7 +6107,7 @@ var staticRenderFns = [function () {
     }
   }, [_c("div", {
     staticClass: "box"
-  }, [_c("h3", [_vm._v("S'inscrire  sur votre compte")]), _vm._v(" "), _c("h4", [_c("sup", [_vm._v("$")]), _vm._v("49"), _c("span", [_vm._v("per month")])]), _vm._v(" "), _c("a", {
+  }, [_c("h3", [_vm._v("S'inscrire  sur votre compte")]), _vm._v(" "), _c("a", {
     staticClass: "buy-btn",
     attrs: {
       href: "#"
@@ -6174,7 +6152,7 @@ var render = function render() {
     attrs: {
       to: "/home"
     }
-  }, [_vm._v("Home")])], 1), _vm._v(" "), _c("li", [_c("router-link", {
+  }, [_vm._v("Accueil")])], 1), _vm._v(" "), _c("li", [_c("router-link", {
     staticClass: "nav-link scrollto",
     attrs: {
       to: "/contact"
@@ -6184,7 +6162,7 @@ var render = function render() {
     attrs: {
       to: "/get-started"
     }
-  }, [_vm._v("Get Started")])], 1)]), _vm._v(" "), _c("i", {
+  }, [_vm._v("Démarrer")])], 1)]), _vm._v(" "), _c("i", {
     staticClass: "bi bi-list mobile-nav-toggle"
   })])])]);
 };

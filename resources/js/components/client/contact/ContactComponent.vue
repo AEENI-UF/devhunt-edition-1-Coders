@@ -19,20 +19,20 @@
                         <div class="info">
                             <div class="address">
                                 <i class="bi bi-geo-alt"></i>
-                                <h4>Location:</h4>
-                                <p>A108 Adam Street, New York, NY 535022</p>
+                                <h4>Localisation:</h4>
+                                <p> Antaninarenina Tanambao BP 1487 , Fianarantsoa, 301</p>
                             </div>
 
                             <div class="email">
                                 <i class="bi bi-envelope"></i>
                                 <h4>Email:</h4>
-                                <p>info@example.com</p>
+                                <p>eni@eni-univ.fianar.mg</p>
                             </div>
 
                             <div class="phone">
                                 <i class="bi bi-phone"></i>
-                                <h4>Call:</h4>
-                                <p>+1 5589 55488 55s</p>
+                                <h4>Contact:</h4>
+                                <p>034 05 733 36/033 42 302 02</p>
                             </div>
                         </div>
                     </div>
@@ -48,7 +48,7 @@
                         >
                             <div class="row">
                                 <div class="form-group col-md-6">
-                                    <label for="name">Your Name</label>
+                                    <label for="name">Votre nom</label>
                                     <input
                                         type="text"
                                         name="name"
@@ -58,7 +58,7 @@
                                     />
                                 </div>
                                 <div class="form-group col-md-6">
-                                    <label for="name">Your Email</label>
+                                    <label for="name">Votre Email</label>
                                     <input
                                         type="email"
                                         class="form-control"
@@ -69,7 +69,7 @@
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label for="name">Subject</label>
+                                <label for="name">Objets</label>
                                 <input
                                     type="text"
                                     class="form-control"
@@ -91,11 +91,11 @@
                                 <div class="loading">Loading</div>
                                 <div class="error-message"></div>
                                 <div class="sent-message">
-                                    Your message has been sent. Thank you!
+                                    Votre message a été bien envoyée. Merci à vous!
                                 </div>
                             </div>
                             <div class="text-center">
-                                <button type="submit">Send Message</button>
+                                <button type="submit">Envoyez Message</button>
                             </div>
                         </form>
                     </div>
