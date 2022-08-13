@@ -9,6 +9,8 @@ use Illuminate\Support\Facades\DB;
 
 class EtudiantController extends Controller
 {
+
+
     /**
      * Display a listing of the resource.
      *
