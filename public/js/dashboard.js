@@ -5407,11 +5407,12 @@ var render = function render() {
   var _vm = this,
       _c = _vm._self._c;
 
-  return _c("v-app", [_c("v-text-field", {
+  return _c("v-app", [_c("v-card", {
+    staticClass: "mt-4"
+  }, [_c("v-card-title", [_c("v-text-field", {
     attrs: {
       "append-icon": "mdi-magnify",
       label: "Search",
-      "single-line": "",
       "hide-details": ""
     },
     model: {
@@ -5421,7 +5422,7 @@ var render = function render() {
       },
       expression: "search"
     }
-  }), _vm._v(" "), _c("v-data-table", {
+  })], 1), _vm._v(" "), _c("v-data-table", {
     staticClass: "elevation-1",
     attrs: {
       search: _vm.search,
@@ -5429,7 +5430,7 @@ var render = function render() {
       items: _vm.data,
       "items-per-page": 5
     }
-  })], 1);
+  })], 1)], 1);
 };
 
 var staticRenderFns = [];

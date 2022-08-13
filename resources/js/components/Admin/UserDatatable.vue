@@ -1,19 +1,22 @@
 <template>
     <v-app>
-        <v-text-field
-            v-model="search"
-            append-icon="mdi-magnify"
-            label="Search"
-            single-line
-            hide-details
-        ></v-text-field>
-        <v-data-table
-            :search="search"
-            :headers="columns"
-            :items="data"
-            :items-per-page="5"
-            class="elevation-1"
-        ></v-data-table>
+        <v-card class="mt-4">
+            <v-card-title>
+                <v-text-field
+                    v-model="search"
+                    append-icon="mdi-magnify"
+                    label="Search"
+                    hide-details
+                ></v-text-field>
+            </v-card-title>
+            <v-data-table
+                :search="search"
+                :headers="columns"
+                :items="data"
+                :items-per-page="5"
+                class="elevation-1"
+            ></v-data-table>
+        </v-card>
     </v-app>
 </template>
 <script>
