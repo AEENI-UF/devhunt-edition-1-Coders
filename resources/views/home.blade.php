@@ -76,7 +76,6 @@
               </h2>
               <div class="d-flex justify-content-center justify-content-lg-start">
                 <a href="#about" class="btn-get-started scrollto">Get Started</a>
-                <!--<a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox btn-watch-video"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>-->
               </div>
             </div>
             <div
@@ -1189,13 +1188,6 @@
                     <h4>Call:</h4>
                     <p>+1 5589 55488 55s</p>
                   </div>
-  
-                  <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621"
-                    frameborder="0"
-                    style="border: 0; width: 100%; height: 290px"
-                    allowfullscreen
-                  ></iframe>
                 </div>
               </div>
   
@@ -1384,8 +1376,6 @@
         </div>
       </footer>
       <!-- End Footer -->
-  
-      <div id="preloader"></div>
       <a
         href="#"
         class="back-to-top d-flex align-items-center justify-content-center"
