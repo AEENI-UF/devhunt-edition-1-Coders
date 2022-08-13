@@ -1,5 +1,5 @@
 <?php
-
+use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\Auth\AuthController;
 use App\Mail\SendEmail;
 use Illuminate\Support\Facades\Auth;
@@ -47,3 +47,5 @@ Route::prefix('/authentification')->group(function () {
     });
 });
 
+
+Route::get('/dashboard',[DashboardController::class,'list']);
