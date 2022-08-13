@@ -27,7 +27,8 @@
                             <h4><a href="">Système de gestion point d'accès Wifi</a></h4>
                             <p>
                                Mise en place d'une gestion de point d'accès Wifi pour 
-                               chaque étudiant de l'école.
+                               chaque étudiant de l'école grâce à la validation rétroactive
+                               de leur mot de passe.
                             </p>
                         </div>
                     </div>
@@ -38,11 +39,11 @@
                         data-aos-delay="200"
                     >
                         <div class="icon-box">
-                            <div class="icon"><i class="bx bx-file"></i></div>
+                            <div class="icon"><i class="bx bx-database"></i></div>
                             <h4><a href="">Gestion d'une base de données des étudiants</a></h4>
                             <p>
                                 Création  d'une base de données communes pour tous 
-                                les étudiants de Chaque niveau confondu.
+                                les étudiants de chaque niveau confondu.
                                 
                             </p>
                         </div>
@@ -55,12 +56,12 @@
                     >
                         <div class="icon-box">
                             <div class="icon">
-                                <i class="bx bx-tachometer"></i>
+                                <i class="bx bx-user"></i>
                             </div>
-                            <h4><a href=""></a></h4>
+                            <h4><a href="">Gestion des utilisateurs</a></h4>
                             <p>
-                                Excepteur sint occaecat cupidatat non proident,
-                                sunt in culpa qui officia
+                                Mise en place d'une page d'acceuil dans laquel chaque
+                                étudiant pourra accéder et se connecter
                             </p>
                         </div>
                     </div>
