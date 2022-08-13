@@ -35,27 +35,35 @@ class AuthController extends Controller
         $data = [ 'nom' => $user->email,
             'title' => 'Verification Compte'];
         Mail::to($user->email)->send(new SendEmail($data));
-        return response()->json($user,200);
+        $tokenResult = $user->createToken('auth_token')->plainTextToken;
+        return response()->json([
+            'token' => $tokenResult
+        ],200);
+        
     }
 
     public function login(Request $request){
-        $user = Validator::make($request->all(),[
+        
+        $user = $request->validate([
             'email' => 'required|email',
-            'password' => 'required',
-        ]);
-        $credentials = request(['email', 'password']); 
-        if (!Auth::attempt($credentials))
-        {
-            return response()->json([
-                'message' =>'unauthorized'
-            ],401);
-        }
-    $user = Etudiant::where('email', $request->email)->firstOrFail();
-    $tokenResult = $user->createToken('auth_token')->plainTextToken;
-    return response()->json([
-        'token' => $tokenResult
-    ],200);
+            'password' => ['required','min:8'],
 
+        ]);
+        $user = Etudiant::where('email',$request->email)->first();
+        if($user != []){
+            if(Hash::check($request->password, $user->password)){
+                $tokenResult = $user->createToken('auth_token')->plainTextToken;
+                return response()->json([
+                    'token' => $tokenResult
+                ],200);
+            }
+            return response()->json(['message'=>'votre mot de passe est incorrecte'], 401);
+        
+        }
+         return response()->json(['title'=>'Votre Adresse Email est incorrecte'], 401) ;
+        
+        
+       
     }
     
 

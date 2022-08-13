@@ -25,7 +25,7 @@ class CreateEtudiantsTable extends Migration
             $table->string('tel');
             $table->string('password');
             $table->string('email');
-            $table->string('id_niveau');
+           // $table->string('id_niveau');
             $table->timestamps();
         });
     }
