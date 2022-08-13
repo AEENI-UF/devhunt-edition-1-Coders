@@ -4,50 +4,43 @@
  * building robust, powerful web applications using Vue and Laravel.
  */
 
-require("./bootstrap");
-import Vue from "vue";
-import router from "./routes/router";
-import VueToast from "vue-toast-notification";
-import "vue-toast-notification/dist/theme-sugar.css";
+ require("./bootstrap");
+ import Vue from "vue";
+ 
+ window.Vue = require("vue").default;
+ import router from "./routes/router";
+ 
+ /**
+  * The following block of code may be used to automatically register your
+  * Vue components. It will recursively scan this directory for the Vue
+  * components and automatically register them with their "basename".
+  *
+  * Eg. ./components/ExampleComponent.vue -> <example-component></example-component>
+  */
+ 
+ // const files = require.context('./', true, /\.vue$/i)
+ // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
+ 
 
-window.Vue = require("vue").default;
-
-/**
- * The following block of code may be used to automatically register your
- * Vue components. It will recursively scan this directory for the Vue
- * components and automatically register them with their "basename".
- *
- * Eg. ./components/ExampleComponent.vue -> <example-component></example-component>
- */
-
-// const files = require.context('./', true, /\.vue$/i)
-// files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
-
-Vue.use(VueToast);
-Vue.component(
-    "menu-component",
-    require("./components/client/menu/MenuComponent.vue").default
-);
-
-Vue.component(
+ Vue.component(
+     "menu-component",
+     require("./components/client/menu/MenuComponent.vue").default
+ );
+ Vue.component(
     "footer-component",
     require("./components/client/footer/FooterComponent.vue").default
 );
-<<<<<<< HEAD
-=======
 
-Vue.component(
-    "base-component",
-    require("./components/BaseComponent.vue").default
-);
->>>>>>> 4d01f1498d642be6fc77bdeccfe368941d681ef3
-/**
- * Next, we will create a fresh Vue application instance and attach it to
- * the page. Then, you may begin adding components to this application
- * or customize the JavaScript scaffolding to fit your unique needs.
- */
+ 
+ /**
+  * Next, we will create a fresh Vue application instance and attach it to
+  * the page. Then, you may begin adding components to this application
+  * or customize the JavaScript scaffolding to fit your unique needs.
+  */
+ 
+ const app = new Vue({
 
-const app = new Vue({
-    el: "#app",
-    router,
-});
+     el: "#app",
+     router,
+ });
+ 
