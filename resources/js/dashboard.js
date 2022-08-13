@@ -26,20 +26,7 @@ import DataTable from 'laravel-vue-datatable';
 Vue.use(DataTable);
 
 Vue.use(VueToast);
-Vue.component(
-    "menu-component",
-    require("./components/client/menu/MenuComponent.vue").default
-);
 
-Vue.component(
-    "footer-component",
-    require("./components/client/footer/FooterComponent.vue").default
-);
-
-Vue.component(
-    "base-component",
-    require("./components/BaseComponent.vue").default
-);
 Vue.component(
     "user-datatable",
     require("./components/Admin/UserDatatable.vue").default
