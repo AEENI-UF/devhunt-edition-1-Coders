@@ -116,7 +116,7 @@
 
         <div class="container footer-bottom clearfix">
             <div class="copyright">
-                &copy; Copyright <strong><span>Arsha</span></strong
+                &copy; Copyright <strong><span>ENI</span></strong
                 >. All Rights Reserved
             </div>
             <div class="credits">
