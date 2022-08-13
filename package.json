@@ -23,5 +23,5 @@
         "vue-router": "^3.5.3",
         "vue-loader": "^15.10.0",
         "vue-template-compiler": "^2.6.12"
-    }   
+    }
 }
