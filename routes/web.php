@@ -25,6 +25,7 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
+<<<<<<< HEAD
 // Route::group('/authentification', function () {
 //     Route::get('/etudiant', function () {
 //         return view('auth.etudiant-login');
@@ -33,3 +34,16 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 //         return view('auth.admin-login');
 //     });
 // });
+=======
+Route::prefix('/authentification')->group(function () {
+    Route::get('/etudiant', function () {
+        return view('auth.etudiant-login');
+    });
+    Route::get('/admin', function () {
+        return view('auth.admin-login');
+    });
+    Route::get('inscription', function () {
+        return view('auth.etudiant-register');
+    });
+});
+>>>>>>> bf672a621a9c823e7f45cfc74cd1749590d4235b
