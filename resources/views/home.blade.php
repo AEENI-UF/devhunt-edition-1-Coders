@@ -70,10 +70,17 @@
               data-aos="fade-up"
               data-aos-delay="200"
             >
+
               <h1>Accès WIFI</h1>
               <h2>
                 C'est une plateforme d'application web afin de gérer l'accès à un point d'accès WIFI.
               </h2>
+
+              <h2>Meilleurs solutions pour la gestion de point d'accès WIFI</h2>
+              <h3>
+                C'est une plateforme d'application web afin de gérer l'accès à un point d'accès WIFI.
+              </h3>
+
               <div class="d-flex justify-content-center justify-content-lg-start">
                 <a href="#about" class="btn-get-started scrollto">Démarrer</a>
               </div>

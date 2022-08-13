@@ -40,6 +40,10 @@
                         data-aos-delay="200"
                     >
                         <div class="icon-box">
+
+                            <div class="icon"><i class="bx bx-layer"></i></div>
+                            <h4><a href="">Gestion d'une base de données des étudiants</a></h4>
+
                             <div class="icon">
                                 <i class="bx bx-database"></i>
                             </div>
@@ -49,6 +53,7 @@
                                     étudiants</a
                                 >
                             </h4>
+
                             <p>
                                 Création d'une base de données communes pour
                                 tous les étudiants de chaque niveau confondu.
@@ -79,12 +84,15 @@
                         data-aos-delay="400"
                     >
                         <div class="icon-box">
+
                             <div class="icon"><i class="bx bx-desktop"></i></div>
+
+                            <div class="icon"><i class="bx bx-layer"></i></div>
+
                             <h4><a href="">Administration des systèmes et réseaux</a></h4>
                             <p>
                                 Gestion des utilisateurs connectés avec un tableau de bord
-                                 démontrant la liste des comptes des utilisateurs qui devraient enregistrés sur ce plateforme.
-
+                                 démontrant la liste des comptes des utilisateurs qui devraient enregistrés sur ce plateforme
                             </p>
                         </div>
                     </div>
