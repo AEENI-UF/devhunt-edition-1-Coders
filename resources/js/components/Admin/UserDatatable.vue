@@ -1,70 +1,69 @@
 <template>
-    <div>
-    <data-table
-    :url="url"
-    :columns="columns"
-    :per-page="perPage">
-
-    <span slot="pagination" slot-scope="{ links, meta }">
-        <paginator 
-            :meta="meta"
-            :links="links"
-            @next="updateUrl"
-            @prev="updateUrl">
-        </paginator>
-    </span>
-</data-table>
-    </div>
+    <v-app>
+        <v-text-field
+            v-model="search"
+            append-icon="mdi-magnify"
+            label="Search"
+            single-line
+            hide-details
+        ></v-text-field>
+        <v-data-table
+            :search="search"
+            :headers="columns"
+            :items="data"
+            :items-per-page="5"
+            class="elevation-1"
+        ></v-data-table>
+    </v-app>
 </template>
 <script>
-import ExampleButton from './ExampleButton.vue';
+import axios from "axios";
 export default {
     data() {
         return {
-            url: 'http://vue-datatable.test/ajax',
-            perPage: ['10', '25', '50'],
+            search: "",
+            data: [],
             columns: [
-            {
-                label: 'ID',
-                name: 'id',
-                filterable: true,
-            },
-            {
-                label: 'Name',
-                 name: 'name',
-                filterable: true,
-            },
-            {
-                label: 'Email',
-                name: 'email',
-                filterable: true,
-            },
-            {
-                label: '',
-                name: 'View',
-                filterable: false,
-                component: ExampleButton,
-                event: "click",
-                handler: this.alertMe,
-                classes: { 
-                    'btn': true,
-                    'btn-primary': true,
-                    'btn-sm': true,
-                } 
-            },
-            ]
-        }
-    },
-    components: {
-        ExampleButton,
+                {
+                    text: "IM",
+                    value: "matricule",
+                },
+                {
+                    text: "Nom",
+                    value: "nom",
+                },
+                {
+                    text: "Prénoms",
+                    value: "prenoms",
+                },
+                {
+                    text: "Email",
+                    value: "email",
+                },
+                // ,
+                // {
+                //     text: "",
+                //     value: "matricule",
+                //     filterable: false,
+                //     component: ExampleButton,
+                //     event: "click",
+                //     handler: this.alertMe,
+                //     classes: {
+                //         btn: true,
+                //         "btn-primary": true,
+                //         "btn-sm": true,
+                //     },
+                // },
+            ],
+        };
     },
     methods: {
         alertMe(data) {
             alert("hey");
-        }
+        },
     },
-    mounted(){
-        console.log('mandehg')
-    }
-}
+    async mounted() {
+        this.data = await axios.get("/api/etudiant").then((res) => res.data);
+    },
+};
 </script>
