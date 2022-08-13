@@ -9,16 +9,16 @@
             <nav id="navbar" class="navbar">
                 <ul>
                     <li>
-                        <a class="nav-link scrollto active" href="#hero"
-                            >Home</a
+                        <router-link class="nav-link scrollto active" to="/home"
+                            >Accueil</router-link
                         >
                     </li>
-                    <li>
+                    <!--<li>
                         <a class="nav-link scrollto" href="#about">About</a>
                     </li>
                     <li>
-                        <a class="nav-link scrollto" href="#services"
-                            >Services</a
+                        <router-link class="nav-link scrollto" to="/get-started"
+                            >Get started</router-link
                         >
                     </li>
                     <li>
@@ -52,12 +52,18 @@
                             <li><a href="#">Drop Down 4</a></li>
                         </ul>
                     </li>
+                    -->
                     <li>
-                        <a class="nav-link scrollto" href="#contact">Contact</a>
+                        <router-link class="nav-link scrollto" to="/contact"
+                            >Contact</router-link
+                        >
                     </li>
+
                     <li>
-                        <a class="getstarted scrollto" href="#about"
-                            >Get Started</a
+                        <router-link
+                            class="getstarted scrollto"
+                            to="/get-started"
+                            >Démarrer</router-link
                         >
                     </li>
                 </ul>
