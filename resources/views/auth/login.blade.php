@@ -2,7 +2,7 @@
 
 @section('content')
 <!-- Section: Design Block -->
-<section class="vh-50" style="background-color: #450002;">
+<section class="vh-50" style="background-color: #D2D2CF;">
   <div class="container py-4 h-50">
     <div class="row d-flex justify-content-center align-items-center h-100">
       <div class="col col-xl-10">
@@ -32,7 +32,7 @@
                   </div>
 
                   <div class="pt-1 mb-4">
-                    <button class="btn btn-blue btn-lg btn-block" type="submit"> {{ __('Login') }}</button>
+                    <button class="btn btn-secondary btn-lg btn-block" type="submit"> {{ __('Login') }}</button>
                   </div>
 
                   <a class="small text-muted" href="#!">Forgot password?</a>

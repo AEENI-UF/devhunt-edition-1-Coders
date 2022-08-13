@@ -75,7 +75,7 @@
     </div>
 </div> -->
 
-<section class="vh-50" style="background-color: #450002;">
+<section class="vh-50" style="background-color: #D2D2CF;">
   <div class="container py-4 h-50">
     <div class="row d-flex justify-content-center align-items-center h-100">
       <div class="col col-xl-10">
@@ -93,18 +93,14 @@
 
                   <h5 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">S'inscrire dans votre compte</h5>
 
-                  <div class="form-outline mb-2">
+                  <div class="form-outline mb-3">
                   <label for="name" class="col-md-4 col-form-label text-md-end">{{ __('Name') }}</label>
                     <input id="name" type="name" class="form-control @error('name') is-invalid @enderror"  class="form-control form-control-lg" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus />
                     
-                  </div>
-
-
-                  <div class="form-outline mb-2">
-                  <label for="email" class="col-md-4 col-form-label text-md-end">{{ __('Email Address') }}</label>
+                    <label for="email" class="col-md-4 col-form-label text-md-end">{{ __('Email Address') }}</label>
                     <input id="email" type="email" class="form-control @error('email') is-invalid @enderror"  class="form-control form-control-lg" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus />
-                
                   </div>
+
 
                   <div class="form-outline mb-3">
                   <label for="password" class="col-md-3 col-form-label text-md-end">{{ __('Password') }}</label>
@@ -116,10 +112,11 @@
 
                   <div class="pt-2 mb-3">
                     <button class="btn btn-secondary btn-lg btn-block" type="submit"> {{ __('Register') }}</button>
+
+
                 </div>
-
-
                 </form>
+
 
 </section>
 @endsection
