@@ -40,6 +40,50 @@ class EtudiantController extends Controller
             // In case the uploaded file path is to be stored in the database
             $filepath = public_path($location . "/" . $filename);
             // Reading file
+            $spreadsheet = \PhpOffice\PhpSpreadsheet\IOFactory::load($filepath);
+            $worksheet = $spreadsheet->getActiveSheet();
+            $isHeader = 0;
+            $looper = 0;
+            foreach ($worksheet->getRowIterator() as $row) {
+                if ($isHeader > 0) {
+                    $dataToInsert = [];
+                    $labels = [
+                        'matricule',
+                        'nom',
+                        'prenoms',
+                        'sexe',
+                        'date_naiss',
+                        'lieu_naiss',
+                        'cin',
+                        'tel',
+                        'adresse',
+                        'email',
+                        'password',
+                    ];
+                    $cellIterator = $row->getCellIterator();
+                    $cellIterator->setIterateOnlyExistingCells(FALSE); // This loops through all cells,
+                    //    even if a cell value is not set.
+                    // For 'TRUE', we loop through cells
+                    //    only when their value is set.
+                    // If this method is not called,
+                    //    the default value is 'false'.
+                    foreach ($cellIterator as $cell) {
+                        $dataToInsert[$labels[$looper]] = $cell->getValue();
+                        $looper++;
+                    }
+                    // return $dataToInsert;
+                    $etudiant = new Etudiant($dataToInsert);
+                    $etudiant->id_niveau = $request->input('id_niveau');
+                    $etudiant->save();
+                } else {
+                    $isHeader = 1;
+                }
+            }
+            return;
+            // return response()->json($cellValue);
+
+
+
             $file = fopen($filepath, "r");
             $importData_arr = array(); // Read through the file and store the contents as an array
             $i = 0;
