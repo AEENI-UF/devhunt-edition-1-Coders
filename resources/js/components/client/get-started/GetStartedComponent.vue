@@ -43,7 +43,7 @@
                         data-aos-delay="200"
                     >
                         <div class="icon-box">
-<<<<<<< HEAD
+
                             <div class="icon"><i class="bx bx-layer"></i></div>
                             <h4><a href="">Gestion d'une base de données des étudiants</a></h4>
 =======
@@ -56,7 +56,7 @@
                                     étudiants</a
                                 >
                             </h4>
->>>>>>> bf672a621a9c823e7f45cfc74cd1749590d4235b
+
                             <p>
                                 Création d'une base de données communes pour
                                 tous les étudiants de chaque niveau confondu.
