@@ -82,7 +82,7 @@
         <div class="card" style="border-radius: 1rem;">
           <div class="row g-0">
             <div class="col-md-6 col-lg-5 d-none d-md-block">
-              <img src="assets/img/pexels-hassan.jpg"
+              <img src="assets/img/why-us.png"
                 alt="login form" class="img-fluid" style="border-radius: 1rem 0 0 1rem;" />
             </div>
             <div class="col-md-6 col-lg-6 d-flex align-items-center">
@@ -103,7 +103,7 @@
 
 
                   <div class="form-outline mb-3">
-                  <label for="password" class="col-md-3 col-form-label text-md-end">{{ __('Password') }}</label>
+                  <label for="password" class="col-md-4 col-form-label text-md-end">{{ __('Password') }}</label>
                     <input id="password" type="password" class="form-control @error('password') is-invalid @enderror"  class="form-control form-control-lg" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus />
                    
                     <label for="password-confirm" class="col-md-4 col-form-label text-md-end">{{ __('Confirm Password') }}</label>
@@ -112,8 +112,7 @@
 
                   <div class="pt-2 mb-3">
                     <button class="btn btn-secondary btn-lg btn-block" type="submit"> {{ __('Register') }}</button>
-
-
+                    
                 </div>
                 </form>
 
