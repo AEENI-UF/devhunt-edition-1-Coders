@@ -9,7 +9,7 @@
             <nav id="navbar" class="navbar">
                 <ul>
                     <li>
-                        <router-link class="nav-link scrollto" to="/home"
+                        <router-link class="nav-link scrollto" to="/"
                             >Accueil</router-link
                         >
                     </li>
