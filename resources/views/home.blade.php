@@ -94,7 +94,7 @@
       </section>
       <!-- End Hero -->
       <main id="main">
-<<<<<<< HEAD
+
         <!-- ======= Cliens Section ======= -->
         <section id="cliens" class="cliens section-bg">
           <div class="container">
@@ -1255,9 +1255,9 @@
           </div>
         </section>
         <!-- End Contact Section -->
-=======
+
         <base-component></base-component>
->>>>>>> 4d01f1498d642be6fc77bdeccfe368941d681ef3
+
       </main>
       <!-- End #main -->
   
