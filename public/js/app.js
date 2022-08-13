@@ -5393,10 +5393,122 @@ var render = function render() {
   var _vm = this,
       _c = _vm._self._c;
 
-  return _c("div", [_vm._v("template")]);
+  return _vm._m(0);
 };
 
-var staticRenderFns = [];
+var staticRenderFns = [function () {
+  var _vm = this,
+      _c = _vm._self._c;
+
+  return _c("header", {
+    staticClass: "fixed-top",
+    attrs: {
+      id: "header"
+    }
+  }, [_c("div", {
+    staticClass: "container d-flex align-items-center"
+  }, [_c("h1", {
+    staticClass: "logo me-auto"
+  }, [_c("a", {
+    attrs: {
+      href: "index.html"
+    }
+  }, [_vm._v("Arsha")])]), _vm._v(" "), _c("nav", {
+    staticClass: "navbar",
+    attrs: {
+      id: "navbar"
+    }
+  }, [_c("ul", [_c("li", [_c("a", {
+    staticClass: "nav-link scrollto active",
+    attrs: {
+      href: "#hero"
+    }
+  }, [_vm._v("Home")])]), _vm._v(" "), _c("li", [_c("a", {
+    staticClass: "nav-link scrollto",
+    attrs: {
+      href: "#about"
+    }
+  }, [_vm._v("About")])]), _vm._v(" "), _c("li", [_c("a", {
+    staticClass: "nav-link scrollto",
+    attrs: {
+      href: "#services"
+    }
+  }, [_vm._v("Services")])]), _vm._v(" "), _c("li", [_c("a", {
+    staticClass: "nav-link scrollto",
+    attrs: {
+      href: "#portfolio"
+    }
+  }, [_vm._v("Portfolio")])]), _vm._v(" "), _c("li", [_c("a", {
+    staticClass: "nav-link scrollto",
+    attrs: {
+      href: "#team"
+    }
+  }, [_vm._v("Team")])]), _vm._v(" "), _c("li", {
+    staticClass: "dropdown"
+  }, [_c("a", {
+    attrs: {
+      href: "#"
+    }
+  }, [_c("span", [_vm._v("Drop Down")]), _vm._v(" "), _c("i", {
+    staticClass: "bi bi-chevron-down"
+  })]), _vm._v(" "), _c("ul", [_c("li", [_c("a", {
+    attrs: {
+      href: "#"
+    }
+  }, [_vm._v("Drop Down 1")])]), _vm._v(" "), _c("li", {
+    staticClass: "dropdown"
+  }, [_c("a", {
+    attrs: {
+      href: "#"
+    }
+  }, [_c("span", [_vm._v("Deep Drop Down")]), _vm._v(" "), _c("i", {
+    staticClass: "bi bi-chevron-right"
+  })]), _vm._v(" "), _c("ul", [_c("li", [_c("a", {
+    attrs: {
+      href: "#"
+    }
+  }, [_vm._v("Deep Drop Down 1")])]), _vm._v(" "), _c("li", [_c("a", {
+    attrs: {
+      href: "#"
+    }
+  }, [_vm._v("Deep Drop Down 2")])]), _vm._v(" "), _c("li", [_c("a", {
+    attrs: {
+      href: "#"
+    }
+  }, [_vm._v("Deep Drop Down 3")])]), _vm._v(" "), _c("li", [_c("a", {
+    attrs: {
+      href: "#"
+    }
+  }, [_vm._v("Deep Drop Down 4")])]), _vm._v(" "), _c("li", [_c("a", {
+    attrs: {
+      href: "#"
+    }
+  }, [_vm._v("Deep Drop Down 5")])])])]), _vm._v(" "), _c("li", [_c("a", {
+    attrs: {
+      href: "#"
+    }
+  }, [_vm._v("Drop Down 2")])]), _vm._v(" "), _c("li", [_c("a", {
+    attrs: {
+      href: "#"
+    }
+  }, [_vm._v("Drop Down 3")])]), _vm._v(" "), _c("li", [_c("a", {
+    attrs: {
+      href: "#"
+    }
+  }, [_vm._v("Drop Down 4")])])])]), _vm._v(" "), _c("li", [_c("a", {
+    staticClass: "nav-link scrollto",
+    attrs: {
+      href: "#contact"
+    }
+  }, [_vm._v("Contact")])]), _vm._v(" "), _c("li", [_c("a", {
+    staticClass: "getstarted scrollto",
+    attrs: {
+      href: "#about"
+    }
+  }, [_vm._v("Get Started")])])]), _vm._v(" "), _c("i", {
+    staticClass: "bi bi-list mobile-nav-toggle"
+  })])])]);
+}];
 render._withStripped = true;
 
 
@@ -5410,6 +5522,7 @@ render._withStripped = true;
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm.js");
 /* harmony import */ var _routes_router__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./routes/router */ "./resources/js/routes/router.js");
 /**
  * First we will load all of this project's JavaScript dependencies which
@@ -5417,6 +5530,7 @@ __webpack_require__.r(__webpack_exports__);
  * building robust, powerful web applications using Vue and Laravel.
  */
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
+
 
 
 window.Vue = (__webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm.js")["default"]);
@@ -5430,14 +5544,15 @@ window.Vue = (__webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm.js
 // const files = require.context('./', true, /\.vue$/i)
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
-Vue.component("example-component", (__webpack_require__(/*! ./components/ExampleComponent.vue */ "./resources/js/components/ExampleComponent.vue")["default"]));
+vue__WEBPACK_IMPORTED_MODULE_1__["default"].component("example-component", (__webpack_require__(/*! ./components/ExampleComponent.vue */ "./resources/js/components/ExampleComponent.vue")["default"]));
+vue__WEBPACK_IMPORTED_MODULE_1__["default"].component("menu-component", (__webpack_require__(/*! ./components/client/menu/MenuComponent.vue */ "./resources/js/components/client/menu/MenuComponent.vue")["default"]));
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-var app = new Vue({
+var app = new vue__WEBPACK_IMPORTED_MODULE_1__["default"]({
   el: "#app",
   router: _routes_router__WEBPACK_IMPORTED_MODULE_0__["default"]
 });

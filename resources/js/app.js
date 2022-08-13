@@ -5,6 +5,7 @@
  */
 
 require("./bootstrap");
+import Vue from "vue";
 import router from "./routes/router";
 
 window.Vue = require("vue").default;
@@ -23,6 +24,10 @@ window.Vue = require("vue").default;
 Vue.component(
     "example-component",
     require("./components/ExampleComponent.vue").default
+);
+Vue.component(
+    "menu-component",
+    require("./components/client/menu/MenuComponent.vue").default
 );
 
 /**
