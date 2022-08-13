@@ -113,12 +113,7 @@
                 </div>
             </div>
         </div>
-
         <div class="container footer-bottom clearfix">
-            <div class="copyright">
-                &copy; Copyright <strong><span>Arsha</span></strong
-                >. All Rights Reserved
-            </div>
             <div class="credits">
                 <!-- All the links in the footer should remain intact. -->
                 <!-- You can delete the links only if you purchased the pro version. -->
