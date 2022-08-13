@@ -14,7 +14,14 @@ class AuthController extends Controller
 {
     public function register(Request $request){
         $register = $request->validate( [
-            'name' => 'required',
+            'matricule' => 'required',
+            'nom'=> 'required',
+            'prenoms' =>'required',
+            'date_naiss' => 'required',
+            'lieu_naiss' => 'required',
+            'sexe'=> 'required',
+            'adresse'=> 'required',
+            'tel' => 'required',
             'email' => 'required',
             'password' => 'required'
         ]);
