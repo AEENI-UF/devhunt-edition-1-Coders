@@ -1,5 +1,5 @@
 <?php
-
+use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\Auth\AuthController;
 use App\Mail\SendEmail;
 use Illuminate\Support\Facades\Auth;
@@ -25,5 +25,27 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::post('/etudiant-register', [AuthController::class, 'register']);
-Route::post('/etudinat-login', [AuthController::class,'login']);
+
+// Route::group('/authentification', function () {
+//     Route::get('/etudiant', function () {
+//         return view('auth.etudiant-login');
+//     });
+//     Route::get('/admin', function () {
+//         return view('auth.admin-login');
+//     });
+// });
+
+Route::prefix('/authentification')->group(function () {
+    Route::get('/etudiant', function () {
+        return view('auth.etudiant-login');
+    });
+    Route::get('/admin', function () {
+        return view('auth.login');
+    });
+    Route::get('inscription', function () {
+        return view('auth.etudiant-register');
+    });
+});
+
+
+Route::get('/dashboard',[DashboardController::class,'list']);

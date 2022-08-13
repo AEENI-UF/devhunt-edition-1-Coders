@@ -5570,24 +5570,24 @@ var staticRenderFns = [function () {
     }
   }, [_c("div", {
     staticClass: "section-title"
-  }, [_c("h2", [_vm._v("About Us")])]), _vm._v(" "), _c("div", {
+  }, [_c("h2", [_vm._v("A propos ")])]), _vm._v(" "), _c("div", {
     staticClass: "row content"
   }, [_c("div", {
     staticClass: "col-lg-6"
-  }, [_c("p", [_vm._v("\n                        Lorem ipsum dolor sit amet, consectetur adipiscing\n                        elit, sed do eiusmod tempor incididunt ut labore et\n                        dolore magna aliqua.\n                    ")]), _vm._v(" "), _c("ul", [_c("li", [_c("i", {
+  }, [_c("p", [_vm._v("\n                        L'Ecole Nationale d'informatique possède à peu près 2000 étudiants dans\n                        son effectif actuellement. En tant qu'école nationale de l'innovation dans la digitalisation informatique,\n                        avoir une connexion internet est un atout pour chaque étudiant dans cette école.\n                    ")]), _vm._v(" "), _c("ul", [_c("li", [_c("i", {
     staticClass: "ri-check-double-line"
-  }), _vm._v(" Ullamco\n                            laboris nisi ut aliquip ex ea commodo consequat\n                        ")]), _vm._v(" "), _c("li", [_c("i", {
+  }), _vm._v(" Mettre en place un\n                            point d'accèss WIFI pour permettre à ces étudiants d'avoir internet.\n                        ")]), _vm._v(" "), _c("li", [_c("i", {
     staticClass: "ri-check-double-line"
-  }), _vm._v(" Duis aute\n                            irure dolor in reprehenderit in voluptate velit\n                        ")]), _vm._v(" "), _c("li", [_c("i", {
+  }), _vm._v(" Gérer plus de 2000 étudiants est une tâche\n                            très délicate pour l'administrateur réseau de l'école, que ce soit dans le domaine de\n\n                        ")]), _vm._v(" "), _c("li", [_c("i", {
     staticClass: "ri-check-double-line"
-  }), _vm._v(" Ullamco\n                            laboris nisi ut aliquip ex ea commodo consequat\n                        ")])])]), _vm._v(" "), _c("div", {
+  }), _vm._v(" Création d'une application WEB permettant d'administrer\n                            et répartir l'accès internet pour chaque étudiant de l'école.\n                        ")])])]), _vm._v(" "), _c("div", {
     staticClass: "col-lg-6 pt-4 pt-lg-0"
-  }, [_c("p", [_vm._v("\n                        Ullamco laboris nisi ut aliquip ex ea commodo\n                        consequat. Duis aute irure dolor in reprehenderit in\n                        voluptate velit esse cillum dolore eu fugiat nulla\n                        pariatur. Excepteur sint occaecat cupidatat non\n                        proident, sunt in culpa qui officia deserunt mollit\n                        anim id est laborum.\n                    ")]), _vm._v(" "), _c("a", {
+  }, [_c("p", [_vm._v("\n                        L'école n'a qu'une option: mettre en place un point d'accès WIFI pour permettre à\n                        ces étudiants d'avoir internet.Gérer plus de 2 000 étudiants est une tâche très delicate pour l'administrateur réseau de l'école,\n                        que ce soit dans le domaine de sécurisation ou dans le domaine de gestion d'accès à ce réseau WIFI\n                    ")]), _vm._v(" "), _c("a", {
     staticClass: "btn-learn-more",
     attrs: {
       href: "#"
     }
-  }, [_vm._v("Learn More")])])])])]), _vm._v(" "), _c("section", {
+  }, [_vm._v("En savoir plus")])])])])]), _vm._v(" "), _c("section", {
     staticClass: "why-us section-bg",
     attrs: {
       id: "why-us"

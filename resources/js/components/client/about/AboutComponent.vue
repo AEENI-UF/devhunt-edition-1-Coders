@@ -4,41 +4,39 @@
         <section id="about" class="about">
             <div class="container" data-aos="fade-up">
                 <div class="section-title">
-                    <h2>About Us</h2>
+                    <h2>A propos </h2>
                 </div>
 
                 <div class="row content">
                     <div class="col-lg-6">
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit, sed do eiusmod tempor incididunt ut labore et
-                            dolore magna aliqua.
+                            L'Ecole Nationale d'informatique possède à peu près 2000 étudiants dans
+                            son effectif actuellement. En tant qu'école nationale de l'innovation dans la digitalisation informatique,
+                            avoir une connexion internet est un atout pour chaque étudiant dans cette école.
                         </p>
                         <ul>
                             <li>
-                                <i class="ri-check-double-line"></i> Ullamco
-                                laboris nisi ut aliquip ex ea commodo consequat
+                                <i class="ri-check-double-line"></i> Mettre en place un
+                                point d'accèss WIFI pour permettre à ces étudiants d'avoir internet.
                             </li>
                             <li>
-                                <i class="ri-check-double-line"></i> Duis aute
-                                irure dolor in reprehenderit in voluptate velit
+                                <i class="ri-check-double-line"></i> Gérer plus de 2000 étudiants est une tâche
+                                très délicate pour l'administrateur réseau de l'école, que ce soit dans le domaine de
+
                             </li>
                             <li>
-                                <i class="ri-check-double-line"></i> Ullamco
-                                laboris nisi ut aliquip ex ea commodo consequat
+                                <i class="ri-check-double-line"></i> Création d'une application WEB permettant d'administrer
+                                et répartir l'accès internet pour chaque étudiant de l'école.
                             </li>
                         </ul>
                     </div>
                     <div class="col-lg-6 pt-4 pt-lg-0">
                         <p>
-                            Ullamco laboris nisi ut aliquip ex ea commodo
-                            consequat. Duis aute irure dolor in reprehenderit in
-                            voluptate velit esse cillum dolore eu fugiat nulla
-                            pariatur. Excepteur sint occaecat cupidatat non
-                            proident, sunt in culpa qui officia deserunt mollit
-                            anim id est laborum.
+                            L'école n'a qu'une option: mettre en place un point d'accès WIFI pour permettre à
+                            ces étudiants d'avoir internet.Gérer plus de 2 000 étudiants est une tâche très delicate pour l'administrateur réseau de l'école,
+                            que ce soit dans le domaine de sécurisation ou dans le domaine de gestion d'accès à ce réseau WIFI
                         </p>
-                        <a href="#" class="btn-learn-more">Learn More</a>
+                        <a href="#" class="btn-learn-more">En savoir plus</a>
                     </div>
                 </div>
             </div>

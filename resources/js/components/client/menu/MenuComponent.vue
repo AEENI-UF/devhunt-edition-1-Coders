@@ -9,13 +9,16 @@
             <nav id="navbar" class="navbar">
                 <ul>
                     <li>
-                        <router-link class="nav-link scrollto active" to="/home"
-                            >Home</router-link
+                        <router-link class="nav-link scrollto" to="/home"
+                            >Accueil</router-link
                         >
                     </li>
-                    <!--<li>
-                        <a class="nav-link scrollto" href="#about">About</a>
+                    <li>
+                        <router-link class="nav-link scrollto" to="/about"
+                            >A propos</router-link
+                        >
                     </li>
+                    <!--
                     <li>
                         <router-link class="nav-link scrollto" to="/get-started"
                             >Get started</router-link
@@ -63,7 +66,7 @@
                         <router-link
                             class="getstarted scrollto"
                             to="/get-started"
-                            >Get Started</router-link
+                            >Démarrer</router-link
                         >
                     </li>
                 </ul>
