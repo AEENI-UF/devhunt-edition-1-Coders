@@ -6012,11 +6012,15 @@ var staticRenderFns = [function () {
   }, [_c("div", {
     staticClass: "icon"
   }, [_c("i", {
-<<<<<<< HEAD
-    staticClass: "bx bx-data"
-=======
     staticClass: "bx bx-layer"
->>>>>>> 8f8a7361e10f36f63ea378fe51bf8a4eb6cfa3aa
+  })]), _vm._v(" "), _c("h4", [_c("a", {
+    attrs: {
+      href: ""
+    }
+  }, [_vm._v("Gestion d'une base de données des étudiants")])]), _vm._v(" "), _c("div", {
+    staticClass: "icon"
+  }, [_c("i", {
+    staticClass: "bx bx-database"
   })]), _vm._v(" "), _c("h4", [_c("a", {
     attrs: {
       href: ""
@@ -6049,15 +6053,15 @@ var staticRenderFns = [function () {
     staticClass: "icon"
   }, [_c("i", {
     staticClass: "bx bx-desktop"
+  })]), _vm._v(" "), _c("div", {
+    staticClass: "icon"
+  }, [_c("i", {
+    staticClass: "bx bx-layer"
   })]), _vm._v(" "), _c("h4", [_c("a", {
     attrs: {
       href: ""
     }
-<<<<<<< HEAD
-  }, [_vm._v("Administration des systèmes et réseaux")])]), _vm._v(" "), _c("p", [_vm._v("\n                            Gestion des utilisateurs connectés avec un tableau de bord\n                             démontrant la liste des comptes des utilisateurs qui devraient enregistrés sur ce plateforme.\n\n                        ")])])])])])]), _vm._v(" "), _c("section", {
-=======
-  }, [_vm._v("Administration des systèmes et réseaux")])]), _vm._v(" "), _c("p", [_vm._v("\n                            Gestion des utilisateurs connectés avec un tableau de bord\n                             démontrant la liste des comptes des utilisateurs qui devraient enregistrés sur ce plateforme.\n                             \n                        ")])])])])])]), _vm._v(" "), _c("section", {
->>>>>>> 8f8a7361e10f36f63ea378fe51bf8a4eb6cfa3aa
+  }, [_vm._v("Administration des systèmes et réseaux")])]), _vm._v(" "), _c("p", [_vm._v("\n                            Gestion des utilisateurs connectés avec un tableau de bord\n                             démontrant la liste des comptes des utilisateurs qui devraient enregistrés sur ce plateforme\n                        ")])])])])])]), _vm._v(" "), _c("section", {
     staticClass: "pricing",
     attrs: {
       id: "pricing"
@@ -29985,8 +29989,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /*!
-  * vue-router v3.5.3
-  * (c) 2021 Evan You
+  * vue-router v3.5.4
+  * (c) 2022 Evan You
   * @license MIT
   */
 /*  */
@@ -30504,7 +30508,7 @@ function parsePath (path) {
 }
 
 function cleanPath (path) {
-  return path.replace(/\/+/g, '/')
+  return path.replace(/\/(?:\s*\/)+/g, '/')
 }
 
 var isarray = Array.isArray || function (arr) {
@@ -31435,7 +31439,7 @@ function addRouteRecord (
         warn(
           false,
           "Named Route '" + (route.name) + "' has a default child route. " +
-            "When navigating to this named route (:to=\"{name: '" + (route.name) + "'\"), " +
+            "When navigating to this named route (:to=\"{name: '" + (route.name) + "'}\"), " +
             "the default child route will not be rendered. Remove the name from " +
             "this route and use the name of the default child route for named " +
             "links instead."
@@ -33126,7 +33130,7 @@ function createHref (base, fullPath, mode) {
 }
 
 VueRouter.install = install;
-VueRouter.version = '3.5.3';
+VueRouter.version = '3.5.4';
 VueRouter.isNavigationFailure = isNavigationFailure;
 VueRouter.NavigationFailureType = NavigationFailureType;
 VueRouter.START_LOCATION = START;

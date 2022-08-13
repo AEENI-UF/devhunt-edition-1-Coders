@@ -60,7 +60,7 @@
  <div id="app">
 
     <menu-component></menu-component>
-  
+
       <!-- ======= Hero Section ======= -->
       <section id="hero" class="d-flex align-items-center">
         <div class="container">
@@ -75,11 +75,6 @@
               <h2>
                 C'est une plateforme d'application web afin de gérer l'accès à un point d'accès WIFI.
               </h2>
-
-              <h2>Meilleurs solutions pour la gestion de point d'accès WIFI</h2>
-              <h3>
-                C'est une plateforme d'application web afin de gérer l'accès à un point d'accès WIFI.
-              </h3>
 
               <div class="d-flex justify-content-center justify-content-lg-start">
                 <a href="#about" class="btn-get-started scrollto">Démarrer</a>
@@ -104,7 +99,7 @@
         <base-component></base-component>
       </main>
       <!-- End #main -->
-  
+
       <!-- ======= Footer ======= -->
       <footer-component></footer-component>
       <!-- End Footer -->
@@ -113,7 +108,7 @@
         class="back-to-top d-flex align-items-center justify-content-center"
         ><i class="bi bi-arrow-up-short"></i
       ></a>
-  
+
  </div>
     <!-- Vendor JS Files -->
     <script src="assets/vendor/aos/aos.js"></script>
