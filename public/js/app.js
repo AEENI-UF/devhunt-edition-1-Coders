@@ -6019,12 +6019,12 @@ var staticRenderFns = [function () {
   }, [_c("div", {
     staticClass: "icon"
   }, [_c("i", {
-    staticClass: "bx bxl-wifi"
+    staticClass: "bx bx-wifi"
   })]), _vm._v(" "), _c("h4", [_c("a", {
     attrs: {
       href: ""
     }
-  }, [_vm._v("Système de gestion point d'accès Wifi")])]), _vm._v(" "), _c("p", [_vm._v("\n                           Mise en place d'une gestion de point d'accès Wifi pour \n                           chaque étudiant de l'école grÂ la validation rétroactive\n                        ")])])]), _vm._v(" "), _c("div", {
+  }, [_vm._v("Système de gestion point d'accès Wifi")])]), _vm._v(" "), _c("p", [_vm._v("\n                           Mise en place d'une gestion de point d'accès Wifi pour \n                           chaque étudiant de l'école grâce à la validation rétroactive\n                           de leur mot de passe.\n                        ")])])]), _vm._v(" "), _c("div", {
     staticClass: "col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0",
     attrs: {
       "data-aos": "zoom-in",
@@ -6035,7 +6035,7 @@ var staticRenderFns = [function () {
   }, [_c("div", {
     staticClass: "icon"
   }, [_c("i", {
-    staticClass: "bx bx-database"
+    staticClass: "bx bx-data"
   })]), _vm._v(" "), _c("h4", [_c("a", {
     attrs: {
       href: ""
@@ -6067,12 +6067,12 @@ var staticRenderFns = [function () {
   }, [_c("div", {
     staticClass: "icon"
   }, [_c("i", {
-    staticClass: "bx bx-layer"
+    staticClass: "bx bx-desktop"
   })]), _vm._v(" "), _c("h4", [_c("a", {
     attrs: {
       href: ""
     }
-  }, [_vm._v("Nemo Enim")])]), _vm._v(" "), _c("p", [_vm._v("\n                            At vero eos et accusamus et iusto odio\n                            dignissimos ducimus qui blanditiis\n                        ")])])])])])]), _vm._v(" "), _c("section", {
+  }, [_vm._v("Administration des systèmes et réseaux")])]), _vm._v(" "), _c("p", [_vm._v("\n                            Gestion des utilisateurs connectés avec un tableau de bord\n                             démontrant la liste des comptes des utilisateurs qui devraient enregistrés sur ce plateforme.\n\n                        ")])])])])])]), _vm._v(" "), _c("section", {
     staticClass: "pricing",
     attrs: {
       id: "pricing"

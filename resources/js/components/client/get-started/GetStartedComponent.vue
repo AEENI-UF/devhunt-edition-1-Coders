@@ -6,11 +6,8 @@
                 <div class="section-title">
                     <h2>Les avantages</h2>
                     <p>
-                        Magnam dolores commodi suscipit. Necessitatibus eius
-                        consequatur ex aliquid fuga eum quidem. Sit sint
-                        consectetur velit. Quisquam quos quisquam cupiditate. Et
-                        nemo qui impedit suscipit alias ea. Quia fugiat sit in
-                        iste officiis commodi quidem hic quas.
+                        Quelques fonctionnalités pourraient être données des solutions adéquates aux 
+                        circonstances que l'on a prévue comme:.
                     </p>
                 </div>
 
@@ -22,7 +19,7 @@
                     >
                         <div class="icon-box">
                             <div class="icon">
-                                <i class="bx bxl-wifi"></i>
+                                <i class="bx bx-wifi"></i>
                             </div>
                             <h4><a href="">Système de gestion point d'accès Wifi</a></h4>
                             <p>
@@ -39,7 +36,7 @@
                         data-aos-delay="200"
                     >
                         <div class="icon-box">
-                            <div class="icon"><i class="bx bx-database"></i></div>
+                            <div class="icon"><i class="bx bx-data"></i></div>
                             <h4><a href="">Gestion d'une base de données des étudiants</a></h4>
                             <p>
                                 Création  d'une base de données communes pour tous 
@@ -72,11 +69,12 @@
                         data-aos-delay="400"
                     >
                         <div class="icon-box">
-                            <div class="icon"><i class="bx bx-layer"></i></div>
-                            <h4><a href="">Nemo Enim</a></h4>
+                            <div class="icon"><i class="bx bx-desktop"></i></div>
+                            <h4><a href="">Administration des systèmes et réseaux</a></h4>
                             <p>
-                                At vero eos et accusamus et iusto odio
-                                dignissimos ducimus qui blanditiis
+                                Gestion des utilisateurs connectés avec un tableau de bord
+                                 démontrant la liste des comptes des utilisateurs qui devraient enregistrés sur ce plateforme.
+
                             </p>
                         </div>
                     </div>

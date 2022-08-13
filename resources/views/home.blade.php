@@ -70,12 +70,12 @@
               data-aos="fade-up"
               data-aos-delay="200"
             >
-              <h1>Better Solutions For Your Business</h1>
+              <h1>Accès WIFI</h1>
               <h2>
-                We are team of talented designers making websites with Bootstrap
+                C'est une plateforme d'application web afin de gérer l'accès à un point d'accès WIFI.
               </h2>
               <div class="d-flex justify-content-center justify-content-lg-start">
-                <a href="#about" class="btn-get-started scrollto">Get Started</a>
+                <a href="#about" class="btn-get-started scrollto">Démarrer</a>
               </div>
             </div>
             <div
