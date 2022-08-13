@@ -7,6 +7,8 @@
 require("./bootstrap");
 import Vue from "vue";
 import router from "./routes/router";
+import VueToast from "vue-toast-notification";
+import "vue-toast-notification/dist/theme-sugar.css";
 
 window.Vue = require("vue").default;
 
@@ -21,10 +23,7 @@ window.Vue = require("vue").default;
 // const files = require.context('./', true, /\.vue$/i)
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
-Vue.component(
-    "example-component",
-    require("./components/ExampleComponent.vue").default
-);
+Vue.use(VueToast);
 Vue.component(
     "menu-component",
     require("./components/client/menu/MenuComponent.vue").default
@@ -34,6 +33,14 @@ Vue.component(
     "footer-component",
     require("./components/client/footer/FooterComponent.vue").default
 );
+<<<<<<< HEAD
+=======
+
+Vue.component(
+    "base-component",
+    require("./components/BaseComponent.vue").default
+);
+>>>>>>> 4d01f1498d642be6fc77bdeccfe368941d681ef3
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application

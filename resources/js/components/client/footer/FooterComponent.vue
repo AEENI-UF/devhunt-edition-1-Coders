@@ -6,7 +6,7 @@
                     <div class="col-lg-6">
                         <h4>Join Our Newsletter</h4>
                         <p>
-                        mandeha io 
+
                         </p>
                         <form action="" method="post">
                             <input type="email" name="email" /><input
@@ -112,12 +112,7 @@
                 </div>
             </div>
         </div>
-
         <div class="container footer-bottom clearfix">
-            <div class="copyright">
-                &copy; Copyright <strong><span>Arsha</span></strong
-                >. All Rights Reserved
-            </div>
             <div class="credits">
                 <!-- All the links in the footer should remain intact. -->
                 <!-- You can delete the links only if you purchased the pro version. -->

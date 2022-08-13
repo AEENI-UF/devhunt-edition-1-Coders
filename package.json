@@ -20,11 +20,15 @@
         "sass": "^1.32.11",
         "sass-loader": "^11.0.1",
         "vue": "^2.6.12",
-        "vue-router": "^3.5.3",
         "vue-loader": "^15.10.0",
+        "vue-router": "^3.5.3",
         "vue-template-compiler": "^2.6.12"
     },
     "dependencies": {
+<<<<<<< HEAD
         "vue-router": "^3.5.3"
+=======
+        "vue-toast-notification": "^0.6.3"
+>>>>>>> 4d01f1498d642be6fc77bdeccfe368941d681ef3
     }
 }
