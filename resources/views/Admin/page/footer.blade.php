@@ -1,11 +1,6 @@
 </div>
-<footer class="footer text-center">
-                All Rights Reserved by Matrix-admin. Designed and Developed by <a href="https://wrappixel.com">WrapPixel</a>.
-            </footer>
-        </div>
-    </div>
     <script src="{{ asset('admin/assets/libs/jquery/dist/jquery.min.js')}}"></script>
-    
+
     <script src="{{ asset('admin/dist/js/custom.min.js')}}"></script>
     <script src="{{ asset('admin/dist/js/sidebarmenu.js')}}"></script>
     <script src="{{ asset('admin/dist/js/waves.js')}}"></script>

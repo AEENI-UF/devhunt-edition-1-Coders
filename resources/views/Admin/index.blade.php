@@ -239,17 +239,20 @@
                 <nav class="sidebar-nav">
                     <ul id="sidebarnav" class="p-t-30">
                         <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
-                                href="index.html" aria-expanded="false"><i class="mdi mdi-view-dashboard"></i><span
+                                href="/dashboard" aria-expanded="false"><i class="mdi mdi-view-dashboard"></i><span
                                     class="hide-menu">Dashboard</span></a></li>
                         <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
-                                href="charts.html" aria-expanded="false"><i class="mdi mdi-chart-bar"></i><span
-                                    class="hide-menu">Charts</span></a></li>
+                                href="/liste" aria-expanded="false"><i class="mdi mdi-account-multiple-outline"></i><span
+                                    class="hide-menu">Etudiants</span></a></li>
+                            <li class="sidebar-item"> <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-book-variant"></i><span class="hide-menu">Historique </span></a>
+                            <ul aria-expanded="false" class="collapse  first-level">
+                                <li class="sidebar-item"><a href="/liste" class="sidebar-link"><i class="mdi mdi-note-outline"></i><span class="hide-menu"> histogramme </span></a></li>
+                                <li class="sidebar-item"><a href="form-wizard.html" class="sidebar-link"><i class="mdi mdi-note-plus"></i><span class="hide-menu"> Form Wizard </span></a></li>
+                            </ul>
+                        </li>
                         <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
-                                href="charts.html" aria-expanded="false"><i class="mdi mdi-chart-bar"></i><span
-                                    class="hide-menu">Charts</span></a></li>
-                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
-                                href="charts.html" aria-expanded="false"><i class="mdi mdi-chart-bar"></i><span
-                                    class="hide-menu">Charts</span></a></li>
+                                href="charts.html" aria-expanded="false"><i class="mdi mdi-brightness-7"></i><span
+                                    class="hide-menu">Parametre</span></a></li>
                     </ul>
                 </nav>
                 <!-- End Sidebar navigation -->
@@ -284,7 +287,9 @@
             </div>
         </div>
         <div class="container"  id="app">
-            <user-datatable></user-datatable>
+    <!-- eto asiana ny donne avy any -->
+            <dashboard-index></dashboard-index>
+            <card-etudiant></card-etudiant>
         </div>
     </div>
     <script src="{{ asset('admin/assets/libs/jquery/dist/jquery.min.js')}}"></script>

@@ -1,4 +1,6 @@
 <template>
+<div>
+ <upload-file></upload-file>
     <v-app>
         <v-card class="mt-4">
             <v-card-title>
@@ -18,10 +20,14 @@
             ></v-data-table>
         </v-card>
     </v-app>
+</div>
 </template>
 <script>
 import axios from "axios";
+import UploadFile from "./UploadFile.vue"
+import UploadFile from './UploadFile.vue';
 export default {
+  components: { UploadFile },
     data() {
         return {
             search: "",
@@ -67,6 +73,6 @@ export default {
     },
     async mounted() {
         this.data = await axios.get("/api/etudiant").then((res) => res.data);
-    },
+    }   
 };
 </script>

@@ -49,4 +49,5 @@ Route::prefix('/authentification')->group(function () {
 });
 
 
-Route::get('/dashboard', [DashboardController::class, 'list']);
+Route::get('/dashboard', [DashboardController::class, 'dashboard']);
+Route::get('/liste', [DashboardController::class, 'liste']);
