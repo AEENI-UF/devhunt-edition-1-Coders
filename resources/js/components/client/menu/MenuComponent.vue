@@ -9,16 +9,16 @@
             <nav id="navbar" class="navbar">
                 <ul>
                     <li>
-                        <a class="nav-link scrollto active" href="#hero"
-                            >Home</a
+                        <router-link class="nav-link scrollto active" to="/home"
+                            >Home</router-link
                         >
                     </li>
                     <li>
                         <a class="nav-link scrollto" href="#about">About</a>
                     </li>
                     <li>
-                        <a class="nav-link scrollto" href="#services"
-                            >Services</a
+                        <router-link class="nav-link scrollto" to="/get-started"
+                            >Get started</router-link
                         >
                     </li>
                     <li>
