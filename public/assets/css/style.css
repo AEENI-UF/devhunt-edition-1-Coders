@@ -31,11 +31,10 @@ h1, h2, h3, h4, h5, h6 {
 # Preloader
 --------------------------------------------------------------*/
 #preloader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
   z-index: 9999;
   overflow: hidden;
   background: #37517e;
@@ -46,7 +45,6 @@ h1, h2, h3, h4, h5, h6 {
   position: fixed;
   top: calc(50% - 30px);
   left: calc(50% - 30px);
-  border: 6px solid #37517e;
   border-top-color: #fff;
   border-bottom-color: #fff;
   border-radius: 50%;
