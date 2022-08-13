@@ -27,7 +27,7 @@ const routes = new VueRouter({
             component:
                 require("./../components/client/about/AboutComponent.vue")
                     .default,
-        }
+        },
     ],
 });
 

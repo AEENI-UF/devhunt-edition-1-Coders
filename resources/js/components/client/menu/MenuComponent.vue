@@ -10,7 +10,7 @@
                 <ul>
                     <li>
                         <router-link class="nav-link scrollto active" to="/home"
-                            >Home</router-link
+                            >Accueil</router-link
                         >
                     </li>
                     <!--<li>
@@ -63,7 +63,7 @@
                         <router-link
                             class="getstarted scrollto"
                             to="/get-started"
-                            >Get Started</router-link
+                            >Démarrer</router-link
                         >
                     </li>
                 </ul>
