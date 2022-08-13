@@ -33,7 +33,6 @@ Route::prefix('/authentification')->group(function () {
         return view('auth.admin-login');
     });
     Route::get('inscription', function () {
-        return 'hello';
-        // view('auth.etudiant-register');
+        return view('auth.etudiant-register');
     });
 });
