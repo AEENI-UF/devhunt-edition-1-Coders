@@ -13,7 +13,7 @@
                             >Home</router-link
                         >
                     </li>
-                    <li>
+                    <!--<li>
                         <a class="nav-link scrollto" href="#about">About</a>
                     </li>
                     <li>
@@ -52,12 +52,16 @@
                             <li><a href="#">Drop Down 4</a></li>
                         </ul>
                     </li>
+                    -->
                     <li>
                         <a class="nav-link scrollto" href="#contact">Contact</a>
                     </li>
+
                     <li>
-                        <a class="getstarted scrollto" href="#about"
-                            >Get Started</a
+                        <router-link
+                            class="getstarted scrollto"
+                            to="/get-started"
+                            >Get Started</router-link
                         >
                     </li>
                 </ul>
