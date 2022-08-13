@@ -71,7 +71,7 @@ class EtudiantController extends Controller
                     }
                     // return $dataToInsert;
                     $etudiant = new Etudiant($dataToInsert);
-                    $etudiant->id_niveau = 1;
+                    $etudiant->id_niveau = $request->input('id_niveau');
                     $etudiant->save();
                 } else {
                     $isHeader = 1;
