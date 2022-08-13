@@ -40,25 +40,43 @@ class EtudiantController extends Controller
             // Reading file
             $spreadsheet = \PhpOffice\PhpSpreadsheet\IOFactory::load($filepath);
             $worksheet = $spreadsheet->getActiveSheet();
-
-            echo '<table>' . PHP_EOL;
+            $isHeader = 0;
+            $looper = 0;
             foreach ($worksheet->getRowIterator() as $row) {
-                echo '<tr>' . PHP_EOL;
-                $cellIterator = $row->getCellIterator();
-                $cellIterator->setIterateOnlyExistingCells(FALSE); // This loops through all cells,
-                //    even if a cell value is not set.
-                // For 'TRUE', we loop through cells
-                //    only when their value is set.
-                // If this method is not called,
-                //    the default value is 'false'.
-                foreach ($cellIterator as $cell) {
-                    echo '<td>' .
-                        $cell->getValue() .
-                        '</td>' . PHP_EOL;
+                if ($isHeader > 0) {
+                    $dataToInsert = [];
+                    $labels = [
+                        'matricule',
+                        'nom',
+                        'prenoms',
+                        'sexe',
+                        'date_naiss',
+                        'lieu_naiss',
+                        'cin',
+                        'tel',
+                        'adresse',
+                        'email',
+                        'password',
+                    ];
+                    $cellIterator = $row->getCellIterator();
+                    $cellIterator->setIterateOnlyExistingCells(FALSE); // This loops through all cells,
+                    //    even if a cell value is not set.
+                    // For 'TRUE', we loop through cells
+                    //    only when their value is set.
+                    // If this method is not called,
+                    //    the default value is 'false'.
+                    foreach ($cellIterator as $cell) {
+                        $dataToInsert[$labels[$looper]] = $cell->getValue();
+                        $looper++;
+                    }
+                    // return $dataToInsert;
+                    $etudiant = new Etudiant($dataToInsert);
+                    $etudiant->id_niveau = 1;
+                    $etudiant->save();
+                } else {
+                    $isHeader = 1;
                 }
-                echo '</tr>' . PHP_EOL;
             }
-            echo '</table>' . PHP_EOL;
             return;
             // return response()->json($cellValue);
 
