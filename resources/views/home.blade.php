@@ -93,7 +93,9 @@
         </div>
       </section>
       <!-- End Hero -->
-      <base-component></base-component>
+      <main id="main">
+        <base-component></base-component>
+      </main>
       <!-- End #main -->
   
       <!-- ======= Footer ======= -->

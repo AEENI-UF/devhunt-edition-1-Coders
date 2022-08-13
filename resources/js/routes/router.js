@@ -6,13 +6,19 @@ Vue.use(VueRouter);
 const routes = new VueRouter({
     mode: "history",
     routes: [
-        {
-            path: "/home",
-            component: require("./../components/BaseComponent.vue").default,
-        },
+        // {
+        //     path: "/home",
+        //     component: require("./../components/BaseComponent.vue").default,
+        // },
         {
             path: "/get-started",
-            component: require("./../components/Test.vue").default,
+            component: require("./../components/ContentComponent.vue").default,
+        },
+        {
+            path: "/contact",
+            component:
+                require("./../components/client/contact/ContactComponent.vue")
+                    .default,
         },
     ],
 });
