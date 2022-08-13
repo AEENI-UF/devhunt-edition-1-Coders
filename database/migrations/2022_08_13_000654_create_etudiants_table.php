@@ -21,11 +21,11 @@ class CreateEtudiantsTable extends Migration
             $table->string('lieu_naiss');
             $table->string('sexe')->nullable();
             $table->string('adresse');
-            $table->string('cin');
+            $table->string('cin')->nullable();
             $table->string('tel');
             $table->string('password');
             $table->string('email');
-            $table->string('id_niveau');
+           // $table->string('id_niveau');
             $table->timestamps();
         });
     }

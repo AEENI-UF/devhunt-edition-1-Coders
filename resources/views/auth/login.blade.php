@@ -83,7 +83,7 @@
           <div class="row justify-content-center">
             <div class="col-md-8">
               <div class="mb-4">
-              <h3> <a href="/login">Se connecter</a>  | <a href="#">S'inscrire</a> </h3>
+              <h3> <a href="/login">Se connecter</a>  | <a href="/register">S'inscrire</a> </h3>
               <p class="mb-4">Lorem ipsum dolor sit amet elit. Sapiente sit aut eos consectetur adipisicing.</p>
             </div>
             <form action="#" method="post">
