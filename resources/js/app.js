@@ -10,6 +10,7 @@ import router from "./routes/router";
 import VueToast from "vue-toast-notification";
 import axios from 'axios';
 import "vue-toast-notification/dist/theme-sugar.css";
+import vuetify from "./../plugins/vuetify";
 
 window.Vue = require("vue").default;
 
@@ -23,7 +24,7 @@ window.Vue = require("vue").default;
 
 // const files = require.context('./', true, /\.vue$/i)
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
-import DataTable from 'laravel-vue-datatable';
+import DataTable from "laravel-vue-datatable";
 Vue.use(DataTable);
 
 Vue.use(VueToast);
@@ -59,4 +60,5 @@ Vue.component(
 const app = new Vue({
     el: "#app",
     router,
+    vuetify,
 });
