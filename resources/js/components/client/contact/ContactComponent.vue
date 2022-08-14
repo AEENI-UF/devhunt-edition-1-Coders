@@ -106,7 +106,9 @@
                                 </div>
                             </div>
                             <div class="text-center">
-                                <button type="submit">Envoyez Message</button>
+                                <button :disabled="sending" type="submit">
+                                    Envoyez Message
+                                </button>
                             </div>
                         </form>
                     </div>
@@ -122,6 +124,7 @@ import axios from "axios";
 export default {
     data() {
         return {
+            sending: false,
             email: "",
             message: "",
             name: "",
@@ -130,6 +133,7 @@ export default {
     },
     methods: {
         async sendMessage() {
+            this.sending = true;
             const body = new FormData();
             body.append("email", this.email);
             body.append("message", this.message);
@@ -138,7 +142,14 @@ export default {
 
             await axios
                 .post("/contact-us", body)
-                .then((data) => this.$toast.success("Message envoyée"))
+                .then((data) => {
+                    this.$toast.success("Message envoyée");
+                    this.sending = false;
+                    this.email = "";
+                    this.message = "";
+                    this.name = "";
+                    this.object = "";
+                })
                 .catch((e) => this.$toast.error(e.response.data.message));
         },
     },

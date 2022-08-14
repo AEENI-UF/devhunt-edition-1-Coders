@@ -334,10 +334,8 @@ color: rgba(0,0,0,1);
         <table>
             <tr>
                 <td>
-                    <div class="text" style="padding: 0 2.5em">
-                        <h4>From : <?= $data['name'] ?></h4>
+                    <div class="" style="padding: 0 2.5em">
                         <p><?= $data['message'] ?></p>
-
                     </div>
                 </td>
             </tr>
