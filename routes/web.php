@@ -52,14 +52,14 @@ Route::prefix('/authentification')->group(function () {
     });
 });
 
-Route::get('/compte', function(){
+Route::get('/compte', function () {
     return view('Admin/compte/index');
 });
 
 Route::get('/list-user', [AuthController::class, 'index']);
 
-Route::get('/dashboard',[DashboardController::class,'list']);
-Route::get('/list-config', [ConfigurationController::class,'index'])->name('list-config');
+Route::get('/dashboard', [DashboardController::class, 'list']);
+Route::get('/list-config', [ConfigurationController::class, 'index'])->name('list-config');
 Route::post('/add-config', [ConfigurationController::class, 'store'])->name('add-config');
 Route::get('/show-config/{id}', [ConfigurationController::class, 'show'])->name('show-config');
 Route::put('/update-config/{id}', [ConfigurationController::class, 'update'])->name('update-config');
@@ -68,3 +68,4 @@ Route::get('/liste', [DashboardController::class, 'liste']);
 
 
 Route::post("contact-us", [HomeController::class, 'contact_us']);
+Route::post('register-user', [AuthController::class, "registerUser"]);
