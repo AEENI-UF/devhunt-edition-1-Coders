@@ -37,7 +37,6 @@
                                         {{ __('Mot de passe oublié ?') }}
                                     </a>
                                 @endif
-                  
                 </form>
               </div>
             </div>

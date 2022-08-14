@@ -55,7 +55,7 @@ class AuthController extends Controller
 
         $user = $request->validate([
             'email' => 'required|email',
-            'password' => ['required', 'min:8'],
+            'password' => ['required'],
 
         ]);
         $user = Etudiant::where('email', $request->email)->first();
@@ -68,9 +68,9 @@ class AuthController extends Controller
                     'token' => $tokenResult
                 ], 200);
             }
-            return response()->json(['message' => 'votre mot de passe est incorrecte'], 401);
+            return response()->json(['message' => 'Ce compte n\'existe pas'], 401);
         }
-        return response()->json(['title' => 'Votre Adresse Email est incorrecte'], 401);
+        return response()->json(['message' => 'Ce compte n\'existe pas'], 401);
     }
 
     protected function generateRandomString($length = 10)

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Auth\AuthController;
 use App\Http\Controllers\EtudiantController;
 use App\Http\Controllers\NiveauController;
 use App\Models\Niveau;
@@ -28,3 +29,8 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 Route::get('/etudiant', [EtudiantController::class, 'index']);
 Route::get('/by-level', [NiveauController::class, 'byLevel']);
+
+
+Route::prefix("etudiant-auth")->group(function () {
+    Route::post("/login", [AuthController::class, "login"]);
+});

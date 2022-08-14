@@ -7,8 +7,30 @@ const routes = new VueRouter({
     // mode: "history",
     routes: [
         {
+            name: "home",
             path: "/",
             component: require("./../components/ContentComponent.vue").default,
+        },
+        {
+            beforeEnter(to, from, next) {
+                if (localStorage.getItem("access_token")) {
+                    next({ name: "home" });
+                } else next();
+            },
+            path: "/etudiant/login",
+            component: require("./../components/client/auth/LoginComponent.vue")
+                .default,
+        },
+        {
+            beforeEnter(to, from, next) {
+                if (localStorage.getItem("access_token")) {
+                    next({ name: "home" });
+                } else next();
+            },
+            path: "/etudiant/register",
+            component:
+                require("./../components/client/auth/RegisterComponent.vue")
+                    .default,
         },
         {
             path: "/get-started",

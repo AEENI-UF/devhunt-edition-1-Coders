@@ -147,10 +147,10 @@
                                 <div class="m-3">
                                     Vous avez déjà un compte étudiant ?
                                 </div>
-                                <a
-                                    href="/authentification/etudiant"
+                                <router-link
+                                    to="/etudiant/login"
                                     class="buy-btn btn-sm"
-                                    >Se connecter</a
+                                    >Se connecter</router-link
                                 >
                             </div>
                         </div>
@@ -165,10 +165,10 @@
                                     Inscrivez-vous pour béneficier des offres de
                                     l'école avec la connexion internet
                                 </div>
-                                <a
-                                    href="/authentification/inscription"
+                                <router-link
+                                    to="/etudiant/register"
                                     class="buy-btn btn-sm"
-                                    >S'inscrire</a
+                                    >S'inscrire</router-link
                                 >
                             </div>
                         </div>
