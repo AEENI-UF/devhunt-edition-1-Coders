@@ -61,9 +61,9 @@
                             <h3>
                             L’Ecole Nationale d’Informatique possède à
                                 <strong
+
                                     >peu près 2 000 étudiants dans son
-effectif actuel.</strong
-                                >
+effectif actuel.</strong>
                             </h3>
                             <p>
                                 En tant qu’école nationale de l’innovation dans la digitalisation informatique,

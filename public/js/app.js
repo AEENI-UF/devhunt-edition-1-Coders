@@ -6048,7 +6048,7 @@ var staticRenderFns = [function () {
       id: "accordion-list-1",
       "data-bs-parent": ".accordion-list"
     }
-  }, [_c("p")])]), _vm._v(" "), _c("li", [_c("a", {
+  }, [_c("p", [_vm._v("\n                                            L'informatique générale est un domaine d'activité scientifique, technique, et industriel concernant \n                                            le traitement automatique de l'information numérique par l'exécution de programmes informatiques hébergés par des dispositifs électriques-électroniques : des systèmes embarqués, des ordinateurs, des robots, des automates,\n                                        ")])])]), _vm._v(" "), _c("li", [_c("a", {
     staticClass: "collapsed",
     attrs: {
       "data-bs-toggle": "collapse",
@@ -6126,7 +6126,7 @@ var staticRenderFns = [function () {
     }
   }, [_c("div", {
     staticClass: "section-title"
-  }, [_c("h2", [_vm._v("Contact")]), _vm._v(" "), _c("p", [_vm._v("\n                  ENI Fianarantsoa est une école de renom se spécialiser en informatique à Madagascar. "), _c("br"), _vm._v("\n                  ECOLE NATIONALE D'INFORMATIQUE. "), _c("strong", [_c("i", [_vm._v("La pépinière des élites informaticiennes Malgache.")])])])]), _vm._v(" "), _c("div", {
+  }, [_c("h2", [_vm._v("Contact")]), _vm._v(" "), _c("p", [_vm._v("\n                  ENI Fianarantsoa est une école de rénom se spécialiser en informatique à Madagascar. "), _c("br"), _vm._v("\n                  ECOLE NATIONALE D'INFORMATIQUE. "), _c("strong", [_c("i", [_vm._v("La pépinière des élites informaticiennes Malgache.")])])])]), _vm._v(" "), _c("div", {
     staticClass: "row"
   }, [_c("div", {
     staticClass: "col-lg-5 d-flex align-items-stretch"
@@ -6579,9 +6579,9 @@ var staticRenderFns = [function () {
     staticClass: "logo me-auto"
   }, [_c("a", {
     attrs: {
-      href: "index.html"
+      href: "/"
     }
-  }, [_vm._v("ENI")])]);
+  }, [_c("strong", [_vm._v(" ENI ")])])]);
 }];
 render._withStripped = true;
 
