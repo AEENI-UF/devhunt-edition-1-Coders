@@ -121,7 +121,10 @@
                             <p>
                                 En tant qu’école nationale de l’innovation dans
                                 la digitalisation informatique, on a 3 parcours
-                                different dans cette ecole
+                                différents dans cette ecole En tant qu’école
+                                nationale de l’innovation dans la digitalisation
+                                informatique, on a 3 parcours different dans
+                                cette ecole
                             </p>
                         </div>
 
@@ -132,8 +135,10 @@
                                         data-bs-toggle="collapse"
                                         class="collapse"
                                         data-bs-target="#accordion-list-1"
-                                        ><span>01</span> Parcours Informatique
-                                        Generale(IG)
+                                        ><span>01</span> Informatique
+                                        Generale(IG) ><span>01</span> Parcours
+                                        Informatique Generale(IG)
+
                                         <i
                                             class="bx bx-chevron-down icon-show"
                                         ></i
@@ -147,6 +152,17 @@
                                         data-bs-parent=".accordion-list"
                                     >
                                         <p>
+                                            L'informatique générale est un
+                                            domaine d'activité scientifique,
+                                            technique, et industriel concernant
+                                            le traitement automatique de
+                                            l'information numérique par
+                                            l'exécution de programmes
+                                            informatiques hébergés par des
+                                            dispositifs
+                                            électriques-électroniques : des
+                                            systèmes embarqués, des ordinateurs,
+                                            des robots, des automates,
                                             Informatique Générale fait les atous
                                             en informatique Genie et Systeme
                                             Réseaux
@@ -160,7 +176,9 @@
                                         data-bs-target="#accordion-list-2"
                                         class="collapsed"
                                         ><span>02</span> Génie Logiciel et Base
-                                        de donnée(GB)
+                                        de données(GB) ><span>02</span> Génie
+                                        Logiciel et Base de donnée(GB)
+
                                         <i
                                             class="bx bx-chevron-down icon-show"
                                         ></i
@@ -174,8 +192,14 @@
                                         data-bs-parent=".accordion-list"
                                     >
                                         <p>
-                                            fait et créer des logiciel en facon
-                                            proffesionnel
+                                            Le génie logiciel applique les
+                                            principes et techniques d'ingénierie
+                                            à la conception de systèmes
+                                            logiciels, intégrés et à grande
+                                            échelle. L'ingénieur logiciel doit
+                                            maîtriser la théorie et les méthodes
+                                            de l'informatique. fait et créer des
+                                            logiciel en facon proffesionnel
                                         </p>
                                     </div>
                                 </li>
@@ -185,7 +209,8 @@
                                         data-bs-toggle="collapse"
                                         data-bs-target="#accordion-list-3"
                                         class="collapsed"
-                                        ><span>03</span> System et Réseaux(SR)
+                                        ><span>03</span>Administration Systèmes
+                                        et Réseaux(SR)
                                         <i
                                             class="bx bx-chevron-down icon-show"
                                         ></i
@@ -199,6 +224,13 @@
                                         data-bs-parent=".accordion-list"
                                     >
                                         <p>
+                                            L'administrateur système et réseau
+                                            est un professionnel en charge de
+                                            l'architecture informatique de
+                                            l'entreprise. Garant de l'efficacité
+                                            des machines et de l'intégrité des
+                                            données, ce profil technique est
+                                            très recherché par les entreprises.
                                             Fait les atous des materiel en
                                             réseaux en informatique
                                         </p>
