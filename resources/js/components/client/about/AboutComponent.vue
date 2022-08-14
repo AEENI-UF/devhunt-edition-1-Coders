@@ -1,42 +1,97 @@
 <template>
     <div>
+        <section
+            v-if="$route.path != '/'"
+            id="hero"
+            class="d-flex align-items-center"
+        >
+            <div class="container">
+                <div class="row">
+                    <div
+                        class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-1 order-lg-1"
+                        data-aos="fade-up"
+                        data-aos-delay="200"
+                    >
+                        <h1>Accès WIFI</h1>
+                        <h2>
+                            C'est une plateforme d'application web afin de gérer
+                            l'accès à un point d'accès WIFI.
+                        </h2>
+
+                        <div
+                            class="d-flex justify-content-center justify-content-lg-start"
+                        >
+                            <router-link
+                                to="/about"
+                                class="btn-get-started scrollto"
+                                >Démarrer</router-link
+                            >
+                        </div>
+                    </div>
+                    <div
+                        class="col-lg-6 order-2 order-lg-2 hero-img"
+                        data-aos="zoom-in"
+                        data-aos-delay="200"
+                    >
+                        <img
+                            src="/assets/img/pngtree-cute-clouds-bubble-question-mark-clipart-png-image_5592907-removebg-preview.png"
+                            class="img-fluid animated"
+                            alt=""
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
         <!-- ======= About Us Section ======= -->
         <section id="about" class="about">
             <div class="container" data-aos="fade-up">
                 <div class="section-title">
-                    <h2>A propos </h2>
+                    <h2>A propos</h2>
                 </div>
 
                 <div class="row content">
                     <div class="col-lg-6">
                         <p>
-                            L'Ecole Nationale d'informatique possède à peu près 2000 étudiants dans
-                            son effectif actuellement. En tant qu'école nationale de l'innovation dans la digitalisation informatique,
-                            avoir une connexion internet est un atout pour chaque étudiant dans cette école.
+                            L'Ecole Nationale d'informatique possède à peu près
+                            2000 étudiants dans son effectif actuellement. En
+                            tant qu'école nationale de l'innovation dans la
+                            digitalisation informatique, avoir une connexion
+                            internet est un atout pour chaque étudiant dans
+                            cette école.
                         </p>
                         <ul>
                             <li>
-                                <i class="ri-check-double-line"></i> Mettre en place un
-                                point d'accèss WIFI pour permettre à ces étudiants d'avoir internet.
+                                <i class="ri-check-double-line"></i> Mettre en
+                                place un point d'accèss WIFI pour permettre à
+                                ces étudiants d'avoir internet.
                             </li>
                             <li>
-                                <i class="ri-check-double-line"></i> Gérer plus de 2000 étudiants est une tâche
-                                très délicate pour l'administrateur réseau de l'école, que ce soit dans le domaine de
-
+                                <i class="ri-check-double-line"></i> Gérer plus
+                                de 2000 étudiants est une tâche très délicate
+                                pour l'administrateur réseau de l'école, que ce
+                                soit dans le domaine de
                             </li>
                             <li>
-                                <i class="ri-check-double-line"></i> Création d'une application WEB permettant d'administrer
-                                et répartir l'accès internet pour chaque étudiant de l'école.
+                                <i class="ri-check-double-line"></i> Création
+                                d'une application WEB permettant d'administrer
+                                et répartir l'accès internet pour chaque
+                                étudiant de l'école.
                             </li>
                         </ul>
                     </div>
                     <div class="col-lg-6 pt-4 pt-lg-0">
                         <p>
-                            L'école n'a qu'une option: mettre en place un point d'accès WIFI pour permettre à
-                            ces étudiants d'avoir internet.Gérer plus de 2 000 étudiants est une tâche très delicate pour l'administrateur réseau de l'école,
-                            que ce soit dans le domaine de sécurisation ou dans le domaine de gestion d'accès à ce réseau WIFI
+                            L'école n'a qu'une option: mettre en place un point
+                            d'accès WIFI pour permettre à ces étudiants d'avoir
+                            internet.Gérer plus de 2 000 étudiants est une tâche
+                            très delicate pour l'administrateur réseau de
+                            l'école, que ce soit dans le domaine de sécurisation
+                            ou dans le domaine de gestion d'accès à ce réseau
+                            WIFI
                         </p>
-                        <a href="#" class="btn-learn-more">En savoir plus</a>
+                        <router-link to="/contact" class="btn-learn-more"
+                            >Rester en contact</router-link
+                        >
                     </div>
                 </div>
             </div>
@@ -51,15 +106,15 @@
                     >
                         <div class="content">
                             <h3>
-                            L’Ecole Nationale d’Informatique possède à
+                                L’Ecole Nationale d’Informatique possède à
                                 <strong
-                                    >peu près 2 000 étudiants dans son 
-effectif actuellement.</strong
+                                    >peu près 2 000 étudiants dans son effectif actuellement.</strong
                                 >
                             </h3>
                             <p>
-                                En tant qu’école nationale de l’innovation dans la digitalisation informatique,
-                                on a 3 parcours different dans cette ecole
+                                En tant qu’école nationale de l’innovation dans
+                                la digitalisation informatique, on a 3 parcours
+                                different dans cette ecole
                             </p>
                         </div>
 
@@ -70,7 +125,8 @@ effectif actuellement.</strong
                                         data-bs-toggle="collapse"
                                         class="collapse"
                                         data-bs-target="#accordion-list-1"
-                                        ><span>01</span> Parcours Informatique Generale(IG)
+                                        ><span>01</span> Parcours Informatique
+                                        Generale(IG)
                                         <i
                                             class="bx bx-chevron-down icon-show"
                                         ></i
@@ -84,7 +140,9 @@ effectif actuellement.</strong
                                         data-bs-parent=".accordion-list"
                                     >
                                         <p>
-                                            Informatique Générale fait les atous en informatique Genie et Systeme Réseaux
+                                            Informatique Générale fait les atous
+                                            en informatique Genie et Systeme
+                                            Réseaux
                                         </p>
                                     </div>
                                 </li>
@@ -94,7 +152,8 @@ effectif actuellement.</strong
                                         data-bs-toggle="collapse"
                                         data-bs-target="#accordion-list-2"
                                         class="collapsed"
-                                        ><span>02</span> Génie Logiciel et Base de donnée(GB) 
+                                        ><span>02</span> Génie Logiciel et Base
+                                        de donnée(GB)
                                         <i
                                             class="bx bx-chevron-down icon-show"
                                         ></i
@@ -108,7 +167,8 @@ effectif actuellement.</strong
                                         data-bs-parent=".accordion-list"
                                     >
                                         <p>
-                                            fait et créer des logiciel en facon proffesionnel
+                                            fait et créer des logiciel en facon
+                                            proffesionnel
                                         </p>
                                     </div>
                                 </li>
@@ -132,7 +192,8 @@ effectif actuellement.</strong
                                         data-bs-parent=".accordion-list"
                                     >
                                         <p>
-                                           Fait les atous des materiel en réseaux en informatique
+                                            Fait les atous des materiel en
+                                            réseaux en informatique
                                         </p>
                                     </div>
                                 </li>

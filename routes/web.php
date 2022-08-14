@@ -4,6 +4,8 @@ use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\Auth\AuthController;
 use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\ConfigurationController;
+use App\Http\Controllers\EtudiantController;
+use App\Http\Controllers\HomeController;
 use App\Mail\SendEmail;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Mail;
@@ -64,3 +66,5 @@ Route::put('/update-config/{id}', [ConfigurationController::class, 'update'])->n
 Route::get('/dashboard', [DashboardController::class, 'dashboard']);
 Route::get('/liste', [DashboardController::class, 'liste']);
 
+
+Route::post("contact-us", [HomeController::class, 'contact_us']);

@@ -4,7 +4,7 @@ import VueRouter from "vue-router";
 Vue.use(VueRouter);
 
 const routes = new VueRouter({
-    mode: "history",
+    // mode: "history",
     routes: [
         {
             path: "/",

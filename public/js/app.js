@@ -5776,7 +5776,66 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({});
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_0__);
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
+
+function _regeneratorRuntime() { "use strict"; /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */ _regeneratorRuntime = function _regeneratorRuntime() { return exports; }; var exports = {}, Op = Object.prototype, hasOwn = Op.hasOwnProperty, $Symbol = "function" == typeof Symbol ? Symbol : {}, iteratorSymbol = $Symbol.iterator || "@@iterator", asyncIteratorSymbol = $Symbol.asyncIterator || "@@asyncIterator", toStringTagSymbol = $Symbol.toStringTag || "@@toStringTag"; function define(obj, key, value) { return Object.defineProperty(obj, key, { value: value, enumerable: !0, configurable: !0, writable: !0 }), obj[key]; } try { define({}, ""); } catch (err) { define = function define(obj, key, value) { return obj[key] = value; }; } function wrap(innerFn, outerFn, self, tryLocsList) { var protoGenerator = outerFn && outerFn.prototype instanceof Generator ? outerFn : Generator, generator = Object.create(protoGenerator.prototype), context = new Context(tryLocsList || []); return generator._invoke = function (innerFn, self, context) { var state = "suspendedStart"; return function (method, arg) { if ("executing" === state) throw new Error("Generator is already running"); if ("completed" === state) { if ("throw" === method) throw arg; return doneResult(); } for (context.method = method, context.arg = arg;;) { var delegate = context.delegate; if (delegate) { var delegateResult = maybeInvokeDelegate(delegate, context); if (delegateResult) { if (delegateResult === ContinueSentinel) continue; return delegateResult; } } if ("next" === context.method) context.sent = context._sent = context.arg;else if ("throw" === context.method) { if ("suspendedStart" === state) throw state = "completed", context.arg; context.dispatchException(context.arg); } else "return" === context.method && context.abrupt("return", context.arg); state = "executing"; var record = tryCatch(innerFn, self, context); if ("normal" === record.type) { if (state = context.done ? "completed" : "suspendedYield", record.arg === ContinueSentinel) continue; return { value: record.arg, done: context.done }; } "throw" === record.type && (state = "completed", context.method = "throw", context.arg = record.arg); } }; }(innerFn, self, context), generator; } function tryCatch(fn, obj, arg) { try { return { type: "normal", arg: fn.call(obj, arg) }; } catch (err) { return { type: "throw", arg: err }; } } exports.wrap = wrap; var ContinueSentinel = {}; function Generator() {} function GeneratorFunction() {} function GeneratorFunctionPrototype() {} var IteratorPrototype = {}; define(IteratorPrototype, iteratorSymbol, function () { return this; }); var getProto = Object.getPrototypeOf, NativeIteratorPrototype = getProto && getProto(getProto(values([]))); NativeIteratorPrototype && NativeIteratorPrototype !== Op && hasOwn.call(NativeIteratorPrototype, iteratorSymbol) && (IteratorPrototype = NativeIteratorPrototype); var Gp = GeneratorFunctionPrototype.prototype = Generator.prototype = Object.create(IteratorPrototype); function defineIteratorMethods(prototype) { ["next", "throw", "return"].forEach(function (method) { define(prototype, method, function (arg) { return this._invoke(method, arg); }); }); } function AsyncIterator(generator, PromiseImpl) { function invoke(method, arg, resolve, reject) { var record = tryCatch(generator[method], generator, arg); if ("throw" !== record.type) { var result = record.arg, value = result.value; return value && "object" == _typeof(value) && hasOwn.call(value, "__await") ? PromiseImpl.resolve(value.__await).then(function (value) { invoke("next", value, resolve, reject); }, function (err) { invoke("throw", err, resolve, reject); }) : PromiseImpl.resolve(value).then(function (unwrapped) { result.value = unwrapped, resolve(result); }, function (error) { return invoke("throw", error, resolve, reject); }); } reject(record.arg); } var previousPromise; this._invoke = function (method, arg) { function callInvokeWithMethodAndArg() { return new PromiseImpl(function (resolve, reject) { invoke(method, arg, resolve, reject); }); } return previousPromise = previousPromise ? previousPromise.then(callInvokeWithMethodAndArg, callInvokeWithMethodAndArg) : callInvokeWithMethodAndArg(); }; } function maybeInvokeDelegate(delegate, context) { var method = delegate.iterator[context.method]; if (undefined === method) { if (context.delegate = null, "throw" === context.method) { if (delegate.iterator["return"] && (context.method = "return", context.arg = undefined, maybeInvokeDelegate(delegate, context), "throw" === context.method)) return ContinueSentinel; context.method = "throw", context.arg = new TypeError("The iterator does not provide a 'throw' method"); } return ContinueSentinel; } var record = tryCatch(method, delegate.iterator, context.arg); if ("throw" === record.type) return context.method = "throw", context.arg = record.arg, context.delegate = null, ContinueSentinel; var info = record.arg; return info ? info.done ? (context[delegate.resultName] = info.value, context.next = delegate.nextLoc, "return" !== context.method && (context.method = "next", context.arg = undefined), context.delegate = null, ContinueSentinel) : info : (context.method = "throw", context.arg = new TypeError("iterator result is not an object"), context.delegate = null, ContinueSentinel); } function pushTryEntry(locs) { var entry = { tryLoc: locs[0] }; 1 in locs && (entry.catchLoc = locs[1]), 2 in locs && (entry.finallyLoc = locs[2], entry.afterLoc = locs[3]), this.tryEntries.push(entry); } function resetTryEntry(entry) { var record = entry.completion || {}; record.type = "normal", delete record.arg, entry.completion = record; } function Context(tryLocsList) { this.tryEntries = [{ tryLoc: "root" }], tryLocsList.forEach(pushTryEntry, this), this.reset(!0); } function values(iterable) { if (iterable) { var iteratorMethod = iterable[iteratorSymbol]; if (iteratorMethod) return iteratorMethod.call(iterable); if ("function" == typeof iterable.next) return iterable; if (!isNaN(iterable.length)) { var i = -1, next = function next() { for (; ++i < iterable.length;) { if (hasOwn.call(iterable, i)) return next.value = iterable[i], next.done = !1, next; } return next.value = undefined, next.done = !0, next; }; return next.next = next; } } return { next: doneResult }; } function doneResult() { return { value: undefined, done: !0 }; } return GeneratorFunction.prototype = GeneratorFunctionPrototype, define(Gp, "constructor", GeneratorFunctionPrototype), define(GeneratorFunctionPrototype, "constructor", GeneratorFunction), GeneratorFunction.displayName = define(GeneratorFunctionPrototype, toStringTagSymbol, "GeneratorFunction"), exports.isGeneratorFunction = function (genFun) { var ctor = "function" == typeof genFun && genFun.constructor; return !!ctor && (ctor === GeneratorFunction || "GeneratorFunction" === (ctor.displayName || ctor.name)); }, exports.mark = function (genFun) { return Object.setPrototypeOf ? Object.setPrototypeOf(genFun, GeneratorFunctionPrototype) : (genFun.__proto__ = GeneratorFunctionPrototype, define(genFun, toStringTagSymbol, "GeneratorFunction")), genFun.prototype = Object.create(Gp), genFun; }, exports.awrap = function (arg) { return { __await: arg }; }, defineIteratorMethods(AsyncIterator.prototype), define(AsyncIterator.prototype, asyncIteratorSymbol, function () { return this; }), exports.AsyncIterator = AsyncIterator, exports.async = function (innerFn, outerFn, self, tryLocsList, PromiseImpl) { void 0 === PromiseImpl && (PromiseImpl = Promise); var iter = new AsyncIterator(wrap(innerFn, outerFn, self, tryLocsList), PromiseImpl); return exports.isGeneratorFunction(outerFn) ? iter : iter.next().then(function (result) { return result.done ? result.value : iter.next(); }); }, defineIteratorMethods(Gp), define(Gp, toStringTagSymbol, "Generator"), define(Gp, iteratorSymbol, function () { return this; }), define(Gp, "toString", function () { return "[object Generator]"; }), exports.keys = function (object) { var keys = []; for (var key in object) { keys.push(key); } return keys.reverse(), function next() { for (; keys.length;) { var key = keys.pop(); if (key in object) return next.value = key, next.done = !1, next; } return next.done = !0, next; }; }, exports.values = values, Context.prototype = { constructor: Context, reset: function reset(skipTempReset) { if (this.prev = 0, this.next = 0, this.sent = this._sent = undefined, this.done = !1, this.delegate = null, this.method = "next", this.arg = undefined, this.tryEntries.forEach(resetTryEntry), !skipTempReset) for (var name in this) { "t" === name.charAt(0) && hasOwn.call(this, name) && !isNaN(+name.slice(1)) && (this[name] = undefined); } }, stop: function stop() { this.done = !0; var rootRecord = this.tryEntries[0].completion; if ("throw" === rootRecord.type) throw rootRecord.arg; return this.rval; }, dispatchException: function dispatchException(exception) { if (this.done) throw exception; var context = this; function handle(loc, caught) { return record.type = "throw", record.arg = exception, context.next = loc, caught && (context.method = "next", context.arg = undefined), !!caught; } for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i], record = entry.completion; if ("root" === entry.tryLoc) return handle("end"); if (entry.tryLoc <= this.prev) { var hasCatch = hasOwn.call(entry, "catchLoc"), hasFinally = hasOwn.call(entry, "finallyLoc"); if (hasCatch && hasFinally) { if (this.prev < entry.catchLoc) return handle(entry.catchLoc, !0); if (this.prev < entry.finallyLoc) return handle(entry.finallyLoc); } else if (hasCatch) { if (this.prev < entry.catchLoc) return handle(entry.catchLoc, !0); } else { if (!hasFinally) throw new Error("try statement without catch or finally"); if (this.prev < entry.finallyLoc) return handle(entry.finallyLoc); } } } }, abrupt: function abrupt(type, arg) { for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i]; if (entry.tryLoc <= this.prev && hasOwn.call(entry, "finallyLoc") && this.prev < entry.finallyLoc) { var finallyEntry = entry; break; } } finallyEntry && ("break" === type || "continue" === type) && finallyEntry.tryLoc <= arg && arg <= finallyEntry.finallyLoc && (finallyEntry = null); var record = finallyEntry ? finallyEntry.completion : {}; return record.type = type, record.arg = arg, finallyEntry ? (this.method = "next", this.next = finallyEntry.finallyLoc, ContinueSentinel) : this.complete(record); }, complete: function complete(record, afterLoc) { if ("throw" === record.type) throw record.arg; return "break" === record.type || "continue" === record.type ? this.next = record.arg : "return" === record.type ? (this.rval = this.arg = record.arg, this.method = "return", this.next = "end") : "normal" === record.type && afterLoc && (this.next = afterLoc), ContinueSentinel; }, finish: function finish(finallyLoc) { for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i]; if (entry.finallyLoc === finallyLoc) return this.complete(entry.completion, entry.afterLoc), resetTryEntry(entry), ContinueSentinel; } }, "catch": function _catch(tryLoc) { for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i]; if (entry.tryLoc === tryLoc) { var record = entry.completion; if ("throw" === record.type) { var thrown = record.arg; resetTryEntry(entry); } return thrown; } } throw new Error("illegal catch attempt"); }, delegateYield: function delegateYield(iterable, resultName, nextLoc) { return this.delegate = { iterator: values(iterable), resultName: resultName, nextLoc: nextLoc }, "next" === this.method && (this.arg = undefined), ContinueSentinel; } }, exports; }
+
+function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
+
+function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  data: function data() {
+    return {
+      sending: false,
+      email: "",
+      message: "",
+      name: "",
+      object: ""
+    };
+  },
+  methods: {
+    sendMessage: function sendMessage() {
+      var _this = this;
+
+      return _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee() {
+        var body;
+        return _regeneratorRuntime().wrap(function _callee$(_context) {
+          while (1) {
+            switch (_context.prev = _context.next) {
+              case 0:
+                _this.sending = true;
+                body = new FormData();
+                body.append("email", _this.email);
+                body.append("message", _this.message);
+                body.append("name", _this.name);
+                body.append("object", _this.object);
+                _context.next = 8;
+                return axios__WEBPACK_IMPORTED_MODULE_0___default().post("/contact-us", body).then(function (data) {
+                  _this.$toast.success("Message envoyée");
+
+                  _this.sending = false;
+                  _this.email = "";
+                  _this.message = "";
+                  _this.name = "";
+                  _this.object = "";
+                })["catch"](function (e) {
+                  return _this.$toast.error(e.response.data.message);
+                });
+
+              case 8:
+              case "end":
+                return _context.stop();
+            }
+          }
+        }, _callee);
+      }))();
+    }
+  }
+});
 
 /***/ }),
 
@@ -6263,15 +6322,54 @@ var render = function render() {
     attrs: {
       id: "main"
     }
-  }, [_vm._m(0), _vm._v(" "), _c("about-component"), _vm._v(" "), _c("contact-component")], 1);
+  }, [_c("section", {
+    staticClass: "d-flex align-items-center",
+    attrs: {
+      id: "hero"
+    }
+  }, [_c("div", {
+    staticClass: "container"
+  }, [_c("div", {
+    staticClass: "row"
+  }, [_c("div", {
+    staticClass: "col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1",
+    attrs: {
+      "data-aos": "fade-up",
+      "data-aos-delay": "200"
+    }
+  }, [_c("h1", [_vm._v("Accès WIFI")]), _vm._v(" "), _c("h2", [_vm._v("\n                        C'est une plateforme d'application web afin de gérer\n                        l'accès à un point d'accès WIFI.\n                    ")]), _vm._v(" "), _c("div", {
+    staticClass: "d-flex justify-content-center justify-content-lg-start"
+  }, [_c("router-link", {
+    staticClass: "btn-get-started scrollto",
+    attrs: {
+      to: "/about"
+    }
+  }, [_vm._v("Démarrer")])], 1)]), _vm._v(" "), _vm._m(0)])])]), _vm._v(" "), _vm._m(1), _vm._v(" "), _c("about-component"), _vm._v(" "), _c("contact-component")], 1);
 };
 
 var staticRenderFns = [function () {
   var _vm = this,
       _c = _vm._self._c;
 
+  return _c("div", {
+    staticClass: "col-lg-6 order-1 order-lg-2 hero-img",
+    attrs: {
+      "data-aos": "zoom-in",
+      "data-aos-delay": "200"
+    }
+  }, [_c("img", {
+    staticClass: "img-fluid animated",
+    attrs: {
+      src: "assets/img/hero-img.png",
+      alt: ""
+    }
+  })]);
+}, function () {
+  var _vm = this,
+      _c = _vm._self._c;
+
   return _c("section", {
-    staticClass: "cliens section-bg",
+    staticClass: "cliens",
     attrs: {
       id: "cliens"
     }
@@ -6295,7 +6393,7 @@ var staticRenderFns = [function () {
   }, [_c("img", {
     staticClass: "img-fluid",
     attrs: {
-      src: "arato.JPG",
+      src: "arato.jpg",
       alt: ""
     }
   })]), _vm._v(" "), _c("div", {
@@ -6303,7 +6401,7 @@ var staticRenderFns = [function () {
   }, [_c("img", {
     staticClass: "img-fluid",
     attrs: {
-      src: "log1.JPG",
+      src: "log1.jpg",
       alt: ""
     }
   })]), _vm._v(" "), _c("div", {
@@ -6327,7 +6425,7 @@ var staticRenderFns = [function () {
   }, [_c("img", {
     staticClass: "img-fluid",
     attrs: {
-      src: "WeCours.JPG",
+      src: "WeCours.jpg",
       alt: ""
     }
   })])])])]);
@@ -6353,14 +6451,29 @@ var render = function render() {
   var _vm = this,
       _c = _vm._self._c;
 
-  return _vm._m(0);
-};
-
-var staticRenderFns = [function () {
-  var _vm = this,
-      _c = _vm._self._c;
-
-  return _c("div", [_c("section", {
+  return _c("div", [_vm.$route.path != "/" ? _c("section", {
+    staticClass: "d-flex align-items-center",
+    attrs: {
+      id: "hero"
+    }
+  }, [_c("div", {
+    staticClass: "container"
+  }, [_c("div", {
+    staticClass: "row"
+  }, [_c("div", {
+    staticClass: "col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-1 order-lg-1",
+    attrs: {
+      "data-aos": "fade-up",
+      "data-aos-delay": "200"
+    }
+  }, [_c("h1", [_vm._v("Accès WIFI")]), _vm._v(" "), _c("h2", [_vm._v("\n                        C'est une plateforme d'application web afin de gérer\n                        l'accès à un point d'accès WIFI.\n                    ")]), _vm._v(" "), _c("div", {
+    staticClass: "d-flex justify-content-center justify-content-lg-start"
+  }, [_c("router-link", {
+    staticClass: "btn-get-started scrollto",
+    attrs: {
+      to: "/about"
+    }
+  }, [_vm._v("Démarrer")])], 1)]), _vm._v(" "), _vm._m(0)])])]) : _vm._e(), _vm._v(" "), _c("section", {
     staticClass: "about",
     attrs: {
       id: "about"
@@ -6370,26 +6483,60 @@ var staticRenderFns = [function () {
     attrs: {
       "data-aos": "fade-up"
     }
-  }, [_c("div", {
-    staticClass: "section-title"
-  }, [_c("h2", [_vm._v("A propos ")])]), _vm._v(" "), _c("div", {
+  }, [_vm._m(1), _vm._v(" "), _c("div", {
     staticClass: "row content"
-  }, [_c("div", {
-    staticClass: "col-lg-6"
-  }, [_c("p", [_vm._v("\n                            L'Ecole Nationale d'informatique possède à peu près 2000 étudiants dans\n                            son effectif actuellement. En tant qu'école nationale de l'innovation dans la digitalisation informatique,\n                            avoir une connexion internet est un atout pour chaque étudiant dans cette école.\n                        ")]), _vm._v(" "), _c("ul", [_c("li", [_c("i", {
-    staticClass: "ri-check-double-line"
-  }), _vm._v(" Mettre en place un\n                                point d'accèss WIFI pour permettre à ces étudiants d'avoir internet.\n                            ")]), _vm._v(" "), _c("li", [_c("i", {
-    staticClass: "ri-check-double-line"
-  }), _vm._v(" Gérer plus de 2000 étudiants est une tâche\n                                très délicate pour l'administrateur réseau de l'école, que ce soit dans le domaine de\n\n                            ")]), _vm._v(" "), _c("li", [_c("i", {
-    staticClass: "ri-check-double-line"
-  }), _vm._v(" Création d'une application WEB permettant d'administrer\n                                et répartir l'accès internet pour chaque étudiant de l'école.\n                            ")])])]), _vm._v(" "), _c("div", {
+  }, [_vm._m(2), _vm._v(" "), _c("div", {
     staticClass: "col-lg-6 pt-4 pt-lg-0"
-  }, [_c("p", [_vm._v("\n                            L'école n'a qu'une option: mettre en place un point d'accès WIFI pour permettre à\n                            ces étudiants d'avoir internet.Gérer plus de 2 000 étudiants est une tâche très delicate pour l'administrateur réseau de l'école,\n                            que ce soit dans le domaine de sécurisation ou dans le domaine de gestion d'accès à ce réseau WIFI\n                        ")]), _vm._v(" "), _c("a", {
+  }, [_c("p", [_vm._v("\n                        L'école n'a qu'une option: mettre en place un point\n                        d'accès WIFI pour permettre à ces étudiants d'avoir\n                        internet.Gérer plus de 2 000 étudiants est une tâche\n                        très delicate pour l'administrateur réseau de\n                        l'école, que ce soit dans le domaine de sécurisation\n                        ou dans le domaine de gestion d'accès à ce réseau\n                        WIFI\n                    ")]), _vm._v(" "), _c("router-link", {
     staticClass: "btn-learn-more",
     attrs: {
-      href: "#"
+      to: "/contact"
     }
-  }, [_vm._v("En savoir plus")])])])])]), _vm._v(" "), _c("section", {
+  }, [_vm._v("Rester en contact")])], 1)])])]), _vm._v(" "), _vm._m(3)]);
+};
+
+var staticRenderFns = [function () {
+  var _vm = this,
+      _c = _vm._self._c;
+
+  return _c("div", {
+    staticClass: "col-lg-6 order-2 order-lg-2 hero-img",
+    attrs: {
+      "data-aos": "zoom-in",
+      "data-aos-delay": "200"
+    }
+  }, [_c("img", {
+    staticClass: "img-fluid animated",
+    attrs: {
+      src: "/assets/img/pngtree-cute-clouds-bubble-question-mark-clipart-png-image_5592907-removebg-preview.png",
+      alt: ""
+    }
+  })]);
+}, function () {
+  var _vm = this,
+      _c = _vm._self._c;
+
+  return _c("div", {
+    staticClass: "section-title"
+  }, [_c("h2", [_vm._v("A propos")])]);
+}, function () {
+  var _vm = this,
+      _c = _vm._self._c;
+
+  return _c("div", {
+    staticClass: "col-lg-6"
+  }, [_c("p", [_vm._v("\n                        L'Ecole Nationale d'informatique possède à peu près\n                        2000 étudiants dans son effectif actuellement. En\n                        tant qu'école nationale de l'innovation dans la\n                        digitalisation informatique, avoir une connexion\n                        internet est un atout pour chaque étudiant dans\n                        cette école.\n                    ")]), _vm._v(" "), _c("ul", [_c("li", [_c("i", {
+    staticClass: "ri-check-double-line"
+  }), _vm._v(" Mettre en\n                            place un point d'accèss WIFI pour permettre à\n                            ces étudiants d'avoir internet.\n                        ")]), _vm._v(" "), _c("li", [_c("i", {
+    staticClass: "ri-check-double-line"
+  }), _vm._v(" Gérer plus\n                            de 2000 étudiants est une tâche très délicate\n                            pour l'administrateur réseau de l'école, que ce\n                            soit dans le domaine de\n                        ")]), _vm._v(" "), _c("li", [_c("i", {
+    staticClass: "ri-check-double-line"
+  }), _vm._v(" Création\n                            d'une application WEB permettant d'administrer\n                            et répartir l'accès internet pour chaque\n                            étudiant de l'école.\n                        ")])])]);
+}, function () {
+  var _vm = this,
+      _c = _vm._self._c;
+
+  return _c("section", {
     staticClass: "why-us section-bg",
     attrs: {
       id: "why-us"
@@ -6405,7 +6552,7 @@ var staticRenderFns = [function () {
     staticClass: "col-lg-7 d-flex flex-column justify-content-center align-items-stretch order-2 order-lg-1"
   }, [_c("div", {
     staticClass: "content"
-  }, [_c("h3", [_vm._v("\n                            L’Ecole Nationale d’Informatique possède à\n                                "), _c("strong", [_vm._v("peu près 2 000 étudiants dans son \neffectif actuellement.")])]), _vm._v(" "), _c("p", [_vm._v("\n                                En tant qu’école nationale de l’innovation dans la digitalisation informatique,\n                                on a 3 parcours different dans cette ecole\n                            ")])]), _vm._v(" "), _c("div", {
+  }, [_c("h3", [_vm._v("\n                            L’Ecole Nationale d’Informatique possède à\n                            "), _c("strong", [_vm._v("peu près 2 000 étudiants dans son effectif actuellement.")])]), _vm._v(" "), _c("p", [_vm._v("\n                            En tant qu’école nationale de l’innovation dans\n                            la digitalisation informatique, on a 3 parcours\n                            different dans cette ecole\n                        ")])]), _vm._v(" "), _c("div", {
     staticClass: "accordion-list"
   }, [_c("ul", [_c("li", [_c("a", {
     staticClass: "collapse",
@@ -6413,7 +6560,7 @@ var staticRenderFns = [function () {
       "data-bs-toggle": "collapse",
       "data-bs-target": "#accordion-list-1"
     }
-  }, [_c("span", [_vm._v("01")]), _vm._v(" Parcours Informatique Generale(IG)\n                                        "), _c("i", {
+  }, [_c("span", [_vm._v("01")]), _vm._v(" Parcours Informatique\n                                    Generale(IG)\n                                    "), _c("i", {
     staticClass: "bx bx-chevron-down icon-show"
   }), _c("i", {
     staticClass: "bx bx-chevron-up icon-close"
@@ -6423,13 +6570,13 @@ var staticRenderFns = [function () {
       id: "accordion-list-1",
       "data-bs-parent": ".accordion-list"
     }
-  }, [_c("p", [_vm._v("\n                                            Informatique Générale fait les atous en informatique Genie et Systeme Réseaux\n                                        ")])])]), _vm._v(" "), _c("li", [_c("a", {
+  }, [_c("p", [_vm._v("\n                                        Informatique Générale fait les atous\n                                        en informatique Genie et Systeme\n                                        Réseaux\n                                    ")])])]), _vm._v(" "), _c("li", [_c("a", {
     staticClass: "collapsed",
     attrs: {
       "data-bs-toggle": "collapse",
       "data-bs-target": "#accordion-list-2"
     }
-  }, [_c("span", [_vm._v("02")]), _vm._v(" Génie Logiciel et Base de donnée(GB) \n                                        "), _c("i", {
+  }, [_c("span", [_vm._v("02")]), _vm._v(" Génie Logiciel et Base\n                                    de donnée(GB)\n                                    "), _c("i", {
     staticClass: "bx bx-chevron-down icon-show"
   }), _c("i", {
     staticClass: "bx bx-chevron-up icon-close"
@@ -6439,13 +6586,13 @@ var staticRenderFns = [function () {
       id: "accordion-list-2",
       "data-bs-parent": ".accordion-list"
     }
-  }, [_c("p", [_vm._v("\n                                            fait et créer des logiciel en facon proffesionnel\n                                        ")])])]), _vm._v(" "), _c("li", [_c("a", {
+  }, [_c("p", [_vm._v("\n                                        fait et créer des logiciel en facon\n                                        proffesionnel\n                                    ")])])]), _vm._v(" "), _c("li", [_c("a", {
     staticClass: "collapsed",
     attrs: {
       "data-bs-toggle": "collapse",
       "data-bs-target": "#accordion-list-3"
     }
-  }, [_c("span", [_vm._v("03")]), _vm._v(" System et Réseaux(SR)\n                                        "), _c("i", {
+  }, [_c("span", [_vm._v("03")]), _vm._v(" System et Réseaux(SR)\n                                    "), _c("i", {
     staticClass: "bx bx-chevron-down icon-show"
   }), _c("i", {
     staticClass: "bx bx-chevron-up icon-close"
@@ -6455,7 +6602,7 @@ var staticRenderFns = [function () {
       id: "accordion-list-3",
       "data-bs-parent": ".accordion-list"
     }
-  }, [_c("p", [_vm._v("\n                                           Fait les atous des materiel en réseaux en informatique\n                                        ")])])])])])]), _vm._v(" "), _c("div", {
+  }, [_c("p", [_vm._v("\n                                        Fait les atous des materiel en\n                                        réseaux en informatique\n                                    ")])])])])])]), _vm._v(" "), _c("div", {
     staticClass: "col-lg-5 align-items-stretch order-1 order-lg-2 img",
     staticStyle: {
       "background-image": "url('assets/img/why-us.png')"
@@ -6464,7 +6611,7 @@ var staticRenderFns = [function () {
       "data-aos": "zoom-in",
       "data-aos-delay": "150"
     }
-  }, [_vm._v("\n                         \n                    ")])])])])]);
+  }, [_vm._v("\n                     \n                ")])])])]);
 }];
 render._withStripped = true;
 
@@ -6487,13 +6634,6 @@ var render = function render() {
   var _vm = this,
       _c = _vm._self._c;
 
-  return _vm._m(0);
-};
-
-var staticRenderFns = [function () {
-  var _vm = this,
-      _c = _vm._self._c;
-
   return _c("main", {
     attrs: {
       id: "main"
@@ -6508,34 +6648,17 @@ var staticRenderFns = [function () {
     attrs: {
       "data-aos": "fade-up"
     }
-  }, [_c("div", {
-    staticClass: "section-title"
-  }, [_c("h2", [_vm._v("Contact")]), _vm._v(" "), _c("p", [_vm._v("\n                  ENI Fianarantsoa est une école de renom se spécialiser en informatique à Madagascar. Dortoirs disponibles pour les étudiants de l'établissement... "), _c("br"), _vm._v("\n                  ECOLE NATIONALE D'INFORMATIQUE. "), _c("strong", [_c("i", [_vm._v("La pépinière des élites informaticiennes Malgache.")])])])]), _vm._v(" "), _c("div", {
+  }, [_vm._m(0), _vm._v(" "), _c("div", {
     staticClass: "row"
-  }, [_c("div", {
-    staticClass: "col-lg-5 d-flex align-items-stretch"
-  }, [_c("div", {
-    staticClass: "info"
-  }, [_c("div", {
-    staticClass: "address"
-  }, [_c("i", {
-    staticClass: "bi bi-geo-alt"
-  }), _vm._v(" "), _c("h4", [_vm._v("Localisation:")]), _vm._v(" "), _c("p", [_vm._v(" Antaninarenina Tanambao BP 1487 , Fianarantsoa, 301")])]), _vm._v(" "), _c("div", {
-    staticClass: "email"
-  }, [_c("i", {
-    staticClass: "bi bi-envelope"
-  }), _vm._v(" "), _c("h4", [_vm._v("Email:")]), _vm._v(" "), _c("p", [_vm._v("eni@eni-univ.fianar.mg")])]), _vm._v(" "), _c("div", {
-    staticClass: "phone"
-  }, [_c("i", {
-    staticClass: "bi bi-phone"
-  }), _vm._v(" "), _c("h4", [_vm._v("Contact:")]), _vm._v(" "), _c("p", [_vm._v("034 05 733 36/033 42 302 02")])])])]), _vm._v(" "), _c("div", {
+  }, [_vm._m(1), _vm._v(" "), _c("div", {
     staticClass: "col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch"
   }, [_c("form", {
     staticClass: "php-email-form",
-    attrs: {
-      action: "forms/contact.php",
-      method: "post",
-      role: "form"
+    on: {
+      submit: function submit($event) {
+        $event.preventDefault();
+        return _vm.sendMessage.apply(null, arguments);
+      }
     }
   }, [_c("div", {
     staticClass: "row"
@@ -6546,12 +6669,27 @@ var staticRenderFns = [function () {
       "for": "name"
     }
   }, [_vm._v("Votre nom")]), _vm._v(" "), _c("input", {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: _vm.name,
+      expression: "name"
+    }],
     staticClass: "form-control",
     attrs: {
       type: "text",
       name: "name",
       id: "name",
       required: ""
+    },
+    domProps: {
+      value: _vm.name
+    },
+    on: {
+      input: function input($event) {
+        if ($event.target.composing) return;
+        _vm.name = $event.target.value;
+      }
     }
   })]), _vm._v(" "), _c("div", {
     staticClass: "form-group col-md-6"
@@ -6560,12 +6698,27 @@ var staticRenderFns = [function () {
       "for": "name"
     }
   }, [_vm._v("Votre Email")]), _vm._v(" "), _c("input", {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: _vm.email,
+      expression: "email"
+    }],
     staticClass: "form-control",
     attrs: {
       type: "email",
       name: "email",
       id: "email",
       required: ""
+    },
+    domProps: {
+      value: _vm.email
+    },
+    on: {
+      input: function input($event) {
+        if ($event.target.composing) return;
+        _vm.email = $event.target.value;
+      }
     }
   })])]), _vm._v(" "), _c("div", {
     staticClass: "form-group"
@@ -6574,12 +6727,27 @@ var staticRenderFns = [function () {
       "for": "name"
     }
   }, [_vm._v("Objets")]), _vm._v(" "), _c("input", {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: _vm.object,
+      expression: "object"
+    }],
     staticClass: "form-control",
     attrs: {
       type: "text",
       name: "subject",
       id: "subject",
       required: ""
+    },
+    domProps: {
+      value: _vm.object
+    },
+    on: {
+      input: function input($event) {
+        if ($event.target.composing) return;
+        _vm.object = $event.target.value;
+      }
     }
   })]), _vm._v(" "), _c("div", {
     staticClass: "form-group"
@@ -6588,13 +6756,70 @@ var staticRenderFns = [function () {
       "for": "name"
     }
   }, [_vm._v("Message")]), _vm._v(" "), _c("textarea", {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: _vm.message,
+      expression: "message"
+    }],
     staticClass: "form-control",
     attrs: {
       name: "message",
       rows: "10",
       required: ""
+    },
+    domProps: {
+      value: _vm.message
+    },
+    on: {
+      input: function input($event) {
+        if ($event.target.composing) return;
+        _vm.message = $event.target.value;
+      }
     }
-  })]), _vm._v(" "), _c("div", {
+  })]), _vm._v(" "), _vm._m(2), _vm._v(" "), _c("div", {
+    staticClass: "text-center"
+  }, [_c("button", {
+    attrs: {
+      disabled: _vm.sending,
+      type: "submit"
+    }
+  }, [_vm._v("\n                                Envoyez Message\n                            ")])])])])])])])]);
+};
+
+var staticRenderFns = [function () {
+  var _vm = this,
+      _c = _vm._self._c;
+
+  return _c("div", {
+    staticClass: "section-title"
+  }, [_c("h2", [_vm._v("Contact")]), _vm._v(" "), _c("p", [_vm._v("\n                    ENI Fianarantsoa est une école de renom se spécialiser\n                    en informatique à Madagascar. Dortoirs disponibles pour\n                    les étudiants de l'établissement... "), _c("br"), _vm._v("\n                    ECOLE NATIONALE D'INFORMATIQUE.\n                    "), _c("strong", [_c("i", [_vm._v("La pépinière des élites informaticiennes\n                            Malgache.")])])])]);
+}, function () {
+  var _vm = this,
+      _c = _vm._self._c;
+
+  return _c("div", {
+    staticClass: "col-lg-5 d-flex align-items-stretch"
+  }, [_c("div", {
+    staticClass: "info"
+  }, [_c("div", {
+    staticClass: "address"
+  }, [_c("i", {
+    staticClass: "bi bi-geo-alt"
+  }), _vm._v(" "), _c("h4", [_vm._v("Localisation:")]), _vm._v(" "), _c("p", [_vm._v("\n                                Antaninarenina Tanambao BP 1487 ,\n                                Fianarantsoa, 301\n                            ")])]), _vm._v(" "), _c("div", {
+    staticClass: "email"
+  }, [_c("i", {
+    staticClass: "bi bi-envelope"
+  }), _vm._v(" "), _c("h4", [_vm._v("Email:")]), _vm._v(" "), _c("p", [_vm._v("eni@eni-univ.fianar.mg")])]), _vm._v(" "), _c("div", {
+    staticClass: "phone"
+  }, [_c("i", {
+    staticClass: "bi bi-phone"
+  }), _vm._v(" "), _c("h4", [_vm._v("Contact:")]), _vm._v(" "), _c("p", [_vm._v("034 05 733 36/033 42 302 02")])])])]);
+}, function () {
+  var _vm = this,
+      _c = _vm._self._c;
+
+  return _c("div", {
     staticClass: "my-3"
   }, [_c("div", {
     staticClass: "loading"
@@ -6602,13 +6827,7 @@ var staticRenderFns = [function () {
     staticClass: "error-message"
   }), _vm._v(" "), _c("div", {
     staticClass: "sent-message"
-  }, [_vm._v("\n                                Votre message a été bien envoyée. Merci à vous!\n                            ")])]), _vm._v(" "), _c("div", {
-    staticClass: "text-center"
-  }, [_c("button", {
-    attrs: {
-      type: "submit"
-    }
-  }, [_vm._v("Envoyez Message")])])])])])])])]);
+  }, [_vm._v("\n                                Votre message a été bien envoyée. Merci à\n                                vous!\n                            ")])]);
 }];
 render._withStripped = true;
 
@@ -6762,10 +6981,49 @@ var render = function render() {
   var _vm = this,
       _c = _vm._self._c;
 
-  return _vm._m(0);
+  return _c("div", [_c("section", {
+    staticClass: "d-flex align-items-center",
+    attrs: {
+      id: "hero"
+    }
+  }, [_c("div", {
+    staticClass: "container"
+  }, [_c("div", {
+    staticClass: "row"
+  }, [_vm._m(0), _vm._v(" "), _c("div", {
+    staticClass: "col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-2",
+    attrs: {
+      "data-aos": "fade-up",
+      "data-aos-delay": "200"
+    }
+  }, [_c("h1", [_vm._v("Accès WIFI")]), _vm._v(" "), _c("h2", [_vm._v("\n                        C'est une plateforme d'application web afin de gérer\n                        l'accès à un point d'accès WIFI.\n                    ")]), _vm._v(" "), _c("div", {
+    staticClass: "d-flex justify-content-center justify-content-lg-start"
+  }, [_c("router-link", {
+    staticClass: "btn-get-started scrollto",
+    attrs: {
+      to: "/about"
+    }
+  }, [_vm._v("Démarrer")])], 1)])])])]), _vm._v(" "), _vm._m(1)]);
 };
 
 var staticRenderFns = [function () {
+  var _vm = this,
+      _c = _vm._self._c;
+
+  return _c("div", {
+    staticClass: "col-lg-6 order-1 order-lg-1 hero-img",
+    attrs: {
+      "data-aos": "zoom-in",
+      "data-aos-delay": "200"
+    }
+  }, [_c("img", {
+    staticClass: "img-fluid animated",
+    attrs: {
+      src: "assets/img/pngtree-e-learning-concept-of-online-education-student-version-in-cartoon-style-png-image_6538503-removebg-preview.png",
+      alt: ""
+    }
+  })]);
+}, function () {
   var _vm = this,
       _c = _vm._self._c;
 
@@ -6785,85 +7043,77 @@ var staticRenderFns = [function () {
     }
   }, [_c("div", {
     staticClass: "section-title"
-  }, [_c("h2", [_vm._v("Les avantages")]), _vm._v(" "), _c("p", [_vm._v("\n                    Quelques fonctionnalités pourraient être données des solutions adéquates aux \n                    circonstances que l'on a prévue comme:.\n                ")])]), _vm._v(" "), _c("div", {
+  }, [_c("h2", [_vm._v("Les avantages")]), _vm._v(" "), _c("p", [_vm._v("\n                        Quelques fonctionnalités qui satisferont vos besoins\n                        :\n                    ")])]), _vm._v(" "), _c("div", {
     staticClass: "row"
   }, [_c("div", {
     staticClass: "col-xl-3 col-md-6 d-flex align-items-stretch",
+    staticStyle: {
+      cursor: "pointer"
+    },
     attrs: {
-      "data-aos": "zoom-in",
+      "data-aos": "flip-left",
       "data-aos-delay": "100"
     }
   }, [_c("div", {
-    staticClass: "icon-box"
+    staticClass: "icon-box text-center"
   }, [_c("div", {
     staticClass: "icon"
   }, [_c("i", {
     staticClass: "bx bx-wifi"
-  })]), _vm._v(" "), _c("h4", [_c("a", {
-    attrs: {
-      href: ""
-    }
-  }, [_vm._v("Système de gestion point d'accès Wifi")])]), _vm._v(" "), _c("p", [_vm._v("\n                            Mise en place d'une gestion de point d'accès\n                            Wifi pour chaque étudiant de l'école grâce à la\n                            validation rétroactive de leur mot de passe.\n                        ")])])]), _vm._v(" "), _c("div", {
+  })]), _vm._v(" "), _c("h4", [_vm._v("Points d'accès Wifi")]), _vm._v(" "), _c("p", {
+    staticClass: "text-justify"
+  }, [_vm._v("\n                                Mise en place d'une gestion de point d'accès\n                                Wifi pour chaque étudiant de l'école grâce à\n                                la validation rétroactive de leur mot de\n                                passe.\n                            ")])])]), _vm._v(" "), _c("div", {
     staticClass: "col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0",
+    staticStyle: {
+      cursor: "pointer"
+    },
     attrs: {
-      "data-aos": "zoom-in",
+      "data-aos": "flip-left",
       "data-aos-delay": "200"
     }
   }, [_c("div", {
-    staticClass: "icon-box"
+    staticClass: "icon-box text-center"
   }, [_c("div", {
     staticClass: "icon"
   }, [_c("i", {
-    staticClass: "bx bx-layer"
-  })]), _vm._v(" "), _c("h4", [_c("a", {
-    attrs: {
-      href: ""
-    }
-  }, [_vm._v("Gestion d'une base de données des étudiants")])]), _vm._v(" "), _c("div", {
-    staticClass: "icon"
-  }, [_c("i", {
-    staticClass: "bx bx-database"
-  })]), _vm._v(" "), _c("h4", [_c("a", {
-    attrs: {
-      href: ""
-    }
-  }, [_vm._v("Gestion d'une base de données des\n                                étudiants")])]), _vm._v(" "), _c("p", [_vm._v("\n                            Création d'une base de données communes pour\n                            tous les étudiants de chaque niveau confondu.\n                        ")])])]), _vm._v(" "), _c("div", {
+    staticClass: "bx bx-data"
+  })]), _vm._v(" "), _c("h4", [_vm._v("Base de données des étudiants")]), _vm._v(" "), _c("p", {
+    staticClass: "text-justify"
+  }, [_vm._v("\n                                Création d'une base de données pour les\n                                étudiants tout niveau confondu.\n                            ")])])]), _vm._v(" "), _c("div", {
     staticClass: "col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0",
+    staticStyle: {
+      cursor: "pointer"
+    },
     attrs: {
-      "data-aos": "zoom-in",
+      "data-aos": "flip-left",
       "data-aos-delay": "300"
     }
   }, [_c("div", {
-    staticClass: "icon-box"
+    staticClass: "icon-box text-center"
   }, [_c("div", {
     staticClass: "icon"
   }, [_c("i", {
     staticClass: "bx bx-user"
-  })]), _vm._v(" "), _c("h4", [_c("a", {
-    attrs: {
-      href: ""
-    }
-  }, [_vm._v("Gestion des utilisateurs")])]), _vm._v(" "), _c("p", [_vm._v("\n                            Mise en place d'une page d'acceuil dans laquel\n                            chaque étudiant pourra accéder et se connecter\n                        ")])])]), _vm._v(" "), _c("div", {
+  })]), _vm._v(" "), _c("h4", [_vm._v("Utilisateurs")]), _vm._v(" "), _c("p", {
+    staticClass: "text-justify"
+  }, [_vm._v("\n                                Mise en place d'une page d'acceuil dans\n                                laquel chaque étudiant pourra accéder pour\n                                connecter\n                            ")])])]), _vm._v(" "), _c("div", {
     staticClass: "col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0",
+    staticStyle: {
+      cursor: "pointer"
+    },
     attrs: {
-      "data-aos": "zoom-in",
+      "data-aos": "flip-left",
       "data-aos-delay": "400"
     }
   }, [_c("div", {
-    staticClass: "icon-box"
+    staticClass: "icon-box text-center"
   }, [_c("div", {
     staticClass: "icon"
   }, [_c("i", {
     staticClass: "bx bx-desktop"
-  })]), _vm._v(" "), _c("div", {
-    staticClass: "icon"
-  }, [_c("i", {
-    staticClass: "bx bx-layer"
-  })]), _vm._v(" "), _c("h4", [_c("a", {
-    attrs: {
-      href: ""
-    }
-  }, [_vm._v("Administration des systèmes et réseaux")])]), _vm._v(" "), _c("p", [_vm._v("\n                            Gestion des utilisateurs connectés avec un tableau de bord\n                             démontrant la liste des comptes des utilisateurs qui devraient enregistrés sur ce plateforme\n                        ")])])])])])]), _vm._v(" "), _c("section", {
+  })]), _vm._v(" "), _c("h4", [_vm._v("Dashboard")]), _vm._v(" "), _c("p", {
+    staticClass: "text-justify"
+  }, [_vm._v("\n                                Gestion des contenu avec tableau de bord\n                                pour l'administrateur du plateforme\n                            ")])])])])])]), _vm._v(" "), _c("section", {
     staticClass: "pricing",
     attrs: {
       id: "pricing"
@@ -6875,7 +7125,7 @@ var staticRenderFns = [function () {
     }
   }, [_c("div", {
     staticClass: "section-title"
-  }, [_c("h2", [_vm._v("Comment souscrire")])]), _vm._v(" "), _c("div", {
+  }, [_c("h2", [_vm._v("Commencer")])]), _vm._v(" "), _c("div", {
     staticClass: "row"
   }, [_c("div", {
     staticClass: "col-lg-6",
@@ -6885,8 +7135,10 @@ var staticRenderFns = [function () {
     }
   }, [_c("div", {
     staticClass: "box"
-  }, [_c("h3", [_vm._v("Se connecter sur votre compte")]), _vm._v(" "), _c("a", {
-    staticClass: "buy-btn",
+  }, [_c("h3", [_vm._v("Se connecter sur votre compte")]), _vm._v(" "), _c("div", {
+    staticClass: "m-3"
+  }, [_vm._v("\n                                Vous avez déjà un compte étudiant ?\n                            ")]), _vm._v(" "), _c("a", {
+    staticClass: "buy-btn btn-sm",
     attrs: {
       href: "/authentification/etudiant"
     }
@@ -6898,8 +7150,10 @@ var staticRenderFns = [function () {
     }
   }, [_c("div", {
     staticClass: "box"
-  }, [_c("h3", [_vm._v("S'inscrire sur votre compte")]), _vm._v(" "), _c("a", {
-    staticClass: "buy-btn",
+  }, [_c("h3", [_vm._v("S'inscrire sur le plateforme")]), _vm._v(" "), _c("div", {
+    staticClass: "m-3"
+  }, [_vm._v("\n                                Inscrivez-vous pour béneficier des offres de\n                                l'école avec la connexion internet\n                            ")]), _vm._v(" "), _c("a", {
+    staticClass: "buy-btn btn-sm",
     attrs: {
       href: "/authentification/inscription"
     }
@@ -6971,9 +7225,9 @@ var staticRenderFns = [function () {
     staticClass: "logo me-auto"
   }, [_c("a", {
     attrs: {
-      href: "index.html"
+      href: "/"
     }
-  }, [_vm._v("ENI")])]);
+  }, [_c("strong", [_vm._v(" ENI ")])])]);
 }];
 render._withStripped = true;
 
@@ -7094,7 +7348,7 @@ __webpack_require__.r(__webpack_exports__);
 
 vue__WEBPACK_IMPORTED_MODULE_0__["default"].use(vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]);
 var routes = new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({
-  mode: "history",
+  // mode: "history",
   routes: [{
     path: "/",
     component: (__webpack_require__(/*! ./../components/ContentComponent.vue */ "./resources/js/components/ContentComponent.vue")["default"])
@@ -12363,6 +12617,30 @@ __webpack_require__.r(__webpack_exports__);
 var ___CSS_LOADER_EXPORT___ = _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
 ___CSS_LOADER_EXPORT___.push([module.id, "@-webkit-keyframes fadeOut{from{opacity:1}to{opacity:0}}@keyframes fadeOut{from{opacity:1}to{opacity:0}}.v-toast--fade-out{-webkit-animation-name:fadeOut;animation-name:fadeOut}@-webkit-keyframes fadeInDown{from{opacity:0;transform:translate3d(0, -100%, 0)}to{opacity:1;transform:none}}@keyframes fadeInDown{from{opacity:0;transform:translate3d(0, -100%, 0)}to{opacity:1;transform:none}}.v-toast--fade-in-down{-webkit-animation-name:fadeInDown;animation-name:fadeInDown}@-webkit-keyframes fadeInUp{from{opacity:0;transform:translate3d(0, 100%, 0)}to{opacity:1;transform:none}}@keyframes fadeInUp{from{opacity:0;transform:translate3d(0, 100%, 0)}to{opacity:1;transform:none}}.v-toast--fade-in-up{-webkit-animation-name:fadeInUp;animation-name:fadeInUp}.fade-enter-active,.fade-leave-active{transition:opacity 150ms ease-out}.fade-enter,.fade-leave-to{opacity:0}.v-toast{position:fixed;display:flex;top:0;bottom:0;left:0;right:0;padding:2em;overflow:hidden;z-index:1052;pointer-events:none}.v-toast__item{display:inline-flex;align-items:center;-webkit-animation-duration:150ms;animation-duration:150ms;margin:.5em 0;box-shadow:0 1px 4px rgba(0,0,0,.12),0 0 6px rgba(0,0,0,.04);border-radius:.25em;pointer-events:auto;opacity:.92;color:#fff;min-height:3em;cursor:pointer}.v-toast__item--success{background-color:#47d78a}.v-toast__item--info{background-color:#1c85d5}.v-toast__item--warning{background-color:#febc22}.v-toast__item--error{background-color:#f7471c}.v-toast__item--default{background-color:#343a40}.v-toast__item.v-toast__item--top,.v-toast__item.v-toast__item--bottom{align-self:center}.v-toast__item.v-toast__item--top-right,.v-toast__item.v-toast__item--bottom-right{align-self:flex-end}.v-toast__item.v-toast__item--top-left,.v-toast__item.v-toast__item--bottom-left{align-self:flex-start}.v-toast__text{margin:0;padding:.5em 1em;word-break:break-word}.v-toast__icon{display:none}.v-toast.v-toast--top{flex-direction:column}.v-toast.v-toast--bottom{flex-direction:column-reverse}.v-toast.v-toast--custom-parent{position:absolute}@media screen and (max-width: 768px){.v-toast{padding:0;position:fixed !important}}.v-toast__item{opacity:1;min-height:4em}.v-toast__item .v-toast__text{padding:1.5em 1em}.v-toast__item .v-toast__icon{display:block;width:27px;min-width:27px;height:27px;margin-left:1em;background:url(\"data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 45.999 45.999'%3e %3cpath fill='%23fff' d='M39.264 6.736c-8.982-8.981-23.545-8.982-32.528 0-8.982 8.982-8.981 23.545 0 32.528 8.982 8.98 23.545 8.981 32.528 0 8.981-8.983 8.98-23.545 0-32.528zM25.999 33a3 3 0 11-6 0V21a3 3 0 116 0v12zm-3.053-17.128c-1.728 0-2.88-1.224-2.844-2.735-.036-1.584 1.116-2.771 2.879-2.771 1.764 0 2.88 1.188 2.917 2.771-.001 1.511-1.152 2.735-2.952 2.735z'/%3e %3c/svg%3e\") no-repeat}.v-toast__item.v-toast__item--success .v-toast__icon{background:url(\"data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 52 52'%3e %3cpath fill='%23fff' d='M26 0C11.664 0 0 11.663 0 26s11.664 26 26 26 26-11.663 26-26S40.336 0 26 0zm14.495 17.329l-16 18a1.997 1.997 0 01-2.745.233l-10-8a2 2 0 012.499-3.124l8.517 6.813L37.505 14.67a2.001 2.001 0 012.99 2.659z'/%3e %3c/svg%3e\") no-repeat}.v-toast__item.v-toast__item--error .v-toast__icon{background:url(\"data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 51.976 51.976'%3e %3cpath fill='%23fff' d='M44.373 7.603c-10.137-10.137-26.632-10.138-36.77 0-10.138 10.138-10.137 26.632 0 36.77s26.632 10.138 36.77 0c10.137-10.138 10.137-26.633 0-36.77zm-8.132 28.638a2 2 0 01-2.828 0l-7.425-7.425-7.778 7.778a2 2 0 11-2.828-2.828l7.778-7.778-7.425-7.425a2 2 0 112.828-2.828l7.425 7.425 7.071-7.071a2 2 0 112.828 2.828l-7.071 7.071 7.425 7.425a2 2 0 010 2.828z'/%3e %3c/svg%3e\") no-repeat}.v-toast__item.v-toast__item--warning .v-toast__icon{background:url(\"data:image/svg+xml,%3csvg viewBox='0 0 52 52' xmlns='http://www.w3.org/2000/svg'%3e %3cpath fill='%23fff' d='M49.466 41.26L29.216 6.85c-.69-1.16-1.89-1.85-3.22-1.85-1.32 0-2.53.69-3.21 1.85L2.536 41.26c-.71 1.2-.72 2.64-.03 3.85.68 1.18 1.89 1.89 3.24 1.89h40.51c1.35 0 2.56-.71 3.23-1.89.7-1.21.69-2.65-.02-3.85zm-25.53-21.405h3.381v3.187l-.724 8.92H24.66l-.725-8.92v-3.187zm2.97 17.344a1.712 1.712 0 01-1.267.543c-.491 0-.914-.181-1.268-.543a1.788 1.788 0 01-.531-1.297c0-.502.176-.935.53-1.297a1.712 1.712 0 011.269-.544c.49 0 .914.181 1.268.544s.53.795.53 1.297c0 .503-.176.934-.53 1.297z'/%3e %3c/svg%3e\") no-repeat}\n", ""]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/client/get-started/GetStartedComponent.vue?vue&type=style&index=0&id=66b37794&lang=css&":
+/*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/client/get-started/GetStartedComponent.vue?vue&type=style&index=0&id=66b37794&lang=css& ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
+// Imports
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, "\n.text-justify {\n    text-align: justify;\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -47857,6 +48135,36 @@ var update = _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMP
 
 /***/ }),
 
+/***/ "./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/client/get-started/GetStartedComponent.vue?vue&type=style&index=0&id=66b37794&lang=css&":
+/*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/client/get-started/GetStartedComponent.vue?vue&type=style&index=0&id=66b37794&lang=css& ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_GetStartedComponent_vue_vue_type_style_index_0_id_66b37794_lang_css___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../../../../node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!../../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!../../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./GetStartedComponent.vue?vue&type=style&index=0&id=66b37794&lang=css& */ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/client/get-started/GetStartedComponent.vue?vue&type=style&index=0&id=66b37794&lang=css&");
+
+            
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_GetStartedComponent_vue_vue_type_style_index_0_id_66b37794_lang_css___WEBPACK_IMPORTED_MODULE_1__["default"], options);
+
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_GetStartedComponent_vue_vue_type_style_index_0_id_66b37794_lang_css___WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
+
+/***/ }),
+
 /***/ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js":
 /*!****************************************************************************!*\
   !*** ./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js ***!
@@ -48461,15 +48769,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _GetStartedComponent_vue_vue_type_template_id_66b37794___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./GetStartedComponent.vue?vue&type=template&id=66b37794& */ "./resources/js/components/client/get-started/GetStartedComponent.vue?vue&type=template&id=66b37794&");
 /* harmony import */ var _GetStartedComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./GetStartedComponent.vue?vue&type=script&lang=js& */ "./resources/js/components/client/get-started/GetStartedComponent.vue?vue&type=script&lang=js&");
-/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* harmony import */ var _GetStartedComponent_vue_vue_type_style_index_0_id_66b37794_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./GetStartedComponent.vue?vue&type=style&index=0&id=66b37794&lang=css& */ "./resources/js/components/client/get-started/GetStartedComponent.vue?vue&type=style&index=0&id=66b37794&lang=css&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
 
+;
 
 
 /* normalize component */
-;
-var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+
+var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
   _GetStartedComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
   _GetStartedComponent_vue_vue_type_template_id_66b37794___WEBPACK_IMPORTED_MODULE_0__.render,
   _GetStartedComponent_vue_vue_type_template_id_66b37794___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
@@ -48852,6 +49162,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_lib_loaders_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_lib_index_js_vue_loader_options_MenuComponent_vue_vue_type_template_id_ab9644d2___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
 /* harmony export */ });
 /* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_lib_loaders_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_lib_index_js_vue_loader_options_MenuComponent_vue_vue_type_template_id_ab9644d2___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[2]!../../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./MenuComponent.vue?vue&type=template&id=ab9644d2& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/client/menu/MenuComponent.vue?vue&type=template&id=ab9644d2&");
+
+
+/***/ }),
+
+/***/ "./resources/js/components/client/get-started/GetStartedComponent.vue?vue&type=style&index=0&id=66b37794&lang=css&":
+/*!*************************************************************************************************************************!*\
+  !*** ./resources/js/components/client/get-started/GetStartedComponent.vue?vue&type=style&index=0&id=66b37794&lang=css& ***!
+  \*************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_style_loader_dist_cjs_js_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_GetStartedComponent_vue_vue_type_style_index_0_id_66b37794_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/style-loader/dist/cjs.js!../../../../../node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!../../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!../../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./GetStartedComponent.vue?vue&type=style&index=0&id=66b37794&lang=css& */ "./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/client/get-started/GetStartedComponent.vue?vue&type=style&index=0&id=66b37794&lang=css&");
 
 
 /***/ }),
