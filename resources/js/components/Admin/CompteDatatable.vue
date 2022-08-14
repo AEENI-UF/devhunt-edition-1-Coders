@@ -27,18 +27,18 @@
                   <v-layout wrap>
                     <v-flex xs12 sm6 md6>
                       <v-text-field
-                      xs12 sm6 md6 
+                      xs12 sm6 md6
                     v-model="editedItem.nom"
-                      label="Nom" 
+                      label="Nom"
                       required
                       :rules="[v => !!v || 'Nom obligatoire']"
                       ></v-text-field>
                     </v-flex>
                       <v-flex xs12 sm6 md6>
                       <v-text-field
-                      xs12 sm6 md6 
+                      xs12 sm6 md6
                        v-model="editedItem.prenoms"
-                      label="Prenoms" 
+                      label="Prenoms"
                       required
                       :rules="[v => !!v || 'Prenoms obligatoire']"
                       ></v-text-field>
@@ -48,7 +48,7 @@
                        v-model="editedItem.phone"
                       required
                       :rules="[v => !!v || 'Numéro Telephone obligatoire']"
-                      label="Numéro Telephone " 
+                      label="Numéro Telephone "
                       ></v-text-field>
                     </v-flex>
                     <v-flex xs12 sm6 md6>
@@ -56,14 +56,14 @@
                        v-model="editedItem.email"
                       required
                       :rules="[v => !!v || 'Email obligatoire']"
-                      label="Email" 
+                      label="Email"
                       ></v-text-field>
                     </v-flex>
                     <v-flex xs12 sm6 md6>
                       <v-text-field
                       required
                       :rules="[v => !!v || 'Mot de passe obligatoire']"
-                     
+
                      v-model="editedItem.password"
                       label="Mot de passe"
                       ></v-text-field>
@@ -91,7 +91,7 @@
           </v-card>
     </v-dialog>
   </div>
-        <v-card class="mt-4">        
+        <v-card class="mt-4">
             <v-card-title>
                 <v-text-field
                     v-model="search"
@@ -115,7 +115,7 @@
 import axios from "axios";
 
 export default {
-   
+
     data() {
         return {
             search: "",
@@ -184,7 +184,7 @@ export default {
                     console.log(error)
              })
         } else {
-            
+
           axios.post('/register', this.editedItem)
          .then(response => {
             console.log(response.data);
@@ -193,13 +193,13 @@ export default {
                 }).catch(error=>{
                     console.log(error)
              })
-            
-        
+
+
         }
 
       }
       },
-       
+
     },
     computed :{
           formTitle () {

@@ -10,7 +10,7 @@ import VueToast from "vue-toast-notification";
 import "vue-toast-notification/dist/theme-sugar.css";
 import vuetify from "./../plugins/vuetify";
 import axios from 'axios';
-    
+
 window.Vue = require("vue").default;
 
 /**
@@ -43,6 +43,10 @@ Vue.component(
 Vue.component(
     "compte-datatable",
     require("./components/Admin/CompteDatatable.vue").default
+);
+Vue.component(
+    "niveau-datatable",
+    require("./components/Admin/NiveauDatatable.vue").default
 );
 /**
  * Next, we will create a fresh Vue application instance and attach it to
