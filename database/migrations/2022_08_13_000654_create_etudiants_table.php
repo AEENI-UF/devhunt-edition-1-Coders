@@ -20,13 +20,12 @@ class CreateEtudiantsTable extends Migration
             $table->string('date_naiss')->nullable();
             $table->string('lieu_naiss')->nullable();
             $table->string('sexe')->nullable();
-
             $table->string('adresse')->nullable();
             $table->string('cin')->nullable();
             $table->string('tel');
             $table->string('password');
             $table->string('email');
-            $table->foreignId('id_niveau')->references('id_niveau')->on('niveaus')->onDelete('cascade');
+            $table->foreignId('id_niveau')->references('id_niveau')->on('niveaux')->onDelete('cascade');
             $table->timestamps();
         });
     }

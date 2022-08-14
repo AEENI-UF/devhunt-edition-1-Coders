@@ -15,7 +15,7 @@ class NiveauController extends Controller
      */
     public function index()
     {
-        $niveaux = Niveau::all();
+        $niveaux = Niveau::with('configurations')->get();
         return response()->json($niveaux, 200);
     }
     public function ByLevel()
@@ -50,7 +50,7 @@ class NiveauController extends Controller
      */
     public function show($id)
     {
-        $niveau = Niveau::find($id);
+        $niveau = Niveau::with('configurations')->where('id_niveau', $id)->get();
 
         return response()->json($niveau, 200);
     }

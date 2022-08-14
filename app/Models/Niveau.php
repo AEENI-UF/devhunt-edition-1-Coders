@@ -9,11 +9,14 @@ class Niveau extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['id_niveau', 'design_niveau'];
+    protected $fillable = ['id_niveau', 'design_niveau', 'id_config'];
     protected $primaryKey = 'id_niveau';
     protected $table = 'niveaux';
     public function etudiants()
     {
         return $this->hasMany(Etudiant::class, 'id_niveau');
     }
+     public function configurations(){
+        return $this->belongsTo(Configuration::class, 'id_config');
+     }
 }

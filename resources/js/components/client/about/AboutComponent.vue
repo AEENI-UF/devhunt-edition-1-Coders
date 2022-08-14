@@ -36,7 +36,7 @@
                             ces étudiants d'avoir internet.Gérer plus de 2 000 étudiants est une tâche très delicate pour l'administrateur réseau de l'école,
                             que ce soit dans le domaine de sécurisation ou dans le domaine de gestion d'accès à ce réseau WIFI
                         </p>
-                        <a href="#" class="btn-learn-more">En savoir plus</a>
+                        <router-link to="/contact" class="btn-learn-more">Rester en contact</router-link>
                     </div>
                 </div>
             </div>
