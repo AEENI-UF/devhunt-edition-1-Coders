@@ -48,11 +48,15 @@
                     <div
                         class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch"
                     >
-                        <div role="form" class="php-email-form">
+                        <form
+                            @submit.prevent="sendMessage"
+                            class="php-email-form"
+                        >
                             <div class="row">
                                 <div class="form-group col-md-6">
                                     <label for="name">Votre nom</label>
                                     <input
+                                        v-model="name"
                                         type="text"
                                         name="name"
                                         class="form-control"
@@ -102,11 +106,9 @@
                                 </div>
                             </div>
                             <div class="text-center">
-                                <button @click="sendMessage">
-                                    Envoyez Message
-                                </button>
+                                <button type="submit">Envoyez Message</button>
                             </div>
-                        </div>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -116,16 +118,26 @@
 </template>
 
 <script>
+import axios from "axios";
 export default {
     data() {
         return {
-            message: "",
-            object: "",
             email: "",
+            message: "",
+            name: "",
+            object: "",
         };
     },
     methods: {
-        async sendMessage() {},
+        async sendMessage() {
+            const body = new FormData();
+            body.append("email", this.email);
+            body.append("message", this.message);
+            body.append("name", this.name);
+            body.append("object", this.object);
+
+            await axios.post("/contact-us", body);
+        },
     },
 };
 </script>

@@ -4,6 +4,7 @@ use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\Auth\AuthController;
 use App\Http\Controllers\ConfigurationController;
 use App\Http\Controllers\EtudiantController;
+use App\Http\Controllers\HomeController;
 use App\Mail\SendEmail;
 use App\Models\Etudiant;
 use App\Models\Niveau;
@@ -62,4 +63,4 @@ Route::get('/dashboard', [DashboardController::class, 'dashboard']);
 Route::get('/liste', [DashboardController::class, 'liste']);
 
 
-Route::post("contact-us" , [])
+Route::post("contact-us", [HomeController::class, 'contact_us']);
