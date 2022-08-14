@@ -176,7 +176,7 @@ export default {
          save () {
         if (this.$refs.form.validate()) {
         if (this.editedIndex > -1) {
-            axios.put('/update-user/${this.params.id}', this.editedItem)
+            axios.put('/update-user/${this.editedItem.id_niveau}', this.editedItem)
             .then(response => {
             this.getAllUsers();
             this.close();
