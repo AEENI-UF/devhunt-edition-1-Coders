@@ -133,6 +133,9 @@
                                     <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
                                         href="/config" aria-expanded="false"><i class="mdi mdi-brightness-7"></i><span
                                             class="hide-menu">Configuration</span></a></li>
+                                            <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                                href="/compte" aria-expanded="false"><i class="mdi mdi-account"></i><span
+                                                    class="hide-menu">Utilisateur</span></a></li>
                     </ul>
                 </nav>
                 <!-- End Sidebar navigation -->
