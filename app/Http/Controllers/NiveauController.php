@@ -50,7 +50,7 @@ class NiveauController extends Controller
      */
     public function show($id)
     {
-        $niveau = Niveau::find($id);
+        $niveau = Niveau::with('configurations')->where('id_niveau', $id)->get();
 
         return response()->json($niveau, 200);
     }
