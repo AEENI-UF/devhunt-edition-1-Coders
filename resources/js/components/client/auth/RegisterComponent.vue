@@ -14,7 +14,7 @@
                                 <input
                                     class="mb-4"
                                     type="text"
-                                    v-model="email"
+                                    v-model="matricule"
                                     placeholder="Numéro matricule"
                                 />
                             </div>
@@ -25,7 +25,7 @@
                                 <input
                                     class="mb-4"
                                     type="text"
-                                    v-model="email"
+                                    v-model="nom"
                                     placeholder="Votre nom"
                                 />
                             </div>
@@ -45,7 +45,10 @@
                                 <label class="mb-1"
                                     ><h6 class="mb-0 text-sm">Niveau</h6></label
                                 >
-                                <select v-model="id_niveau">
+                                <select
+                                    v-model="id_niveau"
+                                    class="form form-control"
+                                >
                                     <option
                                         v-for="level in niveau"
                                         :key="level.id"
@@ -61,7 +64,7 @@
                                 >
                                 <select
                                     v-model="sexe"
-                                    placeholder="Votre prénoms"
+                                    class="form form-control"
                                 >
                                     <option value="M">Masculin</option>
                                     <option value="F">Féminin</option>
@@ -150,7 +153,16 @@
                                     type="submit"
                                     class="btn btn-blue text-center"
                                 >
-                                    S'inscrire
+                                    <span v-if="sending == false"
+                                        >S'inscrire</span
+                                    >
+                                    <v-progress-circular
+                                        :size="25"
+                                        :width="1"
+                                        color="white"
+                                        v-if="sending == true"
+                                        indeterminate
+                                    ></v-progress-circular>
                                 </button>
                             </div>
                             <div class="row mb-4 px-3">
@@ -188,6 +200,7 @@ import axios from "axios";
 export default {
     data() {
         return {
+            sending: false,
             matricule: "",
             id_niveau: "",
             nom: "",
@@ -212,6 +225,7 @@ export default {
                 .then((res) => res.data);
         },
         async register() {
+            this.sending = true;
             if (
                 this.matricule == "" ||
                 this.nom == "" ||
@@ -231,15 +245,27 @@ export default {
                 const body = new FormData();
                 body.append("matricule", this.matricule);
                 body.append("nom", this.nom);
-                body.append("prenom", this.prenoms);
+                body.append("prenoms", this.prenoms);
                 body.append("date_naiss", this.date_naiss);
-                body.append("lieu", this.lieu_naiss);
+                body.append("lieu_naiss", this.lieu_naiss);
                 body.append("sexe", this.sexe);
                 body.append("adresse", this.adresse);
                 body.append("tel", this.tel);
                 body.append("email", this.email);
+                body.append("id_niveau", this.id_niveau);
                 body.append("password", this.password);
+
+                await axios
+                    .post("/api/etudiant-auth/register", body)
+                    .then((res) => {
+                        this.$toast.success(
+                            "Votre compte a été créé avec succès"
+                        );
+                        this.$router.push("/");
+                    })
+                    .catch((e) => this.$toast.error(e.response.data.message));
             }
+            this.sending = false;
         },
     },
 };

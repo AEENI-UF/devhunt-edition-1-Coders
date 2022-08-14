@@ -43,7 +43,7 @@
                     <!-- ============================================================== -->
                     <!-- Logo -->
                     <!-- ============================================================== -->
-                    <a class="navbar-brand" href="index.html">
+                    <a class="navbar-brand" href="dashboard">
                         <!-- Logo icon -->
                         <b class="logo-icon p-l-10">
                             <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
@@ -54,12 +54,7 @@
                         </b>
                         <!--End Logo icon -->
                         <!-- Logo text -->
-                        <span class="logo-text">
-                            <!-- dark Logo text -->
-                            <img src="{{ asset('admin/assets/images/logo-text.png')}}" alt="homepage"
-                                class="light-logo" />
 
-                        </span>
 
                     </a>
                     <!-- ============================================================== -->
@@ -133,8 +128,11 @@
                           
                         </li>
                         <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
-                                href="charts.html" aria-expanded="false"><i class="mdi mdi-brightness-7"></i><span
-                                    class="hide-menu">Parametre</span></a></li>
+                                href="/niveau" aria-expanded="false"><i class="mdi mdi-brightness-7"></i><span
+                                    class="hide-menu">Niveau</span></a></li>
+                                    <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                        href="/config" aria-expanded="false"><i class="mdi mdi-brightness-7"></i><span
+                                            class="hide-menu">Configuration</span></a></li>
                     </ul>
                 </nav>
                 <!-- End Sidebar navigation -->

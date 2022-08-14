@@ -14,81 +14,248 @@
                     </v-btn>
                 </template>
 
-      <v-card>
-            <v-card-title>
-              <span class="headline">{{formTitle}}</span>
-            </v-card-title>
-            <v-card-text>
-              <v-form ref="form" v-model="valid" lazy-validation >
-                <v-container tag="form" grid-list-md>
-                  <v-layout wrap>
-                    <v-flex xs12 sm6 md6>
-                      <v-text-field
-                      xs12 sm6 md6
-                    v-model="editedItem.nom"
-                      label="Nom"
-                      required
-                      :rules="[v => !!v || 'Nom obligatoire']"
-                      ></v-text-field>
-                    </v-flex>
-                      <v-flex xs12 sm6 md6>
-                      <v-text-field
-                      xs12 sm6 md6
-                       v-model="editedItem.prenoms"
-                      label="Prenoms"
-                      required
-                      :rules="[v => !!v || 'Prenoms obligatoire']"
-                      ></v-text-field>
-                    </v-flex>
-                  <v-flex xs12 sm6 md6>
-                      <v-text-field
-                       v-model="editedItem.phone"
-                      required
-                      :rules="[v => !!v || 'Numéro Telephone obligatoire']"
-                      label="Numéro Telephone "
-                      ></v-text-field>
-                    </v-flex>
-                    <v-flex xs12 sm6 md6>
-                      <v-text-field
-                       v-model="editedItem.email"
-                      required
-                      :rules="[v => !!v || 'Email obligatoire']"
-                      label="Email"
-                      ></v-text-field>
-                    </v-flex>
-                    <v-flex xs12 sm6 md6>
-                      <v-text-field
-                      required
-                      :rules="[v => !!v || 'Mot de passe obligatoire']"
-                     v-model="editedItem.password"
-                      label="Mot de passe"
-                      ></v-text-field>
-                    </v-flex>
-                    <v-flex xs12 sm6 md6>
-                      <v-text-field
-                      required
-                      :rules="[v => !!v || ' Confirmation Mot de passe obligatoire']"
-                      v-model="editedItem.password_confirmation"
-                      label="Confirmation Mot de passe"
-                      ></v-text-field>
-                        </v-flex>
-                        </v-layout>
-                        </v-container>
-                    </v-form>
-            </v-card-text>
-                    <v-card-actions>
-                        <v-spacer></v-spacer>
-                        <v-btn color="red darken-1" outlined text @click="close"
-                            >Annuler</v-btn
-                        >
-                        <v-btn
-                            color="green darken-1"
-                            outlined
-                            text
-                            @click="save"
-                            >Sauvegarder</v-btn
-                        >
-                    </v-card-actions>
+                <v-card>
+                    <v-card-title>
+                        <span class="headline">{{ formTitle }}</span>
+                    </v-card-title>
+
+                    <v-card-text>
+                        <v-form ref="form" v-model="valid" lazy-validation>
+                            <v-container tag="form" grid-list-md>
+                                <v-layout wrap>
+                                    <v-flex xs12 sm6 md6>
+                                        <v-text-field
+                                            xs12
+                                            sm6
+                                            md6
+                                            v-model="editedItem.nom"
+                                            label="Nom"
+                                            required
+                                            :rules="[
+                                                (v) => !!v || 'Nom obligatoire',
+                                            ]"
+                                        ></v-text-field>
+                                    </v-flex>
+                                    <v-flex xs12 sm6 md6>
+                                        <v-text-field
+                                            xs12
+                                            sm6
+                                            md6
+                                            v-model="editedItem.prenoms"
+                                            label="Prenoms"
+                                            required
+                                            :rules="[
+                                                (v) =>
+                                                    !!v ||
+                                                    'Prenoms obligatoire',
+                                            ]"
+                                        ></v-text-field>
+                                    </v-flex>
+                                    <v-flex xs12 sm6 md6>
+                                        <v-text-field
+                                            v-model="editedItem.phone"
+                                            required
+                                            :rules="[
+                                                (v) =>
+                                                    !!v ||
+                                                    'Numéro Telephone obligatoire',
+                                            ]"
+                                            label="Numéro Telephone "
+                                        ></v-text-field>
+                                    </v-flex>
+                                    <v-flex xs12 sm6 md6>
+                                        <v-text-field
+                                            v-model="editedItem.email"
+                                            required
+                                            :rules="[
+                                                (v) =>
+                                                    !!v || 'Email obligatoire',
+                                            ]"
+                                            label="Email"
+                                        ></v-text-field>
+                                    </v-flex>
+                                    <v-flex xs12 sm6 md6>
+                                        <v-text-field
+                                            required
+                                            :rules="[
+                                                (v) =>
+                                                    !!v ||
+                                                    'Mot de passe obligatoire',
+                                            ]"
+                                            v-model="editedItem.password"
+                                            label="Mot de passe"
+                                        ></v-text-field>
+                                    </v-flex>
+                                    <v-flex xs12 sm6 md6>
+                                        <v-text-field
+                                            required
+                                            :rules="[
+                                                (v) =>
+                                                    !!v ||
+                                                    ' Confirmation Mot de passe obligatoire',
+                                            ]"
+                                            v-model="
+                                                editedItem.password_confirmation
+                                            "
+                                            label="Confirmation Mot de passe"
+                                        ></v-text-field>
+
+                                        <v-card-text>
+                                            <v-form
+                                                ref="form"
+                                                v-model="valid"
+                                                lazy-validation
+                                            >
+                                                <v-container
+                                                    tag="form"
+                                                    grid-list-md
+                                                >
+                                                    <v-layout wrap>
+                                                        <v-flex xs12 sm6 md6>
+                                                            <v-text-field
+                                                                xs12
+                                                                sm6
+                                                                md6
+                                                                v-model="
+                                                                    editedItem.nom
+                                                                "
+                                                                label="Nom"
+                                                                required
+                                                                :rules="[
+                                                                    (v) =>
+                                                                        !!v ||
+                                                                        'Nom obligatoire',
+                                                                ]"
+                                                            ></v-text-field>
+                                                        </v-flex>
+                                                        <v-flex xs12 sm6 md6>
+                                                            <v-text-field
+                                                                xs12
+                                                                sm6
+                                                                md6
+                                                                v-model="
+                                                                    editedItem.prenoms
+                                                                "
+                                                                label="Prenoms"
+                                                                required
+                                                                :rules="[
+                                                                    (v) =>
+                                                                        !!v ||
+                                                                        'Prenoms obligatoire',
+                                                                ]"
+                                                            ></v-text-field>
+                                                        </v-flex>
+                                                        <v-flex xs12 sm6 md6>
+                                                            <v-text-field
+                                                                v-model="
+                                                                    editedItem.phone
+                                                                "
+                                                                required
+                                                                :rules="[
+                                                                    (v) =>
+                                                                        !!v ||
+                                                                        'Numéro Telephone obligatoire',
+                                                                ]"
+                                                                label="Numéro Telephone "
+                                                            ></v-text-field>
+                                                        </v-flex>
+                                                        <v-flex xs12 sm6 md6>
+                                                            <v-text-field
+                                                                v-model="
+                                                                    editedItem.email
+                                                                "
+                                                                required
+                                                                :rules="[
+                                                                    (v) =>
+                                                                        !!v ||
+                                                                        'Email obligatoire',
+                                                                ]"
+                                                                label="Email"
+                                                            ></v-text-field>
+                                                        </v-flex>
+                                                        <v-flex xs12 sm6 md6>
+                                                            <v-text-field
+                                                                @click:append="
+                                                                    show1 =
+                                                                        !show1
+                                                                "
+                                                                :append-icon="
+                                                                    show1
+                                                                        ? 'mdi-eye'
+                                                                        : 'mdi-eye-off'
+                                                                "
+                                                                :type="
+                                                                    show1
+                                                                        ? 'text'
+                                                                        : 'password'
+                                                                "
+                                                                required
+                                                                :rules="[
+                                                                    (v) =>
+                                                                        !!v ||
+                                                                        'Mot de passe obligatoire',
+                                                                ]"
+                                                                v-model="
+                                                                    editedItem.password
+                                                                "
+                                                                label="Mot de passe"
+                                                            ></v-text-field>
+                                                        </v-flex>
+                                                        <v-flex xs12 sm6 md6>
+                                                            <v-text-field
+                                                                required
+                                                                @click:append="
+                                                                    show2 =
+                                                                        !show2
+                                                                "
+                                                                :append-icon="
+                                                                    show2
+                                                                        ? 'mdi-eye'
+                                                                        : 'mdi-eye-off'
+                                                                "
+                                                                :type="
+                                                                    show2
+                                                                        ? 'text'
+                                                                        : 'password'
+                                                                "
+                                                                :rules="[
+                                                                    (v) =>
+                                                                        !!v ||
+                                                                        ' Confirmation Mot de passe obligatoire',
+                                                                ]"
+                                                                v-model="
+                                                                    editedItem.password_confirmation
+                                                                "
+                                                                label="Confirmation Mot de passe"
+                                                            ></v-text-field>
+                                                        </v-flex>
+                                                    </v-layout>
+                                                </v-container>
+                                            </v-form>
+                                        </v-card-text>
+
+                                        <v-card-actions>
+                                            <v-spacer></v-spacer>
+                                            <v-btn
+                                                color="red darken-1"
+                                                outlined
+                                                text
+                                                @click="close"
+                                                >Annuler</v-btn
+                                            >
+                                            <v-btn
+                                                color="green darken-1"
+                                                outlined
+                                                text
+                                                @click="save"
+                                                >Sauvegarder
+                                            </v-btn>
+                                        </v-card-actions>
+                                    </v-flex>
+                                </v-layout>
+                            </v-container>
+                        </v-form>
+                    </v-card-text>
                 </v-card>
             </v-dialog>
         </div>

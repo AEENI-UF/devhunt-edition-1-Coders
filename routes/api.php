@@ -33,4 +33,5 @@ Route::get('/by-level', [NiveauController::class, 'byLevel']);
 
 Route::prefix("etudiant-auth")->group(function () {
     Route::post("/login", [AuthController::class, "login"]);
+    Route::post("/register", [AuthController::class, "register"]);
 });
