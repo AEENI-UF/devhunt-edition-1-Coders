@@ -43,7 +43,7 @@
                     <!-- ============================================================== -->
                     <!-- Logo -->
                     <!-- ============================================================== -->
-                    <a class="navbar-brand" href="index.html">
+                    <a class="navbar-brand" href="/dashboard">
                         <!-- Logo icon -->
                         <b class="logo-icon p-l-10">
                             <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
@@ -239,12 +239,12 @@
                 <nav class="sidebar-nav">
                     <ul id="sidebarnav" class="p-t-30">
                         <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
-                                href="index.html" aria-expanded="false"><i class="mdi mdi-view-dashboard"></i><span
+                                href="/dashboard" aria-expanded="false"><i class="mdi mdi-view-dashboard"></i><span
                                     class="hide-menu">Dashboard</span></a></li>
-                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                        <li class="sidebar-item selected"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
                                 href="charts.html" aria-expanded="false"><i class="mdi mdi-account-multiple-outline"></i><span
                                     class="hide-menu">Etudiants</span></a></li>
-                            <li class="sidebar-item"> <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-book-variant"></i><span class="hide-menu">Historique </span></a>
+                            <li class="sidebar-item"> <a class="sidebar-link active has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-book-variant"></i><span class="hide-menu">Historique </span></a>
                             <ul aria-expanded="false" class="collapse  first-level">
                                 <li class="sidebar-item"><a href="form-basic.html" class="sidebar-link"><i class="mdi mdi-note-outline"></i><span class="hide-menu"> histogramme </span></a></li>
                                 <li class="sidebar-item"><a href="form-wizard.html" class="sidebar-link"><i class="mdi mdi-note-plus"></i><span class="hide-menu"> Form Wizard </span></a></li>
@@ -273,21 +273,16 @@
                 <div class="row">
                     <div class="col-12 d-flex no-block align-items-center">
                         <h4 class="page-title">Dashboard</h4>
-                        <div class="ml-auto text-right">
-                            <nav aria-label="breadcrumb">
-                                <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><a href="#">Home</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">Library</li>
-                                </ol>
-                            </nav>
-                        </div>
-                       
                     </div>
                 </div>
             </div>
         </div>
         <div class="container"  id="app">
+<<<<<<< HEAD
              <user-datatable></user-datatable>
+=======
+            <user-datatable></user-datatable>
+>>>>>>> 8806eb94b79720f1595d434b6b063f9189664f3a
         </div>
     </div>
     <script src="{{ asset('admin/assets/libs/jquery/dist/jquery.min.js')}}"></script>

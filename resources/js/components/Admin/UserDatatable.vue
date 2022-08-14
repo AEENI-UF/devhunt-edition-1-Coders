@@ -1,8 +1,7 @@
 <template>
-<div>
- <upload-file></upload-file>
     <v-app>
         <v-card class="mt-4">
+            <upload-file @uploadfinished="finished_upload"></upload-file>
             <v-card-title>
                 <v-text-field
                     v-model="search"
@@ -20,13 +19,16 @@
             ></v-data-table>
         </v-card>
     </v-app>
-</div>
 </template>
 <script>
 import axios from "axios";
+<<<<<<< HEAD
 import UploadFile from './UploadFile.vue';
+=======
+import UploadFile from "./UploadFile.vue";
+>>>>>>> 8806eb94b79720f1595d434b6b063f9189664f3a
 export default {
-  components: { UploadFile },
+    components: { UploadFile },
     data() {
         return {
             search: "",
@@ -69,9 +71,17 @@ export default {
         alertMe(data) {
             alert("hey");
         },
+        async loadData() {
+            this.data = await axios
+                .get("/api/etudiant")
+                .then((res) => res.data);
+        },
+        async finished_upload() {
+            this.loadData();
+        },
     },
     async mounted() {
-        this.data = await axios.get("/api/etudiant").then((res) => res.data);
-    }   
+        this.loadData();
+    },
 };
 </script>
