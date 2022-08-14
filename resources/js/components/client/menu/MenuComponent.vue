@@ -2,8 +2,10 @@
     <!-- ======= Header ======= -->
     <header id="header" class="fixed-top">
         <div class="container d-flex align-items-center">
-            <h1 class="logo me-auto"><a href="/"> <strong> ENI </strong></a></h1>
-            
+            <h1 class="logo me-auto">
+                <a href="/"> <strong> ENI </strong></a>
+            </h1>
+
             <!-- Uncomment below if you prefer to use an image logo -->
             <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
@@ -25,7 +27,7 @@
                         >
                     </li>
 
-                    <li>
+                    <li v-if="logged">
                         <router-link
                             class="getstarted scrollto"
                             to="/get-started"
@@ -42,7 +44,18 @@
 </template>
 
 <script>
-export default {};
+export default {
+    data() {
+        return {
+            logged: false,
+        };
+    },
+    async mounted() {
+        if (localStorage.getItem("access_token")) {
+            this.logged = true;
+        }
+    },
+};
 </script>
 
 <style></style>
