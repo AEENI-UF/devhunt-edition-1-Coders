@@ -5959,13 +5959,6 @@ var render = function render() {
   var _vm = this,
       _c = _vm._self._c;
 
-  return _vm._m(0);
-};
-
-var staticRenderFns = [function () {
-  var _vm = this,
-      _c = _vm._self._c;
-
   return _c("div", [_c("section", {
     staticClass: "about",
     attrs: {
@@ -5976,11 +5969,30 @@ var staticRenderFns = [function () {
     attrs: {
       "data-aos": "fade-up"
     }
-  }, [_c("div", {
-    staticClass: "section-title"
-  }, [_c("h2", [_vm._v("A propos ")])]), _vm._v(" "), _c("div", {
+  }, [_vm._m(0), _vm._v(" "), _c("div", {
     staticClass: "row content"
-  }, [_c("div", {
+  }, [_vm._m(1), _vm._v(" "), _c("div", {
+    staticClass: "col-lg-6 pt-4 pt-lg-0"
+  }, [_c("p", [_vm._v("\n                            L'école n'a qu'une option: mettre en place un point d'accès WIFI pour permettre à\n                            ces étudiants d'avoir internet.Gérer plus de 2 000 étudiants est une tâche très delicate pour l'administrateur réseau de l'école,\n                            que ce soit dans le domaine de sécurisation ou dans le domaine de gestion d'accès à ce réseau WIFI\n                        ")]), _vm._v(" "), _c("router-link", {
+    staticClass: "btn-learn-more",
+    attrs: {
+      to: "/contact"
+    }
+  }, [_vm._v("Rester en contact")])], 1)])])]), _vm._v(" "), _vm._m(2)]);
+};
+
+var staticRenderFns = [function () {
+  var _vm = this,
+      _c = _vm._self._c;
+
+  return _c("div", {
+    staticClass: "section-title"
+  }, [_c("h2", [_vm._v("A propos ")])]);
+}, function () {
+  var _vm = this,
+      _c = _vm._self._c;
+
+  return _c("div", {
     staticClass: "col-lg-6"
   }, [_c("p", [_vm._v("\n                            L'Ecole Nationale d'informatique possède à peu près 2000 étudiants dans\n                            son effectif actuellement. En tant qu'école nationale de l'innovation dans la digitalisation informatique,\n                            avoir une connexion internet est un atout pour chaque étudiant dans cette école.\n                        ")]), _vm._v(" "), _c("ul", [_c("li", [_c("i", {
     staticClass: "ri-check-double-line"
@@ -5988,14 +6000,12 @@ var staticRenderFns = [function () {
     staticClass: "ri-check-double-line"
   }), _vm._v(" Gérer plus de 2000 étudiants est une tâche\n                                très délicate pour l'administrateur réseau de l'école, que ce soit dans le domaine de\n\n                            ")]), _vm._v(" "), _c("li", [_c("i", {
     staticClass: "ri-check-double-line"
-  }), _vm._v(" Création d'une application WEB permettant d'administrer\n                                et répartir l'accès internet pour chaque étudiant de l'école.\n                            ")])])]), _vm._v(" "), _c("div", {
-    staticClass: "col-lg-6 pt-4 pt-lg-0"
-  }, [_c("p", [_vm._v("\n                            L'école n'a qu'une option: mettre en place un point d'accès WIFI pour permettre à\n                            ces étudiants d'avoir internet.Gérer plus de 2 000 étudiants est une tâche très delicate pour l'administrateur réseau de l'école,\n                            que ce soit dans le domaine de sécurisation ou dans le domaine de gestion d'accès à ce réseau WIFI\n                        ")]), _vm._v(" "), _c("a", {
-    staticClass: "btn-learn-more",
-    attrs: {
-      href: "#"
-    }
-  }, [_vm._v("En savoir plus")])])])])]), _vm._v(" "), _c("section", {
+  }), _vm._v(" Création d'une application WEB permettant d'administrer\n                                et répartir l'accès internet pour chaque étudiant de l'école.\n                            ")])])]);
+}, function () {
+  var _vm = this,
+      _c = _vm._self._c;
+
+  return _c("section", {
     staticClass: "why-us section-bg",
     attrs: {
       id: "why-us"
@@ -6070,7 +6080,7 @@ var staticRenderFns = [function () {
       "data-aos": "zoom-in",
       "data-aos-delay": "150"
     }
-  }, [_vm._v("\n                         \n                    ")])])])])]);
+  }, [_vm._v("\n                         \n                    ")])])])]);
 }];
 render._withStripped = true;
 
