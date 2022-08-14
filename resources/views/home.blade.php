@@ -97,7 +97,6 @@
       <!-- End Hero -->
       <main id="main">
         <base-component></base-component>
-      </main>
       <!-- End #main -->
 
       <!-- ======= Footer ======= -->

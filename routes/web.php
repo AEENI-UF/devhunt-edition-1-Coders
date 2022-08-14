@@ -2,11 +2,11 @@
 
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\Auth\AuthController;
+use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\ConfigurationController;
 use App\Http\Controllers\EtudiantController;
+use App\Http\Controllers\HomeController;
 use App\Mail\SendEmail;
-use App\Models\Etudiant;
-use App\Models\Niveau;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Route;
@@ -52,11 +52,19 @@ Route::prefix('/authentification')->group(function () {
     });
 });
 
+Route::get('/compte', function(){
+    return view('Admin/compte/index');
+});
 
-Route::get('/dashboard', [DashboardController::class, 'list']);
-Route::get('/list-config', [ConfigurationController::class, 'index'])->name('list-config');
+Route::get('/list-user', [AuthController::class, 'index']);
+
+Route::get('/dashboard',[DashboardController::class,'list']);
+Route::get('/list-config', [ConfigurationController::class,'index'])->name('list-config');
 Route::post('/add-config', [ConfigurationController::class, 'store'])->name('add-config');
 Route::get('/show-config/{id}', [ConfigurationController::class, 'show'])->name('show-config');
 Route::put('/update-config/{id}', [ConfigurationController::class, 'update'])->name('update-config');
 Route::get('/dashboard', [DashboardController::class, 'dashboard']);
 Route::get('/liste', [DashboardController::class, 'liste']);
+
+
+Route::post("contact-us", [HomeController::class, 'contact_us']);
