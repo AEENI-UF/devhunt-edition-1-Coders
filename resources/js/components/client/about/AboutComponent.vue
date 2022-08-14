@@ -12,21 +12,10 @@
                         data-aos="fade-up"
                         data-aos-delay="200"
                     >
-                        <h1>Accès WIFI</h1>
+                        <h1>C'est quoi ?</h1>
                         <h2>
-                            C'est une plateforme d'application web afin de gérer
-                            l'accès à un point d'accès WIFI.
+                            Vous trouverez la déscription du plateforme ici !
                         </h2>
-
-                        <div
-                            class="d-flex justify-content-center justify-content-lg-start"
-                        >
-                            <router-link
-                                to="/about"
-                                class="btn-get-started scrollto"
-                                >Démarrer</router-link
-                            >
-                        </div>
                     </div>
                     <div
                         class="col-lg-6 order-2 order-lg-2 hero-img"
@@ -115,16 +104,7 @@
                                     actuellement.</strong
                                 >
                             </h3>
-                            <p>
-                                En tant qu’école nationale de l’innovation dans
-                                la digitalisation informatique, on a 3 parcours
-                                différents dans cette ecole En tant qu’école
-                                nationale de l’innovation dans la digitalisation
-                                informatique, on a 3 parcours different dans
-                                cette ecole
-                            </p>
                         </div>
-
                         <div class="accordion-list">
                             <ul>
                                 <li>
