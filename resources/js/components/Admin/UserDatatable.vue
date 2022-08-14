@@ -22,11 +22,7 @@
 </template>
 <script>
 import axios from "axios";
-<<<<<<< HEAD
 import UploadFile from './UploadFile.vue';
-=======
-import UploadFile from "./UploadFile.vue";
->>>>>>> 8806eb94b79720f1595d434b6b063f9189664f3a
 export default {
     components: { UploadFile },
     data() {
