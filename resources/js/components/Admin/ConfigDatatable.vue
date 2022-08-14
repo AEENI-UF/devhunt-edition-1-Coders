@@ -1,7 +1,7 @@
 <template>
 
         <v-app>
-                    <div class="text-right">
+          <div class="text-right">
             <v-dialog
             v-model="dialog"
             width="1000"
@@ -13,7 +13,7 @@
                 v-bind="attrs"
                 v-on="on"
                 >
-                Click Me
+                Ajouter
                 </v-btn>
             </template>
 
@@ -29,7 +29,7 @@
                             <v-flex xs12 sm6 md6>
                             <v-text-field
                             xs12 sm6 md6
-                            v-model="editedItem.design_niveau"
+                            v-model="editedItem.forfait"
                             label="Desigation"
                             required
                             :rules="[v => !!v || 'Designation obligatoire']"
@@ -106,30 +106,30 @@ export default{
             forfait: [],
             dialog : false,
             editedItem: {
-                id_niveau: '',
-                design_niveau: '',
+                forfait: '',
+                duree: '',
                 id_config: '',
 
             },
             editedIndex: -1,
             defaultItem: {
-               id_niveau: '',
-                design_niveau: '',
+               forfait: '',
+                duree: '',
                 id_config: '',
             },
             headers:[
 
       {
         text: 'id',
-        value: 'id_niveau',
+        value: 'id_config',
   align: 'left',
         sortable: false,
 
 
       },
-      { text: 'Niveau', value: 'design_niveau' },
-      { text: 'Forfait(en Mo)', value: 'configurations.forfait' },
-       { text: 'Durée(en Seconds)', value: 'configurations.duree' },
+      { text: 'Forfait', value: 'forfait' },
+      { text: 'Duréé', value: 'durée' },
+
         { text: 'Action', value: 'actions', sortable: false  },
             ]
 
@@ -145,13 +145,9 @@ export default{
         }, 300)
       },
 
-        async getAllNiveau() {
-            this.data = await axios
-                .get("/api/niveau")
-                .then((res) => res.data);
-        },
+       
            async getAllConfig() {
-            this.forfait = await axios
+            this.data = await axios
                 .get("/list-config")
                 .then((res) => res.data);
         },
@@ -160,19 +156,19 @@ export default{
             console.log(this.item);
         if (this.$refs.form.validate()) {
         if (this.editedIndex > -1) {
-            axios.put(`/api/niveau/${this.editedItem.id_niveau}`,this.editedItem)
+            axios.put(`/add-config/${this.editedItem.id_config}`,this.editedItem)
             .then(response => {
-            this.getAllNiveau();
+            this.getAllConfig();
             this.close();
                 }).catch(error=>{
                     console.log(error)
              })
         } else {
 
-          axios.post('/api/niveau', this.editedItem)
+          axios.post('/add-config', this.editedItem)
          .then(response => {
 
-            this.getAllNiveau();
+            this.getAllConfig();
             this.close();
                 }).catch(error=>{
                     console.log(error)

@@ -253,11 +253,11 @@
                         <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
                                 href="charts.html" aria-expanded="false"><i class="mdi mdi-brightness-7"></i><span
                                     class="hide-menu">Parametre</span></a></li>
-                       <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
-                                href="/niveau" aria-expanded="false"><i class="mdi mdi-home"></i><span
+                                    <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="/niveau" aria-expanded="false"><i class="mdi mdi-brightness-7"></i><span
                                     class="hide-menu">Niveau</span></a></li>
-                     <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
-                                href="/config" aria-expanded="false"><i class="mdi mdi-hospital"></i><span
+                                    <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="/config" aria-expanded="false"><i class="mdi mdi-home-7"></i><span
                                     class="hide-menu">Configuration</span></a></li>
                          <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
                                 href="/compte" aria-expanded="false"><i class="mdi mdi-account"></i><span
@@ -287,7 +287,7 @@
             </div>
         </div>
         <div class="container"  id="app">
-        <niveau-datatable></niveau-datatable>
+        <config-datatable></config-datatable>
         </div>
     </div>
     <script src="{{ asset('admin/assets/libs/jquery/dist/jquery.min.js')}}"></script>
