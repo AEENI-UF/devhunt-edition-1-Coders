@@ -49,7 +49,7 @@
                     <h2>A propos</h2>
                 </div>
 
-                <div class="row content">
+                <div class="row content text-justify">
                     <div class="col-lg-6">
                         <p>
                             L'Ecole Nationale d'informatique possède à peu près
@@ -61,25 +61,22 @@
                         </p>
                         <ul>
                             <li>
-                                <i class="ri-check-double-line"></i> Mettre en
-                                place un point d'accèss WIFI pour permettre à
-                                ces étudiants d'avoir internet.
+                                <i class="ri-check-double-line"></i>Mise en
+                                place d'un système de gestion de point d'accès
+                                WI-FI
                             </li>
                             <li>
-                                <i class="ri-check-double-line"></i> Gérer plus
-                                de 2000 étudiants est une tâche très délicate
-                                pour l'administrateur réseau de l'école, que ce
-                                soit dans le domaine de
+                                <i class="ri-check-double-line"></i> Gestion
+                                d'une base de données uniques pour les étudiants
                             </li>
                             <li>
-                                <i class="ri-check-double-line"></i> Création
-                                d'une application WEB permettant d'administrer
-                                et répartir l'accès internet pour chaque
-                                étudiant de l'école.
+                                <i class="ri-check-double-line"></i> Gestion des
+                                utilisateurs avec authentification à doubles
+                                facteurs
                             </li>
                         </ul>
                     </div>
-                    <div class="col-lg-6 pt-4 pt-lg-0">
+                    <div class="col-lg-6">
                         <p>
                             L'école n'a qu'une option: mettre en place un point
                             d'accès WIFI pour permettre à ces étudiants d'avoir
