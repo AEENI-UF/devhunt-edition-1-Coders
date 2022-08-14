@@ -43,12 +43,9 @@
                             </div>
                             <div class="row px-3">
                                 <label class="mb-1"
-                                    ><h6 class="mb-0 text-sm"></h6
-                                ></label>
-                                <select
-                                    v-model="id_niveau"
-                                    placeholder="Votre prénoms"
+                                    ><h6 class="mb-0 text-sm">Niveau</h6></label
                                 >
+                                <select v-model="id_niveau">
                                     <option
                                         v-for="level in niveau"
                                         :key="level.id"
@@ -56,6 +53,18 @@
                                     >
                                         {{ level.design_niveau }}
                                     </option>
+                                </select>
+                            </div>
+                            <div class="row px-3">
+                                <label class="mb-1"
+                                    ><h6 class="mb-0 text-sm">Sexe</h6></label
+                                >
+                                <select
+                                    v-model="sexe"
+                                    placeholder="Votre prénoms"
+                                >
+                                    <option value="M">Masculin</option>
+                                    <option value="F">Féminin</option>
                                 </select>
                             </div>
                             <div class="row px-3">
@@ -124,7 +133,7 @@
                             <div class="row px-3">
                                 <label class="mb-1"
                                     ><h6 class="mb-0 text-sm">
-                                        Adresse actuelle
+                                        Télephone
                                     </h6></label
                                 >
                                 <input
@@ -180,6 +189,7 @@ export default {
     data() {
         return {
             matricule: "",
+            id_niveau: "",
             nom: "",
             prenoms: "",
             date_naiss: "",
@@ -191,6 +201,9 @@ export default {
             password: "",
             niveau: [],
         };
+    },
+    mounted() {
+        this.getNiveau();
     },
     methods: {
         async getNiveau() {
@@ -211,6 +224,21 @@ export default {
                 this.email == "" ||
                 this.password == ""
             ) {
+                this.$toast.error(
+                    "Veuillez remplier les champs manquants s'il vous plaît"
+                );
+            } else {
+                const body = new FormData();
+                body.append("matricule", this.matricule);
+                body.append("nom", this.nom);
+                body.append("prenom", this.prenoms);
+                body.append("date_naiss", this.date_naiss);
+                body.append("lieu", this.lieu_naiss);
+                body.append("sexe", this.sexe);
+                body.append("adresse", this.adresse);
+                body.append("tel", this.tel);
+                body.append("email", this.email);
+                body.append("password", this.password);
             }
         },
     },
