@@ -9,5 +9,5 @@ class Configuration extends Model
 {
     use HasFactory;
     protected $fillable = ['duree', 'forfait'];
-    protected $primaryKey = 'id';
+    protected $primaryKey = 'id_config';
 }

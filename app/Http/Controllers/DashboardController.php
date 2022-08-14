@@ -6,10 +6,16 @@ use Illuminate\Http\Request;
 
 class DashboardController extends Controller
 {
-    public function dashboard(){
+    public function __construct()
+    {
+        $this->middleware("auth");
+    }
+    public function dashboard()
+    {
         return view('Admin/index');
     }
-    public function liste(){
+    public function liste()
+    {
         return view('Admin/etudiant/index');
     }
 }

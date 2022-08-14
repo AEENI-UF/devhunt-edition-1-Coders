@@ -1,67 +1,43 @@
 <template>
     <main id="main">
         <!-- ======= Cliens Section ======= -->
-        <section id="cliens" class="cliens section-bg">
+        <section id="cliens" class="cliens">
             <div class="container">
                 <div class="row" data-aos="zoom-in">
                     <div
                         class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center"
                     >
-                        <img
-                            src="akata.gif"
-                            class="img-fluid"
-                            alt=""
-                        />
+                        <img src="akata.gif" class="img-fluid" alt="" />
                     </div>
 
                     <div
                         class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center"
                     >
-                        <img
-                            src="arato.JPG"
-                            class="img-fluid"
-                            alt=""
-                        />
+                        <img src="arato.jpg" class="img-fluid" alt="" />
                     </div>
 
                     <div
                         class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center"
                     >
-                        <img
-                            src="log1.JPG"
-                            class="img-fluid"
-                            alt=""
-                        />
+                        <img src="log1.jpg" class="img-fluid" alt="" />
                     </div>
 
                     <div
                         class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center"
                     >
-                        <img
-                            src="numeri.png"
-                            class="img-fluid"
-                            alt=""
-                        />
+                        <img src="numeri.png" class="img-fluid" alt="" />
                     </div>
 
                     <div
                         class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center"
                     >
-                        <img
-                            src="vilia.png"
-                            class="img-fluid"
-                            alt=""
-                        />
+                        <img src="vilia.png" class="img-fluid" alt="" />
                     </div>
 
                     <div
                         class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center"
                     >
-                        <img
-                            src="WeCours.JPG"
-                            class="img-fluid"
-                            alt=""
-                        />
+                        <img src="WeCours.jpg" class="img-fluid" alt="" />
                     </div>
                 </div>
             </div>
