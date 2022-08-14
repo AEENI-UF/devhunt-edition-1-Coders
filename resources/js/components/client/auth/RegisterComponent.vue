@@ -158,6 +158,7 @@
 </template>
 
 <script>
+import axios from "axios";
 export default {
     data() {
         return {
@@ -171,9 +172,15 @@ export default {
             tel: "",
             email: "",
             password: "",
+            niveau: [],
         };
     },
     methods: {
+        async getNiveau() {
+            this.niveau = await axios
+                .get("/api/niveau")
+                .then((res) => res.data);
+        },
         async register() {
             if (
                 this.matricule == "" ||
@@ -187,7 +194,6 @@ export default {
                 this.email == "" ||
                 this.password == ""
             ) {
-                
             }
         },
     },
