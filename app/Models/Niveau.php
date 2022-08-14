@@ -16,4 +16,7 @@ class Niveau extends Model
     {
         return $this->hasMany(Etudiant::class, 'id_niveau');
     }
+     public function configurations(){
+        return $this->belongsTo(Configuration::class, 'id_config');
+     }
 }

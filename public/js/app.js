@@ -5901,7 +5901,7 @@ var staticRenderFns = [function () {
   }, [_c("img", {
     staticClass: "img-fluid",
     attrs: {
-      src: "assets/img/clients/client-2.png",
+      src: "arato.JPG",
       alt: ""
     }
   })]), _vm._v(" "), _c("div", {
@@ -5909,7 +5909,7 @@ var staticRenderFns = [function () {
   }, [_c("img", {
     staticClass: "img-fluid",
     attrs: {
-      src: "assets/img/clients/client-3.png",
+      src: "log1.JPG",
       alt: ""
     }
   })]), _vm._v(" "), _c("div", {
@@ -5917,7 +5917,7 @@ var staticRenderFns = [function () {
   }, [_c("img", {
     staticClass: "img-fluid",
     attrs: {
-      src: "assets/img/clients/client-4.png",
+      src: "numeri.png",
       alt: ""
     }
   })]), _vm._v(" "), _c("div", {
@@ -5925,7 +5925,7 @@ var staticRenderFns = [function () {
   }, [_c("img", {
     staticClass: "img-fluid",
     attrs: {
-      src: "assets/img/clients/client-5.png",
+      src: "vilia.png",
       alt: ""
     }
   })]), _vm._v(" "), _c("div", {
@@ -5933,7 +5933,7 @@ var staticRenderFns = [function () {
   }, [_c("img", {
     staticClass: "img-fluid",
     attrs: {
-      src: "assets/img/clients/client-6.png",
+      src: "WeCours.JPG",
       alt: ""
     }
   })])])])]);
