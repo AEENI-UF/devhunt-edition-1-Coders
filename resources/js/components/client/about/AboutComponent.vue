@@ -88,13 +88,6 @@
             <div class="container-fluid" data-aos="fade-up">
                 <div class="row">
                     <div
-                        class="col-lg-5 d-flex flex-column justify-content-center align-items-stretch order-2 order-lg-1 img"
-                        style="background-image: url('assets/img/why-us.png')"
-                        data-aos="zoom-in"
-                        data-aos-delay="150"
-                    ></div>
-
-                    <div
                         class="col-lg-5 align-items-stretch order-1 order-lg-1 img"
                         style="background-image: url('assets/img/why-us.png')"
                         data-aos="zoom-in"

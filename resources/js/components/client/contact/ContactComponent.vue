@@ -35,9 +35,7 @@
         <main id="main">
             <!-- ======= Contact Section ======= -->
             <section id="contact" class="contact">
-
                 <div class="container" data-aos="fade-up">
-
                     <div class="section-title">
                         <h2>Contact</h2>
 
@@ -50,7 +48,6 @@
                             </h3>
                         </strong>
                     </div>
-
 
                     <div class="row">
                         <div class="col-lg-5 d-flex align-items-stretch">
@@ -70,12 +67,6 @@
                                     <p>eni@eni-univ.fianar.mg</p>
                                 </div>
 
-
-                          <div class="phone">
-                                <i class="bi bi-phone"></i>
-                                <h4>Contact:</h4>
-                                <p>+26134 05 733 36/ +26133 42 302 02</p>
-
                                 <div class="phone">
                                     <i class="bi bi-phone"></i>
                                     <h4>Contact:</h4>
@@ -93,7 +84,6 @@
                                 ></div>
                             </div>
                         </div>
-
                         <div
                             class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch"
                         >
