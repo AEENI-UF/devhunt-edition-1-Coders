@@ -15,12 +15,13 @@ class CreateEtudiantsTable extends Migration
     {
         Schema::create('etudiants', function (Blueprint $table) {
             $table->string('matricule');
-            $table->string('nom');
-            $table->string('prenoms');
-            $table->string('date_naiss');
-            $table->string('lieu_naiss');
+            $table->string('nom')->nullable();
+            $table->string('prenoms')->nullable();
+            $table->string('date_naiss')->nullable();
+            $table->string('lieu_naiss')->nullable();
             $table->string('sexe')->nullable();
-            $table->string('adresse');
+
+            $table->string('adresse')->nullable();
             $table->string('cin')->nullable();
             $table->string('tel');
             $table->string('password');

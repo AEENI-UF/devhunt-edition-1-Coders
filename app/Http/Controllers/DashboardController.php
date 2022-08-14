@@ -6,7 +6,10 @@ use Illuminate\Http\Request;
 
 class DashboardController extends Controller
 {
-    public function list(){
-        return view('welcome');
+    public function dashboard(){
+        return view('Admin/index');
+    }
+    public function liste(){
+        return view('Admin/etudiant/index');
     }
 }

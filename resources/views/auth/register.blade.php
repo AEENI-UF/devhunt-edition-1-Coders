@@ -75,60 +75,48 @@
     </div>
 </div> -->
 
-<div class="content">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <img src="{{asset('log/images/undraw_remotely_2j6y.svg')}}" alt="Image" class="img-fluid">
-        </div>
-        <div class="col-md-6 contents">
-          <div class="row justify-content-center">
-            <div class="col-md-8">
-              <div class="mb-4">
-              <h3> <a href="#">Se connecter</a>  | <a href="#">S'inscrire</a> </h3>
-              <p class="mb-4">Lorem ipsum dolor sit amet elit. Sapiente sit aut eos consectetur adipisicing.</p>
+<section class="vh-50" style="background-color: #D2D2CF;">
+  <div class="container py-4 h-50">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col col-xl-10">
+        <div class="card" style="border-radius: 1rem;">
+          <div class="row g-0">
+            <div class="col-md-6 col-lg-5 d-none d-md-block">
+              <img src="assets/img/why-us.png"
+                alt="login form" class="img-fluid" style="border-radius: 1rem 0 0 1rem;" />
             </div>
-            <form action="#" method="post">
-              <div class="form-group first">
-                <label for="username">Username</label>
-                <input type="text" class="form-control" id="username">
+            <div class="col-md-6 col-lg-6 d-flex align-items-center">
+              <div class="card-body p-4 p-lg-5 text-black">
 
-              </div>
-              <div class="form-group last mb-4">
-                <label for="password">Password</label>
-                <input type="password" class="form-control" id="password">
-                 
-              </div>
-              
-              <div class="d-flex mb-5 align-items-center">
-                <label class="control control--checkbox mb-0"><span class="caption">Remember me</span>
-                  <input type="checkbox" checked="checked"/>
-                  <div class="control__indicator"></div>
-                </label>
-                <span class="ml-auto"><a href="#" class="forgot-pass">Forgot Password</a></span> 
-              </div>
-              <input type="submit" value="Log In" class="btn btn-block btn-primary">
+              <form method="POST" action="{{ route('register') }}">
+                        @csrf
 
-              <span class="d-block text-left my-4 text-muted">&mdash; or login with &mdash;</span>
-              
-              <div class="social-login">
-                <a href="#" class="facebook">
-                  <span class="icon-facebook mr-3"></span> 
-                </a>
-                <a href="#" class="twitter">
-                  <span class="icon-twitter mr-3"></span> 
-                </a>
-                <a href="#" class="google">
-                  <span class="icon-google mr-3"></span> 
-                </a>
-              </div>
-            </form>
-            </div>
-          </div>
-          
-        </div>
-        
-      </div>
-    </div>
-  </div>
+                  <h5 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">S'inscrire dans votre compte</h5>
+
+                  <div class="form-outline mb-3">
+                  <label for="name" class="col-md-4 col-form-label text-md-end">{{ __('Name') }}</label>
+                    <input id="name" type="name" class="form-control @error('name') is-invalid @enderror"  class="form-control form-control-lg" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus />
+                    
+                    <label for="email" class="col-md-4 col-form-label text-md-end">{{ __('Email Address') }}</label>
+                    <input id="email" type="email" class="form-control @error('email') is-invalid @enderror"  class="form-control form-control-lg" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus />
+                  </div>
+
+
+                  <div class="form-outline mb-3">
+                  <label for="password" class="col-md-4 col-form-label text-md-end">{{ __('Password') }}</label>
+                    <input id="password" type="password" class="form-control @error('password') is-invalid @enderror"  class="form-control form-control-lg" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus />
+                   
+                    <label for="password-confirm" class="col-md-4 col-form-label text-md-end">{{ __('Confirm Password') }}</label>
+                    <input id="password-confirm" type="password" class="form-control @error('password') is-invalid @enderror"  class="form-control form-control-lg" name="password" value="{{ old('password') }}" required autocomplete="password" autofocus />
+                  </div>
+
+                  <div class="pt-2 mb-3">
+                    <button class="btn btn-secondary btn-lg btn-block" type="submit"> {{ __('Register') }}</button>
+                    
+                </div>
+                </form>
+
+
+</section>
 @endsection
+

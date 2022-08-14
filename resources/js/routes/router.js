@@ -7,7 +7,7 @@ const routes = new VueRouter({
     mode: "history",
     routes: [
         {
-            path: "/home",
+            path: "/",
             component: require("./../components/ContentComponent.vue").default,
         },
         {

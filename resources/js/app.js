@@ -22,6 +22,8 @@ window.Vue = require("vue").default;
 
 // const files = require.context('./', true, /\.vue$/i)
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
+import DataTable from 'laravel-vue-datatable';
+Vue.use(DataTable);
 
 Vue.use(VueToast);
 Vue.component(
@@ -37,6 +39,10 @@ Vue.component(
 Vue.component(
     "base-component",
     require("./components/BaseComponent.vue").default
+);
+Vue.component(
+    "user-datatable",
+    require("./components/Admin/UserDatatable.vue").default
 );
 /**
  * Next, we will create a fresh Vue application instance and attach it to

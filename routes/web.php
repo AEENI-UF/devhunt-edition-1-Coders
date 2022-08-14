@@ -1,4 +1,5 @@
 <?php
+
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\Auth\AuthController;
 use App\Http\Controllers\ConfigurationController;
@@ -18,13 +19,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 
 // Route::group('/authentification', function () {
@@ -54,3 +55,5 @@ Route::get('/list-config', [ConfigurationController::class,'index'])->name('list
 Route::post('/add-config', [ConfigurationController::class, 'store'])->name('add-config');
 Route::get('/show-config/{id}', [ConfigurationController::class, 'show'])->name('show-config');
 Route::put('/update-config/{id}', [ConfigurationController::class, 'update'])->name('update-config');
+Route::get('/dashboard', [DashboardController::class, 'dashboard']);
+Route::get('/liste', [DashboardController::class, 'liste']);

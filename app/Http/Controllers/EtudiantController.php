@@ -9,6 +9,8 @@ use Illuminate\Support\Facades\DB;
 
 class EtudiantController extends Controller
 {
+
+
     /**
      * Display a listing of the resource.
      *
@@ -59,20 +61,25 @@ class EtudiantController extends Controller
                         'password',
                     ];
                     $cellIterator = $row->getCellIterator();
-                    $cellIterator->setIterateOnlyExistingCells(FALSE); // This loops through all cells,
+                    $cellIterator->setIterateOnlyExistingCells(TRUE); // This loops through all cells,
                     //    even if a cell value is not set.
                     // For 'TRUE', we loop through cells
                     //    only when their value is set.
                     // If this method is not called,
                     //    the default value is 'false'.
                     foreach ($cellIterator as $cell) {
-                        $dataToInsert[$labels[$looper]] = $cell->getValue();
-                        $looper++;
+                        if ($cell->getValue() != "") {
+                            $dataToInsert[$labels[$looper]] = $cell->getValue();
+                            $looper++;
+                        }
                     }
                     // return $dataToInsert;
                     $etudiant = new Etudiant($dataToInsert);
-                    $etudiant->id_niveau = 1;
+                    $etudiant->id_niveau = $request->input('id_niveau');
+                    // var_dump($etudiant);
                     $etudiant->save();
+                    $looper = 0;
+                    // return;
                 } else {
                     $isHeader = 1;
                 }
@@ -88,52 +95,47 @@ class EtudiantController extends Controller
             //Read the contents of the uploaded file
             while (($filedata = fgetcsv($file, 1000, ",")) !== FALSE) {
                 $num = count($filedata);
-                $importData_arr[] = $filedata;
                 // Skip first row (Remove below comment if you want to skip the first row)
                 if ($i == 0) {
                     $i++;
                     continue;
                 }
-                // for ($c = 0; $c < $num; $c++) {
-                //     $importData_arr[$i][] = $filedata[$c];
-                // }
-                // $i++;
+                for ($c = 0; $c < $num; $c++) {
+                    $importData_arr[$i][] = $filedata[$c];
+                }
+                $i++;
             }
             fclose($file); //Close after reading
             $j = 0;
-            $arrayForData = [];
-            // return response()->json($importData_arr);
             foreach ($importData_arr as $importData) {
-                $arrayForData[] = $importData;
+
                 $j++;
                 try {
-                    //     DB::beginTransaction();
-                    //     Etudiant::create([
-                    //         'matricule' => $importData[1],
-                    //         'nom' => $importData[2],
-                    //         'prenoms' => $importData[3],
-                    //         'sexe' => $importData[4],
-                    //         'date_naiss' => $importData[5],
-                    //         'lieu_naiss' => $importData[6],
-                    //         'cin' => $importData[7],
-                    //         'tel' => $importData[8],
-                    //         'adresse' => $importData[9],
-                    //         'email' => $importData[10],
-                    //         'password' => $importData[11],
+                    DB::beginTransaction();
+                    Etudiant::create([
+                        'matricule' => $importData[1],
+                        'nom' => $importData[2],
+                        'prenoms' => $importData[3],
+                        'sexe' => $importData[4],
+                        'date_naiss' => $importData[5],
+                        'lieu_naiss' => $importData[6],
+                        'cin' => $importData[7],
+                        'tel' => $importData[8],
+                        'adresse' => $importData[9],
+                        'email' => $importData[10],
+                        'password' => $importData[11],
 
 
-                    //     ]);
-                    //     DB::commit();
+                    ]);
+                    DB::commit();
                 } catch (\Exception $e) {
 
                     DB::rollBack();
                 }
             }
-            // return response()->json([
-            //     "message" => $arrayForData
-            // ]);
             return response()->json([
                 'message' => "$j records successfully uploaded",
+
             ]);
         } else {
             //no file was uploaded
@@ -162,19 +164,12 @@ class EtudiantController extends Controller
      */
     public function show($id)
     {
-        //
+        $etudiant = Etudiant::where('matricule',$id)->get();
+
+         return response()->json($etudiant,200);
+
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function edit($id)
-    {
-        //
-    }
 
     /**
      * Update the specified resource in storage.
@@ -185,7 +180,10 @@ class EtudiantController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $etudiant = Etudiant::find($id);
+        $etudiant->update($request->all());
+
+        return response()->json($etudiant,200);
     }
 
     /**
@@ -196,6 +194,9 @@ class EtudiantController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $etudiant = Etudiant::find($id);
+        $etudiant->delete();
+
+        return response()->json($etudiant,200);
     }
 }
