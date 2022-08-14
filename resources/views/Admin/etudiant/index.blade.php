@@ -278,7 +278,11 @@
             </div>
         </div>
         <div class="container"  id="app">
+<<<<<<< HEAD
+             <user-datatable></user-datatable>
+=======
             <user-datatable></user-datatable>
+>>>>>>> 8806eb94b79720f1595d434b6b063f9189664f3a
         </div>
     </div>
     <script src="{{ asset('admin/assets/libs/jquery/dist/jquery.min.js')}}"></script>
