@@ -29,7 +29,7 @@
                   </div>
 
                   <div class="pt-1 mb-4">
-                    <button class="btn btn-secondary btn-lg btn-block" type="submit"> {{ __('Se connecter') }}</button>
+                    <button class="btn btn-primary btn-lg btn-block" type="submit"> {{ __('Se connecter') }}</button>
                   </div>
 
                   @if (Route::has('password.request'))
@@ -41,7 +41,7 @@
                 </form>
               </div>
             </div>
-            <div></div>
+            <div>
 </div>
 </section>
 </div>
