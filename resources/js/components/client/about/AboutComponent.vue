@@ -102,13 +102,20 @@
             <div class="container-fluid" data-aos="fade-up">
                 <div class="row">
                     <div
-                        class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch order-2 order-lg-1"
+                        class="col-lg-5 align-items-stretch order-1 order-lg-1 img"
+                        style="background-image: url('assets/img/why-us.png')"
+                        data-aos="zoom-in"
+                        data-aos-delay="150"
+                    ></div>
+                    <div
+                        class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch order-2 order-lg-2"
                     >
                         <div class="content">
                             <h3>
                                 L’Ecole Nationale d’Informatique possède à
                                 <strong
-                                    >peu près 2 000 étudiants dans son effectif actuellement.</strong
+                                    >peu près 2 000 étudiants dans son effectif
+                                    actuellement.</strong
                                 >
                             </h3>
                             <p>
@@ -199,15 +206,6 @@
                                 </li>
                             </ul>
                         </div>
-                    </div>
-
-                    <div
-                        class="col-lg-5 align-items-stretch order-1 order-lg-2 img"
-                        style="background-image: url('assets/img/why-us.png')"
-                        data-aos="zoom-in"
-                        data-aos-delay="150"
-                    >
-                        &nbsp;
                     </div>
                 </div>
             </div>
