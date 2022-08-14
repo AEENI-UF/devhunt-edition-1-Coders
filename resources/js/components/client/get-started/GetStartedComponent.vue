@@ -6,9 +6,7 @@
                 <div class="section-title">
                     <h2>Les avantages</h2>
                     <p>
-                        Quelques fonctionnalités pourraient être données des
-                        solutions adéquates aux circonstances que l'on a prévue
-                        comme:.
+                        Quelques fonctionnalités qui statisferont vos besoins :
                     </p>
                 </div>
 
