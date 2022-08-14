@@ -179,9 +179,12 @@ export default {
         var map = new mapboxgl.Map({
             container: "map",
             style: "mapbox://styles/mapbox/streets-v11",
-            center: [47.0929951, -21.4552835],
-            zoom: 17,
+            center: [47.09337, -21.45493],
+            zoom: 15,
         });
+        const marker = new mapboxgl.Marker()
+            .setLngLat([47.09337, -21.45493])
+            .addTo(map);
     },
     data() {
         return {
