@@ -4,7 +4,7 @@
             <v-dialog v-model="dialog" width="1000">
                 <template v-slot:activator="{ on, attrs }">
                     <v-btn color="red lighten-2" dark v-bind="attrs" v-on="on">
-                        Ajouter
+                        Ajouter Configuration
                     </v-btn>
                 </template>
 
@@ -23,12 +23,12 @@
                                             sm6
                                             md6
                                             v-model="editedItem.forfait"
-                                            label="Desigation"
+                                            label="Forfait"
                                             required
                                             :rules="[
                                                 (v) =>
                                                     !!v ||
-                                                    'Designation obligatoire',
+                                                    'Forfait obligatoire',
                                             ]"
                                         ></v-text-field>
                                     </v-flex>
@@ -37,16 +37,44 @@
                                             xs12
                                             sm6
                                             md6
-                                            :items="forfait"
-                                            item-value="id_config"
-                                            item-text="forfait"
-                                            v-model="editedItem.id_config"
-                                            label="Forfait"
+                                            :items="typeforfait"
+                                            v-model="editedItem.typeforfait"
+                                            label="Type Forfait"
                                             required
                                             :rules="[
                                                 (v) =>
                                                     !!v ||
-                                                    'Forfait obligatoire',
+                                                    'Type Forfait obligatoire',
+                                            ]"
+                                        ></v-select>
+                                    </v-flex>
+                                    <v-flex xs12 sm6 md6>
+                                        <v-text-field
+                                            xs12
+                                            sm6
+                                            md6
+                                            v-model="editedItem.duree"
+                                            label="Durée"
+                                            required
+                                            :rules="[
+                                                (v) =>
+                                                    !!v || 'Durée obligatoire',
+                                            ]"
+                                        ></v-text-field>
+                                    </v-flex>
+                                    <v-flex xs12 sm6 md6>
+                                        <v-select
+                                            xs12
+                                            sm6
+                                            md6
+                                            :items="typeduree"
+                                            v-model="editedItem.typeduree"
+                                            label="Type Durée"
+                                            required
+                                            :rules="[
+                                                (v) =>
+                                                    !!v ||
+                                                    'Type Durée obligatoire',
                                             ]"
                                         ></v-select>
                                     </v-flex>
@@ -95,17 +123,23 @@ export default {
             search: "",
             data: [],
             forfait: [],
+            typeforfait: ["Go", "Mo"],
+            typeduree: ["Jour", "Heure", "Minute"],
             dialog: false,
             editedItem: {
                 forfait: "",
                 duree: "",
                 id_config: "",
+                typeforfait: "",
+                typeduree: "",
             },
             editedIndex: -1,
             defaultItem: {
                 forfait: "",
                 duree: "",
                 id_config: "",
+                typeforfait: "",
+                typeduree: "",
             },
             headers: [
                 {
@@ -114,8 +148,8 @@ export default {
                     align: "left",
                     sortable: false,
                 },
-                { text: "Forfait", value: "forfait" },
-                { text: "Duréé", value: "durée" },
+                { text: "Forfait(en Mo)", value: "forfait" },
+                { text: "Durée (en Second)", value: "duree" },
 
                 { text: "Action", value: "actions", sortable: false },
             ],
@@ -179,12 +213,11 @@ export default {
     computed: {
         formTitle() {
             return this.editedIndex === -1
-                ? "Ajout d'un niveau"
-                : "Modifier un niveau";
+                ? "Ajout d'un Configuration"
+                : "Modifier un Configuration";
         },
     },
     async mounted() {
-        this.getAllNiveau();
         this.getAllConfig();
     },
 };
