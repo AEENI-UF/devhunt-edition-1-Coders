@@ -29,7 +29,7 @@
                   </div>
 
                   <div class="pt-1 mb-4">
-                    <button class="btn btn-secondary btn-lg btn-block" type="submit"> {{ __('Se connecter') }}</button>
+                    <button class="btn btn-primary btn-lg btn-block" type="submit"> {{ __('Se connecter') }}</button>
                   </div>
 
                   <a class="small text-muted" href="#!">Oublier votre mot de passe?</a>
@@ -37,7 +37,7 @@
                 </form>
               </div>
             </div>
-            <div></div>
+            <div>
 </div>
 </section>
 </div>

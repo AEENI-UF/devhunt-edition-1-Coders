@@ -110,8 +110,8 @@
                     <input id="password-confirm" type="password" class="form-control @error('password') is-invalid @enderror"  class="form-control form-control-lg" name="password" value="{{ old('password') }}" required autocomplete="password" autofocus />
                   </div>
 
-                  <div class="pt-2 mb-3">
-                    <button class="btn btn-secondary btn-lg btn-block" type="submit"> {{ __('Register') }}</button>
+                  <div class="pt-1 mb-3">
+                    <button class="btn btn-primary btn-lg btn-block" type="submit"> {{ __('Register') }}</button>
                     
                 </div>
                 </form>
