@@ -136,7 +136,10 @@ export default {
             body.append("name", this.name);
             body.append("object", this.object);
 
-            await axios.post("/contact-us", body);
+            await axios
+                .post("/contact-us", body)
+                .then((data) => this.$toast.success("Message envoyée"))
+                .catch((e) => this.$toast.error(e.response.data.message));
         },
     },
 };
