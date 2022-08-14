@@ -72,6 +72,16 @@
                                     <h4>Contact:</h4>
                                     <p>+261 34 05 733 36/ +261 33 42 302 02</p>
                                 </div>
+                                <div
+                                    id="map"
+                                    frameborder="0"
+                                    style="
+                                        border: 0;
+                                        width: 100%;
+                                        height: 290px;
+                                    "
+                                    allowfullscreen
+                                ></div>
                             </div>
                         </div>
 
@@ -161,7 +171,18 @@
 
 <script>
 import axios from "axios";
+var mapboxgl = require("mapbox-gl/dist/mapbox-gl.js");
 export default {
+    async mounted() {
+        mapboxgl.accessToken =
+            "pk.eyJ1Ijoia2xheXJtb250IiwiYSI6ImNsNnRlN2RjbDBpa2MzY3FqNm92aXczZHQifQ.THDy3h9Kjk8ooh3hygBmzA";
+        var map = new mapboxgl.Map({
+            container: "map",
+            style: "mapbox://styles/mapbox/streets-v11",
+            center: [47.0929951, -21.4552835],
+            zoom: 17,
+        });
+    },
     data() {
         return {
             sending: false,
