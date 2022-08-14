@@ -102,8 +102,12 @@
                     >
                         <div class="box">
                             <h3>Se connecter sur votre compte</h3>
-                            <span>Vous avez déjà un compte étudiant ?</span>
-                            <a href="/authentification/etudiant" class="buy-btn"
+                            <div class="m-3">
+                                Vous avez déjà un compte étudiant ?
+                            </div>
+                            <a
+                                href="/authentification/etudiant"
+                                class="buy-btn btn-sm"
                                 >Se connecter</a
                             >
                         </div>
@@ -114,14 +118,14 @@
                         data-aos-delay="300"
                     >
                         <div class="box">
-                            <h3>S'inscrire sur votre compte</h3>
-                            <span
-                                >Inscrivez-vous pour béneficier des offres de
-                                l'école avec la connexion internet</span
-                            >
+                            <h3>S'inscrire sur le plateforme</h3>
+                            <div class="m-3">
+                                Inscrivez-vous pour béneficier des offres de
+                                l'école avec la connexion internet
+                            </div>
                             <a
                                 href="/authentification/inscription"
-                                class="buy-btn"
+                                class="buy-btn btn-sm"
                                 >S'inscrire</a
                             >
                         </div>
