@@ -1,6 +1,7 @@
 <?php
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\Auth\AuthController;
+use App\Http\Controllers\ConfigurationController;
 use App\Mail\SendEmail;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Mail;
@@ -49,3 +50,7 @@ Route::prefix('/authentification')->group(function () {
 
 
 Route::get('/dashboard',[DashboardController::class,'list']);
+Route::get('/list-config', [ConfigurationController::class,'index'])->name('list-config');
+Route::post('/add-config', [ConfigurationController::class, 'store'])->name('add-config');
+Route::get('/show-config/{id}', [ConfigurationController::class, 'show'])->name('show-config');
+Route::put('/update-config/{id}', [ConfigurationController::class, 'update'])->name('update-config');
