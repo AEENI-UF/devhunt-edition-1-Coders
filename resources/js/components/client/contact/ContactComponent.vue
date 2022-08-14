@@ -1,33 +1,17 @@
 <template>
     <main id="main">
 
-        <!-- ======= Contact Section ======= -->
-        <section id="contact" class="contact">
-            <div class="container" data-aos="fade-up">
-                <div class="section-title">
-                    <h2>Contact</h2>
-                    <p>
-                        "La pépinière des élites informaticiennes Malgache." 
-                    </p>
-                </div>
+
         <v-app>
             <!-- ======= Contact Section ======= -->
             <section id="contact" class="contact">
+
                 <div class="container" data-aos="fade-up">
+
                     <div class="section-title">
                         <h2>Contact</h2>
                         <p>
-                            ENI Fianarantsoa est une école de renom se
-                            spécialiser en informatique à Madagascar. Dortoirs
-                            disponibles pour les étudiants de l'établissement...
-                            <br />
-                            ECOLE NATIONALE D'INFORMATIQUE.
-                            <strong>
-                                <i
-                                    >La pépinière des élites informaticiennes
-                                    Malgache.</i
-                                >
-                            </strong>
+                            "La pépinière des élites informaticiennes Malgache." 
                         </p>
                     </div>
 

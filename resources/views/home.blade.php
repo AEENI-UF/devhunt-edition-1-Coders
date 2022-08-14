@@ -62,6 +62,40 @@
     <menu-component></menu-component>
 
       <!-- ======= Hero Section ======= -->
+      <section id="hero" class="d-flex align-items-center">
+        <div class="container">
+          <div class="row">
+            <div
+              class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+
+              <h1>Accès WIFI</h1>
+              <h2>
+                C'est une plateforme d'application web afin de gérer l'accès à un point d'accès WIFI.
+              </h2>
+
+              <div class="d-flex justify-content-center justify-content-lg-start">
+                <router-link to="/" class="btn-get-started scrollto">Démarrer</router-link>
+              </div>
+            </div>
+            <div
+              class="col-lg-6 order-1 order-lg-2 hero-img"
+              data-aos="zoom-in"
+              data-aos-delay="200"
+            >
+              <img
+                src="assets/img/hero-img.png"
+                class="img-fluid animated"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Hero -->
+      <main id="main">
         <base-component></base-component>
       <!-- End #main -->
 
