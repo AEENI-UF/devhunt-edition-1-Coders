@@ -5996,11 +5996,11 @@ var staticRenderFns = [function () {
     staticClass: "col-lg-6"
   }, [_c("p", [_vm._v("\n                            L'Ecole Nationale d'informatique possède à peu près 2000 étudiants dans\n                            son effectif actuellement. En tant qu'école nationale de l'innovation dans la digitalisation informatique,\n                            avoir une connexion internet est un atout pour chaque étudiant dans cette école.\n                        ")]), _vm._v(" "), _c("ul", [_c("li", [_c("i", {
     staticClass: "ri-check-double-line"
-  }), _vm._v(" Mettre en place un\n                                point d'accèss WIFI pour permettre à ces étudiants d'avoir internet.\n                            ")]), _vm._v(" "), _c("li", [_c("i", {
+  }), _vm._v(" Mise en place  d'un\n                                système de gestion d'accès à un point d'accès Wi-Fi pour permettre à ces étudiants d'avoir internet.\n                            ")]), _vm._v(" "), _c("li", [_c("i", {
     staticClass: "ri-check-double-line"
-  }), _vm._v(" Gérer plus de 2000 étudiants est une tâche\n                                très délicate pour l'administrateur réseau de l'école, que ce soit dans le domaine de\n\n                            ")]), _vm._v(" "), _c("li", [_c("i", {
+  }), _vm._v(" Gestion d'une base de données uniques afin d'acceuillir \n                                plus de 2000 étudiants avec de sécurisation fiable.\n\n                            ")]), _vm._v(" "), _c("li", [_c("i", {
     staticClass: "ri-check-double-line"
-  }), _vm._v(" Création d'une application WEB permettant d'administrer\n                                et répartir l'accès internet pour chaque étudiant de l'école.\n                            ")])])]);
+  }), _vm._v(" Gestion des utilisateurs et mise en place d'une page d'acceuil\n                                dans laquelle chaque etudiant pourra y accéder à ses propres comptes.\n                            ")])])]);
 }, function () {
   var _vm = this,
       _c = _vm._self._c;
@@ -6126,7 +6126,7 @@ var staticRenderFns = [function () {
     }
   }, [_c("div", {
     staticClass: "section-title"
-  }, [_c("h2", [_vm._v("Contact")]), _vm._v(" "), _c("p", [_vm._v("\n                  ENI Fianarantsoa est une école de rénom se spécialiser en informatique à Madagascar. "), _c("br"), _vm._v("\n                  ECOLE NATIONALE D'INFORMATIQUE. "), _c("strong", [_c("i", [_vm._v("La pépinière des élites informaticiennes Malgache.")])])])]), _vm._v(" "), _c("div", {
+  }, [_c("h2", [_vm._v("Contact")]), _vm._v(" "), _c("p", [_vm._v('\n                    "La pépinière des élites informaticiennes Malgache." \n                ')])]), _vm._v(" "), _c("div", {
     staticClass: "row"
   }, [_c("div", {
     staticClass: "col-lg-5 d-flex align-items-stretch"
@@ -6144,7 +6144,7 @@ var staticRenderFns = [function () {
     staticClass: "phone"
   }, [_c("i", {
     staticClass: "bi bi-phone"
-  }), _vm._v(" "), _c("h4", [_vm._v("Contact:")]), _vm._v(" "), _c("p", [_vm._v("034 05 733 36/033 42 302 02")])])])]), _vm._v(" "), _c("div", {
+  }), _vm._v(" "), _c("h4", [_vm._v("Contact:")]), _vm._v(" "), _c("p", [_vm._v("+26134 05 733 36/ +26133 42 302 02")])])])]), _vm._v(" "), _c("div", {
     staticClass: "col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch"
   }, [_c("form", {
     staticClass: "php-email-form",
@@ -6349,9 +6349,9 @@ var staticRenderFns = [function () {
     staticClass: "container footer-bottom clearfix"
   }, [_c("div", {
     staticClass: "copyright"
-  }, [_vm._v("\n            © Copyright "), _c("strong", [_c("span", [_vm._v("ENI")])]), _vm._v(". Tout Droit réservé\n        ")]), _vm._v(" "), _c("div", {
+  }, [_vm._v("\n            © Copyright "), _c("strong", [_c("span", [_vm._v("Arsha")])]), _vm._v(". All right reserved\n        ")]), _vm._v(" "), _c("div", {
     staticClass: "credits"
-  }, [_vm._v("\n            Designé par\n            "), _c("a", {
+  }, [_vm._v("\n            Designed by\n            "), _c("a", {
     attrs: {
       href: "https://bootstrapmade.com/"
     }

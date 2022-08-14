@@ -16,17 +16,17 @@
                         </p>
                         <ul>
                             <li>
-                                <i class="ri-check-double-line"></i> Mettre en place un
-                                point d'accèss WIFI pour permettre à ces étudiants d'avoir internet.
+                                <i class="ri-check-double-line"></i> Mise en place  d'un
+                                système de gestion d'accès à un point d'accès Wi-Fi pour permettre à ces étudiants d'avoir internet.
                             </li>
                             <li>
-                                <i class="ri-check-double-line"></i> Gérer plus de 2000 étudiants est une tâche
-                                très délicate pour l'administrateur réseau de l'école, que ce soit dans le domaine de
+                                <i class="ri-check-double-line"></i> Gestion d'une base de données uniques afin d'acceuillir 
+                                plus de 2000 étudiants avec de sécurisation fiable.
 
                             </li>
                             <li>
-                                <i class="ri-check-double-line"></i> Création d'une application WEB permettant d'administrer
-                                et répartir l'accès internet pour chaque étudiant de l'école.
+                                <i class="ri-check-double-line"></i> Gestion des utilisateurs et mise en place d'une page d'acceuil
+                                dans laquelle chaque etudiant pourra y accéder à ses propres comptes.
                             </li>
                         </ul>
                     </div>
@@ -63,7 +63,8 @@
                                 <strong
 
                                     >peu près 2 000 étudiants dans son
-effectif actuel.</strong>
+effectif actuel.</strong
+>
                             </h3>
                             <p>
                                 En tant qu’école nationale de l’innovation dans la digitalisation informatique,

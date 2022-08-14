@@ -6,8 +6,7 @@
                 <div class="section-title">
                     <h2>Contact</h2>
                     <p>
-                      ENI Fianarantsoa est une école de rénom se spécialiser en informatique à Madagascar. <br>
-                      ECOLE NATIONALE D'INFORMATIQUE. <strong> <i>La pépinière des élites informaticiennes Malgache.</i> </strong>
+                        "La pépinière des élites informaticiennes Malgache." 
                     </p>
                 </div>
 
@@ -29,7 +28,7 @@
                             <div class="phone">
                                 <i class="bi bi-phone"></i>
                                 <h4>Contact:</h4>
-                                <p>034 05 733 36/033 42 302 02</p>
+                                <p>+26134 05 733 36/ +26133 42 302 02</p>
                             </div>
                         </div>
                     </div>
