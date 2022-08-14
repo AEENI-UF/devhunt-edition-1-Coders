@@ -41,7 +41,7 @@ class ConfigurationController extends Controller
     }
     
     public function Timeconfig($val,$type_val){
-        $tab_val = array("day", "hour", "minute"); 
+        $tab_val = array("Jour", "Heure", "Minute"); 
         if (!(in_array($type_val, $tab_val))) 
         return 0;
         $tab = array_flip($tab_val); 
