@@ -19,11 +19,13 @@ class ConfigurationController extends Controller
             'duree' => 'required',
             'typeduree' => 'required',
             'forfait' => 'required',
+            'typeforfait' => 'required',
         ]);
-        $request->duree = $this->Timeconfig($request->duree,$request->typeduree);
-        $request->forfait = $this->
+        $request->forfait= $this->Convertconfig($request->forfait,$request->typeforfait);
+       dd($request->forfait);
         $config = new Configuration($config);
-        $config->duree = 
+        $request->duree = $this->Timeconfig($request->duree,$request->typeduree);
+        
         $config->save();
         return response()->json($config,200);
     }
@@ -66,19 +68,16 @@ class ConfigurationController extends Controller
         }
          
     }
+ 
     function ConvertConfig($val , $type_val){
         $tab_val = array("Mo", "Go"); 
          if (!(in_array($type_val, $tab_val))) 
          return 0; 
          $tab = array_flip($tab_val); 
          $diff = $tab[$type_val] - 0; 
-         if ($diff != 0) {
+         if ($diff == 0) {
             return $val;
          }
-
             return ($val * pow(1024, $diff)); 
          }
-        
-       
-       }
 }
