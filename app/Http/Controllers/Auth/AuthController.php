@@ -14,6 +14,10 @@ use Illuminate\Support\Facades\Validator;
 
 class AuthController extends Controller
 {
+    public function index(){
+        $user = User::all();
+        return response()->json($user,200);
+    }
     public function register(Request $request){
         $register = $request->validate( [
             'matricule' => 'required',

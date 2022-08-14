@@ -8,6 +8,7 @@ require("./bootstrap");
 import Vue from "vue";
 import router from "./routes/router";
 import VueToast from "vue-toast-notification";
+import axios from 'axios';
 import "vue-toast-notification/dist/theme-sugar.css";
 
 window.Vue = require("vue").default;
@@ -41,9 +42,14 @@ Vue.component(
     require("./components/BaseComponent.vue").default
 );
 Vue.component(
+    "compte-datatable",
+    require("./components/Admin/CompteDatatable.vue").default
+);
+Vue.component(
     "user-datatable",
     require("./components/Admin/UserDatatable.vue").default
 );
+
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application

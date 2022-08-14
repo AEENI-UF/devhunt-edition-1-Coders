@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\Auth\AuthController;
+use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\ConfigurationController;
 use App\Mail\SendEmail;
 use Illuminate\Support\Facades\Auth;
@@ -49,6 +50,11 @@ Route::prefix('/authentification')->group(function () {
     });
 });
 
+Route::get('/compte', function(){
+    return view('Admin/compte/index');
+});
+
+Route::get('/list-user', [AuthController::class, 'index']);
 
 Route::get('/dashboard',[DashboardController::class,'list']);
 Route::get('/list-config', [ConfigurationController::class,'index'])->name('list-config');
@@ -57,3 +63,4 @@ Route::get('/show-config/{id}', [ConfigurationController::class, 'show'])->name(
 Route::put('/update-config/{id}', [ConfigurationController::class, 'update'])->name('update-config');
 Route::get('/dashboard', [DashboardController::class, 'dashboard']);
 Route::get('/liste', [DashboardController::class, 'liste']);
+
