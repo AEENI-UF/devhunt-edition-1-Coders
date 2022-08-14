@@ -43,6 +43,23 @@
                             </div>
                             <div class="row px-3">
                                 <label class="mb-1"
+                                    ><h6 class="mb-0 text-sm"></h6
+                                ></label>
+                                <select
+                                    v-model="id_niveau"
+                                    placeholder="Votre prénoms"
+                                >
+                                    <option
+                                        v-for="level in niveau"
+                                        :key="level.id"
+                                        :value="level.id_niveau"
+                                    >
+                                        {{ level.design_niveau }}
+                                    </option>
+                                </select>
+                            </div>
+                            <div class="row px-3">
+                                <label class="mb-1"
                                     ><h6 class="mb-0 text-sm">
                                         Adresse email
                                     </h6></label
