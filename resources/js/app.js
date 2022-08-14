@@ -50,6 +50,10 @@ Vue.component(
     "user-datatable",
     require("./components/Admin/UserDatatable.vue").default
 );
+Vue.component(
+    "niveau-datatable",
+    require("./components/Admin/NiveauDatatable.vue").default
+);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to

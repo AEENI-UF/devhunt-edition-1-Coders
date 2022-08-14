@@ -55,6 +55,10 @@ Route::prefix('/authentification')->group(function () {
 Route::get('/compte', function () {
     return view('Admin/compte/index');
 });
+Route::get('/niveau', function(){
+    return view('Admin/compte/niveau');
+});
+
 
 Route::get('/list-user', [AuthController::class, 'index']);
 

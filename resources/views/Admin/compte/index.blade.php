@@ -253,6 +253,9 @@
                         <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
                                 href="charts.html" aria-expanded="false"><i class="mdi mdi-brightness-7"></i><span
                                     class="hide-menu">Parametre</span></a></li>
+                                    <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="/niveau" aria-expanded="false"><i class="mdi mdi-brightness-7"></i><span
+                                    class="hide-menu">Niveau</span></a></li>
                          <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
                                 href="/compte" aria-expanded="false"><i class="mdi mdi-account"></i><span
                                     class="hide-menu">Compte</span></a></li>
