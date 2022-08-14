@@ -5893,7 +5893,7 @@ var staticRenderFns = [function () {
   }, [_c("img", {
     staticClass: "img-fluid",
     attrs: {
-      src: "assets/img/clients/client-1.png",
+      src: "akata.gif",
       alt: ""
     }
   })]), _vm._v(" "), _c("div", {
