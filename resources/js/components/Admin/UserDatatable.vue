@@ -22,7 +22,7 @@
 </template>
 <script>
 import axios from "axios";
-import UploadFile from './UploadFile.vue';
+import UploadFile from "./UploadFile.vue";
 export default {
     components: { UploadFile },
     data() {

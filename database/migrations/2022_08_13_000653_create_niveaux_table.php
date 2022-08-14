@@ -14,9 +14,10 @@ class CreateNiveauxTable extends Migration
     public function up()
     {
         Schema::create('niveaux', function (Blueprint $table) {
-            $table->bigInteger('id_niveau')->autoIncrement();
-            $table->String('design_niveau');
-            $table->String('id');
+            $table->unsignedBigInteger('id_niveau')->autoIncrement();
+            $table->string('design_niveau');
+            $table->foreignId('id_config')->references('id_config')->on('configurations')->onDelete('cascade');
+
             $table->timestamps();
         });
     }

@@ -14,7 +14,7 @@ class CreateConfigurationsTable extends Migration
     public function up()
     {
         Schema::create('configurations', function (Blueprint $table) {
-            $table->unsignedBigInteger('id')->autoIncrement();
+            $table->unsignedBigInteger('id_config')->autoIncrement();
             $table->bigInteger('duree');
             $table->bigInteger('forfait');
             $table->timestamps();

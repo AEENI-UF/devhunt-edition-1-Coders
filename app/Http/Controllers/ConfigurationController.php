@@ -16,16 +16,16 @@ class ConfigurationController extends Controller
 
     public function store(Request $request){
         $config = $request->validate([
-            'duree' => 'required',
+            'duree' => 'required|integer',
             'typeduree' => 'required',
-            'forfait' => 'required',
+            'forfait' => 'required|integer',
             'typeforfait' => 'required',
         ]);
-        $request->forfait= $this->Convertconfig($request->forfait,$request->typeforfait);
-       dd($request->forfait);
+       
         $config = new Configuration($config);
-        $request->duree = $this->Timeconfig($request->duree,$request->typeduree);
-        
+        $config->duree = $this->Timeconfig($request->duree,$request->typeduree);
+        $config->forfait= $this->Convertconfig($request->forfait,$request->typeforfait);
+       // dd($config);
         $config->save();
         return response()->json($config,200);
     }
