@@ -105,6 +105,7 @@ export default {
                         "Votre connexion est réussi, vous avez réçu le code du Portal Captif sur votre numéro de téléphone"
                     );
                     localStorage.setItem("access_token", res.data.token);
+                    this.$router.push("/");
                 })
                 .catch((e) => {
                     this.sending = false;

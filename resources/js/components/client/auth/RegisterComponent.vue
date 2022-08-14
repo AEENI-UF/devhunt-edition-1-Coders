@@ -7,13 +7,26 @@
                         <div class="card2 card border-0 px-4 py-5">
                             <div class="row px-3">
                                 <label class="mb-1"
+                                    ><h6 class="mb-0 text-sm">
+                                        N. matricule
+                                    </h6></label
+                                >
+                                <input
+                                    class="mb-4"
+                                    type="text"
+                                    v-model="email"
+                                    placeholder="Numéro matricule"
+                                />
+                            </div>
+                            <div class="row px-3">
+                                <label class="mb-1"
                                     ><h6 class="mb-0 text-sm">Nom</h6></label
                                 >
                                 <input
                                     class="mb-4"
                                     type="text"
-                                    name="email"
-                                    placeholder="Enter a valid email address"
+                                    v-model="email"
+                                    placeholder="Votre nom"
                                 />
                             </div>
                             <div class="row px-3">
@@ -23,13 +36,91 @@
                                     </h6></label
                                 >
                                 <input
-                                    type="password"
-                                    name="password"
-                                    placeholder="Enter password"
+                                    type="text"
+                                    v-model="prenoms"
+                                    placeholder="Votre prénoms"
                                 />
                             </div>
+                            <div class="row px-3">
+                                <label class="mb-1"
+                                    ><h6 class="mb-0 text-sm">
+                                        Adresse email
+                                    </h6></label
+                                >
+                                <input
+                                    type="email"
+                                    v-model="email"
+                                    placeholder="Votre adresse email"
+                                />
+                            </div>
+                            <div class="row px-3">
+                                <label class="mb-1"
+                                    ><h6 class="mb-0 text-sm">
+                                        Mot de passe
+                                    </h6></label
+                                >
+                                <input
+                                    class="mb-4"
+                                    type="password"
+                                    v-model="password"
+                                />
+                            </div>
+                            <div class="row px-3">
+                                <label class="mb-1"
+                                    ><h6 class="mb-0 text-sm">
+                                        Date de naissance
+                                    </h6></label
+                                >
+                                <input
+                                    class="mb-4"
+                                    type="text"
+                                    v-model="date_naiss"
+                                    placeholder="17-08-1998"
+                                />
+                            </div>
+                            <div class="row px-3">
+                                <label class="mb-1"
+                                    ><h6 class="mb-0 text-sm">
+                                        Lieu de naissance
+                                    </h6></label
+                                >
+                                <input
+                                    class="mb-4"
+                                    type="text"
+                                    v-model="lieu_naiss"
+                                    placeholder="Ankazobe"
+                                />
+                            </div>
+                            <div class="row px-3">
+                                <label class="mb-1"
+                                    ><h6 class="mb-0 text-sm">
+                                        Adresse actuelle
+                                    </h6></label
+                                >
+                                <input
+                                    class="mb-4"
+                                    type="text"
+                                    v-model="adresse"
+                                    placeholder="Andrainjato"
+                                />
+                            </div>
+                            <div class="row px-3">
+                                <label class="mb-1"
+                                    ><h6 class="mb-0 text-sm">
+                                        Adresse actuelle
+                                    </h6></label
+                                >
+                                <input
+                                    class="mb-4"
+                                    type="text"
+                                    v-model="tel"
+                                    placeholder="+2613484578"
+                                />
+                            </div>
+
                             <div class="row mb-3 px-3">
                                 <button
+                                    @click="register"
                                     type="submit"
                                     class="btn btn-blue text-center"
                                 >
@@ -67,7 +158,40 @@
 </template>
 
 <script>
-export default {};
+export default {
+    data() {
+        return {
+            matricule: "",
+            nom: "",
+            prenoms: "",
+            date_naiss: "",
+            lieu_naiss: "",
+            sexe: "",
+            adresse: "",
+            tel: "",
+            email: "",
+            password: "",
+        };
+    },
+    methods: {
+        async register() {
+            if (
+                this.matricule == "" ||
+                this.nom == "" ||
+                this.prenoms == "" ||
+                this.date_naiss == "" ||
+                this.lieu_naiss == "" ||
+                this.sexe == "" ||
+                this.adresse == "" ||
+                this.tel == "" ||
+                this.email == "" ||
+                this.password == ""
+            ) {
+                
+            }
+        },
+    },
+};
 </script>
 
 <style scoped>

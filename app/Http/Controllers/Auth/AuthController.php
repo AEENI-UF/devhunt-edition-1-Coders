@@ -32,7 +32,8 @@ class AuthController extends Controller
             'adresse' => 'required',
             'tel' => 'required',
             'email' => 'required|string|email|unique:users',
-            'password' => 'required'
+            'password' => 'required',
+            'id_niveau' => 'required'
         ]);
 
         $user = new Etudiant($register);
