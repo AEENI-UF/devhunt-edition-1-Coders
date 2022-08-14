@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
+use App\Http\Controllers\TwilioController;
 use App\Mail\SendEmail;
 use App\Models\Etudiant;
 use App\Models\User;
@@ -61,6 +62,8 @@ class AuthController extends Controller
         if ($user != []) {
             if (Hash::check($request->password, $user->password)) {
                 $tokenResult = $user->createToken('auth_token')->plainTextToken;
+
+                TwilioController::sendMessage($this->generateRandomString(8));
                 return response()->json([
                     'token' => $tokenResult
                 ], 200);
@@ -68,6 +71,17 @@ class AuthController extends Controller
             return response()->json(['message' => 'votre mot de passe est incorrecte'], 401);
         }
         return response()->json(['title' => 'Votre Adresse Email est incorrecte'], 401);
+    }
+
+    protected function generateRandomString($length = 10)
+    {
+        $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        $charactersLength = strlen($characters);
+        $randomString = '';
+        for ($i = 0; $i < $length; $i++) {
+            $randomString .= $characters[rand(0, $charactersLength - 1)];
+        }
+        return $randomString;
     }
 
     public function registerUser(Request $request)
