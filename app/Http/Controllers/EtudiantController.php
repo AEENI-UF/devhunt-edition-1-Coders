@@ -61,22 +61,19 @@ class EtudiantController extends Controller
                         'password',
                     ];
                     $cellIterator = $row->getCellIterator();
-                    $cellIterator->setIterateOnlyExistingCells(TRUE); // This loops through all cells,
+                    $cellIterator->setIterateOnlyExistingCells(FALSE); // This loops through all cells,
                     //    even if a cell value is not set.
                     // For 'TRUE', we loop through cells
                     //    only when their value is set.
                     // If this method is not called,
                     //    the default value is 'false'.
                     foreach ($cellIterator as $cell) {
-                        if ($cell->getValue() != "") {
-                            $dataToInsert[$labels[$looper]] = $cell->getValue();
-                            $looper++;
-                        }
+                        $dataToInsert[$labels[$looper]] = ($cell->getFormattedValue());
+                        $looper++;
                     }
                     // return $dataToInsert;
                     $etudiant = new Etudiant($dataToInsert);
                     $etudiant->id_niveau = $request->input('id_niveau');
-                    // var_dump($etudiant);
                     $etudiant->save();
                     $looper = 0;
                     // return;
@@ -164,10 +161,9 @@ class EtudiantController extends Controller
      */
     public function show($id)
     {
-        $etudiant = Etudiant::where('matricule',$id)->get();
+        $etudiant = Etudiant::where('matricule', $id)->get();
 
-         return response()->json($etudiant,200);
-
+        return response()->json($etudiant, 200);
     }
 
 
@@ -183,7 +179,7 @@ class EtudiantController extends Controller
         $etudiant = Etudiant::find($id);
         $etudiant->update($request->all());
 
-        return response()->json($etudiant,200);
+        return response()->json($etudiant, 200);
     }
 
     /**
@@ -197,6 +193,6 @@ class EtudiantController extends Controller
         $etudiant = Etudiant::find($id);
         $etudiant->delete();
 
-        return response()->json($etudiant,200);
+        return response()->json($etudiant, 200);
     }
 }

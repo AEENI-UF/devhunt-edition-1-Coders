@@ -43,8 +43,25 @@ export default {
                     value: "prenoms",
                 },
                 {
+                    text: "Sexe",
+                    value: "sexe",
+                },
+                {
                     text: "Email",
                     value: "email",
+                },
+
+                {
+                    text: "Niveau",
+                    value: "niveau.design_niveau",
+                },
+                {
+                    text: "Adresse",
+                    value: "adresse",
+                },
+                {
+                    text: "Télephone",
+                    value: "tel",
                 },
                 // ,
                 // {
