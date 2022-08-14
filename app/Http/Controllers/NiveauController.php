@@ -15,7 +15,7 @@ class NiveauController extends Controller
      */
     public function index()
     {
-        $niveaux = Niveau::all();
+        $niveaux = Niveau::with('configuration')->get();
         return response()->json($niveaux,200);
     }
 
