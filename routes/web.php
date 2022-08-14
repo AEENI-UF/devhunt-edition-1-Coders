@@ -58,6 +58,9 @@ Route::get('/compte', function () {
 Route::get('/niveau', function(){
     return view('Admin/compte/niveau');
 });
+Route::get('/config', function(){
+    return view('Admin/compte/config');
+});
 
 
 Route::get('/list-user', [AuthController::class, 'index']);
