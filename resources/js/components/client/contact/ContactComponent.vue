@@ -80,7 +80,7 @@
                                 <div class="phone">
                                     <i class="bi bi-phone"></i>
                                     <h4>Contact:</h4>
-                                    <p>034 05 733 36/033 42 302 02</p>
+                                    <p>+261 34 05 733 36/ +261 33 42 302 02</p>
                                 </div>
                             </div>
                         </div>
