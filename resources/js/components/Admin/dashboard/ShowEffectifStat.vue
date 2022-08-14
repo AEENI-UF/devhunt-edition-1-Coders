@@ -1,20 +1,25 @@
 <template>
-    <div>
-        <div class="d-flex no-block align-items-center m-t-25">
-            <span>72% Uniquie Clicks</span>
-            <div class="ml-auto">
-                <span>120</span>
+    <div class="w-50">
+        <div v-for="niveau in listeNiveau" :key="niveau.id_niveau">
+            <div class="d-flex no-block align-items-center m-t-25">
+                <span
+                    >{{ niveau.etudiants.length }} étudiant(s)
+                    {{ niveau.design_niveau }}</span
+                >
+                <div class="ml-auto">
+                    <span>{{ total }}</span>
+                </div>
             </div>
-        </div>
-        <div class="progress">
-            <div
-                class="progress-bar progress-bar-striped bg-success"
-                role="progressbar"
-                style="width: 72%"
-                aria-valuenow="25"
-                aria-valuemin="0"
-                aria-valuemax="100"
-            ></div>
+            <div class="progress">
+                <div
+                    class="progress-bar progress-bar-striped bg-success"
+                    role="progressbar"
+                    :style="{ width: niveau.etudiants.length + '%' }"
+                    aria-valuenow="25"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                ></div>
+            </div>
         </div>
     </div>
 </template>
@@ -24,11 +29,17 @@ import axios from "axios";
 export default {
     data() {
         return {
-            listeEtudiant: [],
+            listeNiveau: [],
+            total: 0,
         };
     },
     async mounted() {
-        // await axios("/api/etudiant");
+        this.listeNiveau = await axios("/api/by-level").then((res) => {
+            res.data.map((element) => {
+                this.total += element.etudiants.length;
+            });
+            return res.data;
+        });
     },
 };
 </script>

@@ -16,9 +16,12 @@ class NiveauController extends Controller
     public function index()
     {
         $niveaux = Niveau::all();
-        return response()->json($niveaux,200);
+        return response()->json($niveaux, 200);
     }
-
+    public function ByLevel()
+    {
+        return response()->json(Niveau::with('etudiants')->get());
+    }
 
     /**
      * Store a newly created resource in storage.
@@ -28,7 +31,7 @@ class NiveauController extends Controller
      */
     public function store(Request $request)
     {
-        $niveau = Validator::make($request->all(),[
+        $niveau = Validator::make($request->all(), [
             "design_niveau" => "required",
 
         ]);
@@ -36,7 +39,7 @@ class NiveauController extends Controller
         $niveau = new Niveau($request->all());
         $niveau->save();
 
-       return response()->json($niveau,200);
+        return response()->json($niveau, 200);
     }
 
     /**
@@ -49,7 +52,7 @@ class NiveauController extends Controller
     {
         $niveau = Niveau::find($id);
 
-        return response()->json($niveau,200);
+        return response()->json($niveau, 200);
     }
 
 
@@ -60,12 +63,12 @@ class NiveauController extends Controller
      * @param  \App\Models\Niveau  $niveau
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request,$id)
+    public function update(Request $request, $id)
     {
         $niveau = Niveau::find($id);
         $niveau->update($request->all());
 
-        return response()->json($niveau,200);
+        return response()->json($niveau, 200);
     }
 
     /**
@@ -79,6 +82,6 @@ class NiveauController extends Controller
         $niveau = Niveau::find($id);
         $niveau->delete();
 
-        return response()->json($niveau,200);
+        return response()->json($niveau, 200);
     }
 }
