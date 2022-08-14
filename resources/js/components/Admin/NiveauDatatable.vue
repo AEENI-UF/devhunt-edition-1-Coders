@@ -160,7 +160,7 @@ export default{
             console.log(this.item);
         if (this.$refs.form.validate()) {
         if (this.editedIndex > -1) {
-            axios.put('/api/niveau/${this.editedItem.id_niveau}',this.editedItem)
+            axios.put(`/api/niveau/${this.editedItem.id_niveau}`,this.editedItem)
             .then(response => {
             this.getAllNiveau();
             this.close();
@@ -191,7 +191,7 @@ export default{
 
     deleteItem (item) {
       const index = this.data.indexOf(item)
-      confirm('Are you sure you want to delete this item?') && this.data.splice(index, 1)
+      confirm('vous voulez les supprimers?') && this.data.splice(index, 1)
     },
 
 
