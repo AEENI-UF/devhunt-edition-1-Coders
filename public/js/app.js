@@ -5973,7 +5973,7 @@ var render = function render() {
     staticClass: "row content"
   }, [_vm._m(1), _vm._v(" "), _c("div", {
     staticClass: "col-lg-6 pt-4 pt-lg-0"
-  }, [_c("p", [_vm._v("\n                            L'école n'a qu'une option: mettre en place un point d'accès WIFI pour permettre à\n                            ces étudiants d'avoir internet.Gérer plus de 2 000 étudiants est une tâche très delicate pour l'administrateur réseau de l'école,\n                            que ce soit dans le domaine de sécurisation ou dans le domaine de gestion d'accès à ce réseau WIFI\n                        ")]), _vm._v(" "), _c("router-link", {
+  }, [_c("p", [_vm._v("\n                        L'école n'a qu'une option: mettre en place un point d'accès WIFI pour permettre à\n                        ces étudiants d'avoir internet.Gérer plus de 2 000 étudiants est une tâche très delicate pour l'administrateur réseau de l'école,\n                        que ce soit dans le domaine de sécurisation ou dans le domaine de gestion d'accès à ce réseau WIFI\n                    ")]), _vm._v(" "), _c("router-link", {
     staticClass: "btn-learn-more",
     attrs: {
       to: "/contact"
@@ -5994,13 +5994,13 @@ var staticRenderFns = [function () {
 
   return _c("div", {
     staticClass: "col-lg-6"
-  }, [_c("p", [_vm._v("\n                            L'Ecole Nationale d'informatique possède à peu près 2000 étudiants dans\n                            son effectif actuellement. En tant qu'école nationale de l'innovation dans la digitalisation informatique,\n                            avoir une connexion internet est un atout pour chaque étudiant dans cette école.\n                        ")]), _vm._v(" "), _c("ul", [_c("li", [_c("i", {
+  }, [_c("p", [_vm._v("\n                        L'Ecole Nationale d'informatique possède à peu près 2000 étudiants dans\n                        son effectif actuellement. En tant qu'école nationale de l'innovation dans la digitalisation informatique,\n                        avoir une connexion internet est un atout pour chaque étudiant dans cette école.\n                    ")]), _vm._v(" "), _c("ul", [_c("li", [_c("i", {
     staticClass: "ri-check-double-line"
-  }), _vm._v(" Mettre en place un\n                                point d'accèss WIFI pour permettre à ces étudiants d'avoir internet.\n                            ")]), _vm._v(" "), _c("li", [_c("i", {
+  }), _vm._v(" Mettre en place un\n                            point d'accèss WIFI pour permettre à ces étudiants d'avoir internet.\n                        ")]), _vm._v(" "), _c("li", [_c("i", {
     staticClass: "ri-check-double-line"
-  }), _vm._v(" Gérer plus de 2000 étudiants est une tâche\n                                très délicate pour l'administrateur réseau de l'école, que ce soit dans le domaine de\n\n                            ")]), _vm._v(" "), _c("li", [_c("i", {
+  }), _vm._v(" Gérer plus de 2000 étudiants est une tâche\n                            très délicate pour l'administrateur réseau de l'école, que ce soit dans le domaine de\n\n                        ")]), _vm._v(" "), _c("li", [_c("i", {
     staticClass: "ri-check-double-line"
-  }), _vm._v(" Création d'une application WEB permettant d'administrer\n                                et répartir l'accès internet pour chaque étudiant de l'école.\n                            ")])])]);
+  }), _vm._v(" Création d'une application WEB permettant d'administrer\n                            et répartir l'accès internet pour chaque étudiant de l'école.\n                        ")])])]);
 }, function () {
   var _vm = this,
       _c = _vm._self._c;
@@ -6021,7 +6021,7 @@ var staticRenderFns = [function () {
     staticClass: "col-lg-7 d-flex flex-column justify-content-center align-items-stretch order-2 order-lg-1"
   }, [_c("div", {
     staticClass: "content"
-  }, [_c("h3", [_vm._v("\n                            L’Ecole Nationale d’Informatique possède à\n                                "), _c("strong", [_vm._v("peu près 2 000 étudiants dans son \neffectif actuellement.")])]), _vm._v(" "), _c("p", [_vm._v("\n                                En tant qu’école nationale de l’innovation dans la digitalisation informatique,\n                                on a 3 parcours different dans cette ecole\n                            ")])]), _vm._v(" "), _c("div", {
+  }, [_c("h3", [_vm._v("\n                        L’Ecole Nationale d’Informatique possède à\n                            "), _c("strong", [_vm._v("peu près 2 000 étudiants dans son effectif actuellement.")])]), _vm._v(" "), _c("p", [_vm._v("\n                            En tant qu’école nationale de l’innovation dans la digitalisation informatique,\n                            on a 3 parcours different dans cette ecole\n                        ")])]), _vm._v(" "), _c("div", {
     staticClass: "accordion-list"
   }, [_c("ul", [_c("li", [_c("a", {
     staticClass: "collapse",
@@ -6029,7 +6029,7 @@ var staticRenderFns = [function () {
       "data-bs-toggle": "collapse",
       "data-bs-target": "#accordion-list-1"
     }
-  }, [_c("span", [_vm._v("01")]), _vm._v(" Parcours Informatique Generale(IG)\n                                        "), _c("i", {
+  }, [_c("span", [_vm._v("01")]), _vm._v(" Parcours Informatique Generale(IG)\n                                    "), _c("i", {
     staticClass: "bx bx-chevron-down icon-show"
   }), _c("i", {
     staticClass: "bx bx-chevron-up icon-close"
@@ -6039,13 +6039,13 @@ var staticRenderFns = [function () {
       id: "accordion-list-1",
       "data-bs-parent": ".accordion-list"
     }
-  }, [_c("p", [_vm._v("\n                                            Informatique Générale fait les atous en informatique Genie et Systeme Réseaux\n                                        ")])])]), _vm._v(" "), _c("li", [_c("a", {
+  }, [_c("p", [_vm._v("\n                                        Informatique Générale fait les atous en informatique Genie et Systeme Réseaux\n                                    ")])])]), _vm._v(" "), _c("li", [_c("a", {
     staticClass: "collapsed",
     attrs: {
       "data-bs-toggle": "collapse",
       "data-bs-target": "#accordion-list-2"
     }
-  }, [_c("span", [_vm._v("02")]), _vm._v(" Génie Logiciel et Base de donnée(GB) \n                                        "), _c("i", {
+  }, [_c("span", [_vm._v("02")]), _vm._v(" Génie Logiciel et Base de donnée(GB) \n                                    "), _c("i", {
     staticClass: "bx bx-chevron-down icon-show"
   }), _c("i", {
     staticClass: "bx bx-chevron-up icon-close"
@@ -6055,13 +6055,13 @@ var staticRenderFns = [function () {
       id: "accordion-list-2",
       "data-bs-parent": ".accordion-list"
     }
-  }, [_c("p", [_vm._v("\n                                            fait et créer des logiciel en facon proffesionnel\n                                        ")])])]), _vm._v(" "), _c("li", [_c("a", {
+  }, [_c("p", [_vm._v("\n                                        fait et créer des logiciel en facon proffesionnel\n                                    ")])])]), _vm._v(" "), _c("li", [_c("a", {
     staticClass: "collapsed",
     attrs: {
       "data-bs-toggle": "collapse",
       "data-bs-target": "#accordion-list-3"
     }
-  }, [_c("span", [_vm._v("03")]), _vm._v(" System et Réseaux(SR)\n                                        "), _c("i", {
+  }, [_c("span", [_vm._v("03")]), _vm._v(" System et Réseaux(SR)\n                                    "), _c("i", {
     staticClass: "bx bx-chevron-down icon-show"
   }), _c("i", {
     staticClass: "bx bx-chevron-up icon-close"
@@ -6071,7 +6071,7 @@ var staticRenderFns = [function () {
       id: "accordion-list-3",
       "data-bs-parent": ".accordion-list"
     }
-  }, [_c("p", [_vm._v("\n                                           Fait les atous des materiel en réseaux en informatique\n                                        ")])])])])])]), _vm._v(" "), _c("div", {
+  }, [_c("p", [_vm._v("\n                                       Fait les atous des materiel en réseaux en informatique\n                                    ")])])])])])]), _vm._v(" "), _c("div", {
     staticClass: "col-lg-5 align-items-stretch order-1 order-lg-2 img",
     staticStyle: {
       "background-image": "url('assets/img/why-us.png')"
@@ -6080,7 +6080,7 @@ var staticRenderFns = [function () {
       "data-aos": "zoom-in",
       "data-aos-delay": "150"
     }
-  }, [_vm._v("\n                         \n                    ")])])])]);
+  }, [_vm._v("\n                     \n                ")])])])]);
 }];
 render._withStripped = true;
 
@@ -6401,85 +6401,77 @@ var staticRenderFns = [function () {
     }
   }, [_c("div", {
     staticClass: "section-title"
-  }, [_c("h2", [_vm._v("Les avantages")]), _vm._v(" "), _c("p", [_vm._v("\n                    Quelques fonctionnalités pourraient être données des solutions adéquates aux \n                    circonstances que l'on a prévue comme:.\n                ")])]), _vm._v(" "), _c("div", {
+  }, [_c("h2", [_vm._v("Les avantages")]), _vm._v(" "), _c("p", [_vm._v("\n                    Quelques fonctionnalités qui satisferont vos besoins :\n                ")])]), _vm._v(" "), _c("div", {
     staticClass: "row"
   }, [_c("div", {
     staticClass: "col-xl-3 col-md-6 d-flex align-items-stretch",
+    staticStyle: {
+      cursor: "pointer"
+    },
     attrs: {
-      "data-aos": "zoom-in",
+      "data-aos": "flip-left",
       "data-aos-delay": "100"
     }
   }, [_c("div", {
     staticClass: "icon-box"
   }, [_c("div", {
-    staticClass: "icon"
+    staticClass: "text-center icon"
   }, [_c("i", {
     staticClass: "bx bx-wifi"
-  })]), _vm._v(" "), _c("h4", [_c("a", {
-    attrs: {
-      href: ""
-    }
-  }, [_vm._v("Système de gestion point d'accès Wifi")])]), _vm._v(" "), _c("p", [_vm._v("\n                            Mise en place d'une gestion de point d'accès\n                            Wifi pour chaque étudiant de l'école grâce à la\n                            validation rétroactive de leur mot de passe.\n                        ")])])]), _vm._v(" "), _c("div", {
+  })]), _vm._v(" "), _c("h4", [_vm._v("Système de gestion point d'accès Wifi")]), _vm._v(" "), _c("p", {
+    staticClass: "text-justify"
+  }, [_vm._v("\n                            Mise en place d'une gestion de point d'accès\n                            Wifi pour chaque étudiant de l'école grâce à la\n                            validation rétroactive de leur mot de passe.\n                        ")])])]), _vm._v(" "), _c("div", {
     staticClass: "col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0",
+    staticStyle: {
+      cursor: "pointer"
+    },
     attrs: {
-      "data-aos": "zoom-in",
+      "data-aos": "flip-left",
       "data-aos-delay": "200"
     }
   }, [_c("div", {
     staticClass: "icon-box"
   }, [_c("div", {
-    staticClass: "icon"
+    staticClass: "text-center icon"
   }, [_c("i", {
     staticClass: "bx bx-layer"
-  })]), _vm._v(" "), _c("h4", [_c("a", {
-    attrs: {
-      href: ""
-    }
-  }, [_vm._v("Gestion d'une base de données des étudiants")])]), _vm._v(" "), _c("div", {
-    staticClass: "icon"
-  }, [_c("i", {
-    staticClass: "bx bx-database"
-  })]), _vm._v(" "), _c("h4", [_c("a", {
-    attrs: {
-      href: ""
-    }
-  }, [_vm._v("Gestion d'une base de données des\n                                étudiants")])]), _vm._v(" "), _c("p", [_vm._v("\n                            Création d'une base de données communes pour\n                            tous les étudiants de chaque niveau confondu.\n                        ")])])]), _vm._v(" "), _c("div", {
+  })]), _vm._v(" "), _c("h4", [_vm._v("Gestion d'une base de données des étudiants")]), _vm._v(" "), _c("p", {
+    staticClass: "text-justify"
+  }, [_vm._v("\n                            Création d'une base de données pour les\n                            étudiants tout niveau confondu.\n                        ")])])]), _vm._v(" "), _c("div", {
     staticClass: "col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0",
+    staticStyle: {
+      cursor: "pointer"
+    },
     attrs: {
-      "data-aos": "zoom-in",
+      "data-aos": "flip-left",
       "data-aos-delay": "300"
     }
   }, [_c("div", {
     staticClass: "icon-box"
   }, [_c("div", {
-    staticClass: "icon"
+    staticClass: "text-center icon"
   }, [_c("i", {
     staticClass: "bx bx-user"
-  })]), _vm._v(" "), _c("h4", [_c("a", {
-    attrs: {
-      href: ""
-    }
-  }, [_vm._v("Gestion des utilisateurs")])]), _vm._v(" "), _c("p", [_vm._v("\n                            Mise en place d'une page d'acceuil dans laquel\n                            chaque étudiant pourra accéder et se connecter\n                        ")])])]), _vm._v(" "), _c("div", {
+  })]), _vm._v(" "), _c("h4", [_vm._v("Gestion des utilisateurs")]), _vm._v(" "), _c("p", {
+    staticClass: "text-justify"
+  }, [_vm._v("\n                            Mise en place d'une page d'acceuil dans laquel\n                            chaque étudiant pourra accéder pour connecter\n                        ")])])]), _vm._v(" "), _c("div", {
     staticClass: "col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0",
+    staticStyle: {
+      cursor: "pointer"
+    },
     attrs: {
-      "data-aos": "zoom-in",
+      "data-aos": "flip-left",
       "data-aos-delay": "400"
     }
   }, [_c("div", {
     staticClass: "icon-box"
   }, [_c("div", {
-    staticClass: "icon"
+    staticClass: "text-center icon"
   }, [_c("i", {
     staticClass: "bx bx-desktop"
-  })]), _vm._v(" "), _c("div", {
-    staticClass: "icon"
-  }, [_c("i", {
-    staticClass: "bx bx-layer"
-  })]), _vm._v(" "), _c("h4", [_c("a", {
-    attrs: {
-      href: ""
-    }
-  }, [_vm._v("Administration des systèmes et réseaux")])]), _vm._v(" "), _c("p", [_vm._v("\n                            Gestion des utilisateurs connectés avec un tableau de bord\n                             démontrant la liste des comptes des utilisateurs qui devraient enregistrés sur ce plateforme\n                        ")])])])])])]), _vm._v(" "), _c("section", {
+  })]), _vm._v(" "), _c("h4", [_vm._v("Administration des systèmes et réseaux")]), _vm._v(" "), _c("p", {
+    staticClass: "text-justify"
+  }, [_vm._v("\n                            Gestion des utilisateurs connectés avec tableau\n                            de bord\n                        ")])])])])])]), _vm._v(" "), _c("section", {
     staticClass: "pricing",
     attrs: {
       id: "pricing"
@@ -6491,7 +6483,7 @@ var staticRenderFns = [function () {
     }
   }, [_c("div", {
     staticClass: "section-title"
-  }, [_c("h2", [_vm._v("Comment souscrire")])]), _vm._v(" "), _c("div", {
+  }, [_c("h2", [_vm._v("Commencer")])]), _vm._v(" "), _c("div", {
     staticClass: "row"
   }, [_c("div", {
     staticClass: "col-lg-6",
@@ -6501,7 +6493,7 @@ var staticRenderFns = [function () {
     }
   }, [_c("div", {
     staticClass: "box"
-  }, [_c("h3", [_vm._v("Se connecter sur votre compte")]), _vm._v(" "), _c("a", {
+  }, [_c("h3", [_vm._v("Se connecter sur votre compte")]), _vm._v(" "), _c("span", [_vm._v("Vous avez déjà un compte étudiant ?")]), _vm._v(" "), _c("a", {
     staticClass: "buy-btn",
     attrs: {
       href: "/authentification/etudiant"
@@ -6514,7 +6506,7 @@ var staticRenderFns = [function () {
     }
   }, [_c("div", {
     staticClass: "box"
-  }, [_c("h3", [_vm._v("S'inscrire sur votre compte")]), _vm._v(" "), _c("a", {
+  }, [_c("h3", [_vm._v("S'inscrire sur votre compte")]), _vm._v(" "), _c("span", [_vm._v("Inscrivez-vous pour béneficier des offres de\n                            l'école avec la connexion internet")]), _vm._v(" "), _c("a", {
     staticClass: "buy-btn",
     attrs: {
       href: "/authentification/inscription"
@@ -6587,9 +6579,9 @@ var staticRenderFns = [function () {
     staticClass: "logo me-auto"
   }, [_c("a", {
     attrs: {
-      href: "index.html"
+      href: "/"
     }
-  }, [_vm._v("ENI")])]);
+  }, [_c("strong", [_vm._v(" ENI ")])])]);
 }];
 render._withStripped = true;
 
