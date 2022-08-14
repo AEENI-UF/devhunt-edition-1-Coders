@@ -6,7 +6,7 @@
                 <div class="section-title">
                     <h2>Contact</h2>
                     <p>
-                      ENI Fianarantsoa est une école de renom se spécialiser en informatique à Madagascar. Dortoirs disponibles pour les étudiants de l'établissement... <br>
+                      ENI Fianarantsoa est une école de rénom se spécialiser en informatique à Madagascar. <br>
                       ECOLE NATIONALE D'INFORMATIQUE. <strong> <i>La pépinière des élites informaticiennes Malgache.</i> </strong>
                     </p>
                 </div>
