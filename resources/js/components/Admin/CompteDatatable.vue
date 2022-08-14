@@ -4,13 +4,13 @@
             <v-dialog v-model="dialog" width="1000">
                 <template v-slot:activator="{ on, attrs }">
                     <v-btn
-                        color="green lighten-2"
+                        color="red lighten-2"
                         dark
                         class="mt-2"
                         v-bind="attrs"
                         v-on="on"
                     >
-                        Click Me
+                        Ajouter un utilisateur
                     </v-btn>
                 </template>
 

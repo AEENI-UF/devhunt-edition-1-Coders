@@ -34,6 +34,9 @@
                             >Démarrer</router-link
                         >
                     </li>
+                    <li>
+                        <a class="" href="/dashboard">Administrateur</a>
+                    </li>
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
             </nav>

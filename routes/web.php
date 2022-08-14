@@ -51,6 +51,18 @@ Route::prefix('/authentification')->group(function () {
         return view('auth.etudiant-register');
     });
 });
+
+Route::get('/compte', function () {
+    return view('Admin/compte/index');
+})->middleware('auth');
+Route::get('/niveau', function () {
+    return view('Admin/compte/niveau');
+})->middleware('auth');
+Route::get('/config', function () {
+    return view('Admin/compte/config');
+})->middleware('auth');
+
+
 Route::get('/list-user', [AuthController::class, 'index']);
 
 Route::get('/dashboard', [DashboardController::class, 'list']);
