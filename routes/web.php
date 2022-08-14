@@ -51,18 +51,6 @@ Route::prefix('/authentification')->group(function () {
         return view('auth.etudiant-register');
     });
 });
-
-Route::get('/compte', function () {
-    return view('Admin/compte/index');
-});
-Route::get('/niveau', function(){
-    return view('Admin/compte/niveau');
-});
-Route::get('/config', function(){
-    return view('Admin/compte/config');
-});
-
-
 Route::get('/list-user', [AuthController::class, 'index']);
 
 Route::get('/dashboard', [DashboardController::class, 'list']);
