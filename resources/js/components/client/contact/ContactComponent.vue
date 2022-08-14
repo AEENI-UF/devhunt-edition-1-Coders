@@ -23,21 +23,11 @@
                         data-aos="fade-up"
                         data-aos-delay="200"
                     >
-                        <h1>Accès WIFI</h1>
+                        <h1>Restez en contact avec nous</h1>
                         <h2>
-                            C'est une plateforme d'application web afin de gérer
-                            l'accès à un point d'accès WIFI.
+                            Laissez-nous un pétit message pour communiquer
+                            ensemble
                         </h2>
-
-                        <div
-                            class="d-flex justify-content-center justify-content-lg-start"
-                        >
-                            <router-link
-                                to="/about"
-                                class="btn-get-started scrollto"
-                                >Démarrer</router-link
-                            >
-                        </div>
                     </div>
                 </div>
             </div>
