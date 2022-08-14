@@ -77,7 +77,7 @@
               </h2>
 
               <div class="d-flex justify-content-center justify-content-lg-start">
-                <router-link to="/about" class="btn-get-started scrollto">Démarrer</router-link>
+                <router-link to="/" class="btn-get-started scrollto">Démarrer</router-link>
               </div>
             </div>
             <div
