@@ -6,11 +6,8 @@
                 <div class="section-title">
                     <h2>Contact</h2>
                     <p>
-                        Magnam dolores commodi suscipit. Necessitatibus eius
-                        consequatur ex aliquid fuga eum quidem. Sit sint
-                        consectetur velit. Quisquam quos quisquam cupiditate. Et
-                        nemo qui impedit suscipit alias ea. Quia fugiat sit in
-                        iste officiis commodi quidem hic quas.
+                      ENI Fianarantsoa est une école de renom se spécialiser en informatique à Madagascar. Dortoirs disponibles pour les étudiants de l'établissement... <br>
+                      ECOLE NATIONALE D'INFORMATIQUE. <strong> <i>La pépinière des élites informaticiennes Malgache.</i> </strong>
                     </p>
                 </div>
 

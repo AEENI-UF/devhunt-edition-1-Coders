@@ -287,17 +287,7 @@
             </div>
         </div>
         <div class="container"  id="app">
-        <div class="form-group row">
-            <label class="col-md-2 text-dark" >File Upload</label>
-            <div class="col-md-9">
-                <div class="custom-file">
-                    <input type="file" class="custom-file-input" id="validatedCustomFile" required>
-                    <label class="custom-file-label" for="validatedCustomFile">Choose file...</label>
-                    <div class="invalid-feedback">Example invalid custom file feedback</div>
-                </div>
-            </div>
-        </div>
-            <user-datatable></user-datatable>
+             <user-datatable></user-datatable>
         </div>
     </div>
     <script src="{{ asset('admin/assets/libs/jquery/dist/jquery.min.js')}}"></script>

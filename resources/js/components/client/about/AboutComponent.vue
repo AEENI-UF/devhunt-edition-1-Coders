@@ -51,16 +51,15 @@
                     >
                         <div class="content">
                             <h3>
-                                Eum ipsam laborum deleniti
+                            L’Ecole Nationale d’Informatique possède à
                                 <strong
-                                    >velit pariatur architecto aut nihil</strong
+                                    >peu près 2 000 étudiants dans son 
+effectif actuellement.</strong
                                 >
                             </h3>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua.
-                                Duis aute irure dolor in reprehenderit
+                                En tant qu’école nationale de l’innovation dans la digitalisation informatique,
+                                on a 3 parcours different dans cette ecole
                             </p>
                         </div>
 
@@ -71,8 +70,7 @@
                                         data-bs-toggle="collapse"
                                         class="collapse"
                                         data-bs-target="#accordion-list-1"
-                                        ><span>01</span> Non consectetur a erat
-                                        nam at lectus urna duis?
+                                        ><span>01</span> Parcours Informatique Generale(IG)
                                         <i
                                             class="bx bx-chevron-down icon-show"
                                         ></i
@@ -86,12 +84,7 @@
                                         data-bs-parent=".accordion-list"
                                     >
                                         <p>
-                                            Feugiat pretium nibh ipsum
-                                            consequat. Tempus iaculis urna id
-                                            volutpat lacus laoreet non curabitur
-                                            gravida. Venenatis lectus magna
-                                            fringilla urna porttitor rhoncus
-                                            dolor purus non.
+                                            Informatique Générale fait les atous en informatique Genie et Systeme Réseaux
                                         </p>
                                     </div>
                                 </li>
@@ -101,8 +94,7 @@
                                         data-bs-toggle="collapse"
                                         data-bs-target="#accordion-list-2"
                                         class="collapsed"
-                                        ><span>02</span> Feugiat scelerisque
-                                        varius morbi enim nunc?
+                                        ><span>02</span> Génie Logiciel et Base de donnée(GB) 
                                         <i
                                             class="bx bx-chevron-down icon-show"
                                         ></i
@@ -116,15 +108,7 @@
                                         data-bs-parent=".accordion-list"
                                     >
                                         <p>
-                                            Dolor sit amet consectetur
-                                            adipiscing elit pellentesque
-                                            habitant morbi. Id interdum velit
-                                            laoreet id donec ultrices. Fringilla
-                                            phasellus faucibus scelerisque
-                                            eleifend donec pretium. Est
-                                            pellentesque elit ullamcorper
-                                            dignissim. Mauris ultrices eros in
-                                            cursus turpis massa tincidunt dui.
+                                            fait et créer des logiciel en facon proffesionnel
                                         </p>
                                     </div>
                                 </li>
@@ -134,8 +118,7 @@
                                         data-bs-toggle="collapse"
                                         data-bs-target="#accordion-list-3"
                                         class="collapsed"
-                                        ><span>03</span> Dolor sit amet
-                                        consectetur adipiscing elit?
+                                        ><span>03</span> System et Réseaux(SR)
                                         <i
                                             class="bx bx-chevron-down icon-show"
                                         ></i
@@ -149,16 +132,7 @@
                                         data-bs-parent=".accordion-list"
                                     >
                                         <p>
-                                            Eleifend mi in nulla posuere
-                                            sollicitudin aliquam ultrices
-                                            sagittis orci. Faucibus pulvinar
-                                            elementum integer enim. Sem nulla
-                                            pharetra diam sit amet nisl
-                                            suscipit. Rutrum tellus pellentesque
-                                            eu tincidunt. Lectus urna duis
-                                            convallis convallis tellus. Urna
-                                            molestie at elementum eu facilisis
-                                            sed odio morbi quis
+                                           Fait les atous des materiel en réseaux en informatique
                                         </p>
                                     </div>
                                 </li>
