@@ -23,11 +23,10 @@ class CreateEtudiantsTable extends Migration
 
             $table->string('adresse')->nullable();
             $table->string('cin')->nullable();
-            $table->string('tel')->nullable();
-            $table->string('password')->nullable();
-            $table->string('email')->nullable();
-            $table->string('id_niveau')->nullable();
-
+            $table->string('tel');
+            $table->string('password');
+            $table->string('email');
+            $table->foreignId('id_niveau')->references('id_niveau')->on('niveaus')->onDelete('cascade');
             $table->timestamps();
         });
     }
