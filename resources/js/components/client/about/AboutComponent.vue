@@ -113,13 +113,7 @@
                                         class="collapse"
                                         data-bs-target="#accordion-list-1"
                                         ><span>01</span> Informatique
-                                        Generale(IG) ><span>01</span> Parcours
-                                        Informatique Generale(IG)
-
-                                        <i
-                                            class="bx bx-chevron-down icon-show"
-                                        ></i
-                                        ><i
+                                        Generale(IG) ><i
                                             class="bx bx-chevron-up icon-close"
                                         ></i
                                     ></a>
@@ -153,16 +147,7 @@
                                         data-bs-target="#accordion-list-2"
                                         class="collapsed"
                                         ><span>02</span> Génie Logiciel et Base
-                                        de données(GB) ><span>02</span> Génie
-                                        Logiciel et Base de données(GB) ><span
-                                            >02</span
-                                        >
-                                        Génie Logiciel et Base de donnée(GB)
-
-                                        <i
-                                            class="bx bx-chevron-down icon-show"
-                                        ></i
-                                        ><i
+                                        de données(GB) ><i
                                             class="bx bx-chevron-up icon-close"
                                         ></i
                                     ></a>
