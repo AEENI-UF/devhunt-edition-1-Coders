@@ -61,6 +61,19 @@
                         </p>
                         <ul>
                             <li>
+
+                                <i class="ri-check-double-line"></i> Mise en place  d'un
+                                système de gestion d'accès à un point d'accès Wi-Fi pour permettre à ces étudiants d'avoir internet.
+                            </li>
+                            <li>
+                                <i class="ri-check-double-line"></i> Gestion d'une base de données uniques afin d'acceuillir 
+                                plus de 2000 étudiants avec de sécurisation fiable.
+
+                            </li>
+                            <li>
+                                <i class="ri-check-double-line"></i> Gestion des utilisateurs et mise en place d'une page d'acceuil
+                                dans laquelle chaque etudiant pourra y accéder à ses propres comptes.
+
                                 <i class="ri-check-double-line"></i> Mettre en
                                 place un point d'accèss WIFI pour permettre à
                                 ces étudiants d'avoir internet.
@@ -76,6 +89,7 @@
                                 d'une application WEB permettant d'administrer
                                 et répartir l'accès internet pour chaque
                                 étudiant de l'école.
+
                             </li>
                         </ul>
                     </div>
@@ -99,8 +113,16 @@
         <!-- End About Us Section -->
         <!-- ======= Why Us Section ======= -->
         <section id="why-us" class="why-us section-bg">
-            <div class="container-fluid" data-aos="fade-up">
+         <div class="container-fluid" data-aos="fade-up">
                 <div class="row">
+                <div
+                        class="col-lg-5 d-flex flex-column justify-content-center align-items-stretch order-2 order-lg-1 img" 
+                        style="background-image: url('assets/img/why-us.png')"
+                        data-aos="zoom-in"
+                        data-aos-delay="150"
+                    >
+                 </div>
+
                     <div
                         class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch order-2 order-lg-1"
                     >
@@ -108,15 +130,23 @@
                             <h3>
                                 L’Ecole Nationale d’Informatique possède à
                                 <strong
-                                    >peu près 2 000 étudiants dans son effectif actuellement.</strong
-                                >
+
+                                    >peu près 2 000 étudiants dans son
+effectif actuel.</strong
+>
                             </h3>
                             <p>
+
+                                En tant qu’école nationale de l’innovation dans la digitalisation informatique,
+                                on a 3 parcours différents dans cette ecole
+
                                 En tant qu’école nationale de l’innovation dans
                                 la digitalisation informatique, on a 3 parcours
                                 different dans cette ecole
+
                             </p>
                         </div>
+
 
                         <div class="accordion-list">
                             <ul>
@@ -125,8 +155,12 @@
                                         data-bs-toggle="collapse"
                                         class="collapse"
                                         data-bs-target="#accordion-list-1"
+
+                                        ><span>01</span> Informatique Generale(IG)
+
                                         ><span>01</span> Parcours Informatique
                                         Generale(IG)
+
                                         <i
                                             class="bx bx-chevron-down icon-show"
                                         ></i
@@ -140,9 +174,14 @@
                                         data-bs-parent=".accordion-list"
                                     >
                                         <p>
+
+                                            L'informatique générale est un domaine d'activité scientifique, technique, et industriel concernant 
+                                            le traitement automatique de l'information numérique par l'exécution de programmes informatiques hébergés par des dispositifs électriques-électroniques : des systèmes embarqués, des ordinateurs, des robots, des automates,
+
                                             Informatique Générale fait les atous
                                             en informatique Genie et Systeme
                                             Réseaux
+
                                         </p>
                                     </div>
                                 </li>
@@ -152,8 +191,12 @@
                                         data-bs-toggle="collapse"
                                         data-bs-target="#accordion-list-2"
                                         class="collapsed"
+
+                                        ><span>02</span> Génie Logiciel et Base de données(GB)
+
                                         ><span>02</span> Génie Logiciel et Base
                                         de donnée(GB)
+
                                         <i
                                             class="bx bx-chevron-down icon-show"
                                         ></i
@@ -167,8 +210,14 @@
                                         data-bs-parent=".accordion-list"
                                     >
                                         <p>
+
+                                           Le génie logiciel applique les principes et techniques d'ingénierie à la conception de systèmes logiciels,
+                                         intégrés et à grande échelle.
+                                            L'ingénieur logiciel doit maîtriser la théorie et les méthodes de l'informatique.
+
                                             fait et créer des logiciel en facon
                                             proffesionnel
+
                                         </p>
                                     </div>
                                 </li>
@@ -178,7 +227,7 @@
                                         data-bs-toggle="collapse"
                                         data-bs-target="#accordion-list-3"
                                         class="collapsed"
-                                        ><span>03</span> System et Réseaux(SR)
+                                        ><span>03</span>Administration Systèmes et Réseaux(SR)
                                         <i
                                             class="bx bx-chevron-down icon-show"
                                         ></i
@@ -192,8 +241,14 @@
                                         data-bs-parent=".accordion-list"
                                     >
                                         <p>
+
+                                           L'administrateur système et réseau est un professionnel en charge de l'architecture informatique de l'entreprise.
+                                            Garant de l'efficacité des machines et de l'intégrité des données, 
+                                           ce profil technique est très recherché par les entreprises.
+
                                             Fait les atous des materiel en
                                             réseaux en informatique
+
                                         </p>
                                     </div>
                                 </li>
@@ -201,14 +256,7 @@
                         </div>
                     </div>
 
-                    <div
-                        class="col-lg-5 align-items-stretch order-1 order-lg-2 img"
-                        style="background-image: url('assets/img/why-us.png')"
-                        data-aos="zoom-in"
-                        data-aos-delay="150"
-                    >
-                        &nbsp;
-                    </div>
+
                 </div>
             </div>
         </section>

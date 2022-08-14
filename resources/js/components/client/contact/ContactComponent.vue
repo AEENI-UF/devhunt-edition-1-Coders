@@ -1,25 +1,20 @@
 <template>
     <main id="main">
+
+
         <v-app>
             <!-- ======= Contact Section ======= -->
             <section id="contact" class="contact">
+
                 <div class="container" data-aos="fade-up">
+
                     <div class="section-title">
                         <h2>Contact</h2>
                         <p>
-                            ENI Fianarantsoa est une école de renom se
-                            spécialiser en informatique à Madagascar. Dortoirs
-                            disponibles pour les étudiants de l'établissement...
-                            <br />
-                            ECOLE NATIONALE D'INFORMATIQUE.
-                            <strong>
-                                <i
-                                    >La pépinière des élites informaticiennes
-                                    Malgache.</i
-                                >
-                            </strong>
+                            "La pépinière des élites informaticiennes Malgache." 
                         </p>
                     </div>
+
 
                     <div class="row">
                         <div class="col-lg-5 d-flex align-items-stretch">
@@ -39,11 +34,18 @@
                                     <p>eni@eni-univ.fianar.mg</p>
                                 </div>
 
+
+                          <div class="phone">
+                                <i class="bi bi-phone"></i>
+                                <h4>Contact:</h4>
+                                <p>+26134 05 733 36/ +26133 42 302 02</p>
+
                                 <div class="phone">
                                     <i class="bi bi-phone"></i>
                                     <h4>Contact:</h4>
                                     <p>034 05 733 36/033 42 302 02</p>
                                 </div>
+
                             </div>
                         </div>
 
