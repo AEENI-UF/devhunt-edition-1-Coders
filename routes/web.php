@@ -60,3 +60,6 @@ Route::get('/show-config/{id}', [ConfigurationController::class, 'show'])->name(
 Route::put('/update-config/{id}', [ConfigurationController::class, 'update'])->name('update-config');
 Route::get('/dashboard', [DashboardController::class, 'dashboard']);
 Route::get('/liste', [DashboardController::class, 'liste']);
+
+
+Route::post("contact-us" , [])
