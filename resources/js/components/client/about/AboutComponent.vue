@@ -93,7 +93,8 @@ effectif actuel.</strong
                                         data-bs-parent=".accordion-list"
                                     >
                                         <p>
-                                            
+                                            L'informatique générale est un domaine d'activité scientifique, technique, et industriel concernant 
+                                            le traitement automatique de l'information numérique par l'exécution de programmes informatiques hébergés par des dispositifs électriques-électroniques : des systèmes embarqués, des ordinateurs, des robots, des automates,
                                         </p>
                                     </div>
                                 </li>
