@@ -27,7 +27,7 @@
                         >
                     </li>
 
-                    <li v-if="logged">
+                    <li v-if="logged == false">
                         <router-link
                             class="getstarted scrollto"
                             to="/get-started"
