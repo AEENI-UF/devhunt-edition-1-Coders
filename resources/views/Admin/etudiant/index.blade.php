@@ -253,6 +253,9 @@
                         <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
                                 href="charts.html" aria-expanded="false"><i class="mdi mdi-brightness-7"></i><span
                                     class="hide-menu">Parametre</span></a></li>
+                         <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="/compte" aria-expanded="false"><i class="mdi mdi-account"></i><span
+                                    class="hide-menu">Compte</span></a></li>
                     </ul>
                 </nav>
                 <!-- End Sidebar navigation -->
@@ -299,7 +302,7 @@
     <script src="{{ asset('admin/assets/libs/flot/jquery.flot.crosshair.js')}}"></script>
     <script src="{{ asset('admin/assets/libs/flot.tooltip/js/jquery.flot.tooltip.min.js')}}"></script>
     <script src="{{ asset('admin/dist/js/pages/chart/chart-page-init.js')}}"></script>
-    <script src="{{ asset('js/dashboard.js') }}"></script>
+    <script src="{{ asset('js/app.js') }}"></script>
 </body>
 
 </html>
