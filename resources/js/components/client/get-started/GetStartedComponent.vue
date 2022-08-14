@@ -6,26 +6,24 @@
                 <div class="section-title">
                     <h2>Les avantages</h2>
                     <p>
-                        Quelques fonctionnalités pourraient être données des solutions adéquates aux 
-                        circonstances que l'on a prévue comme:.
+                        Quelques fonctionnalités pourraient être données des
+                        solutions adéquates aux circonstances que l'on a prévue
+                        comme:.
                     </p>
                 </div>
 
                 <div class="row">
                     <div
+                        style="cursor: pointer"
                         class="col-xl-3 col-md-6 d-flex align-items-stretch"
-                        data-aos="zoom-in"
+                        data-aos="flip-left"
                         data-aos-delay="100"
                     >
                         <div class="icon-box">
                             <div class="icon">
                                 <i class="bx bx-wifi"></i>
                             </div>
-                            <h4>
-                                <a href=""
-                                    >Système de gestion point d'accès Wifi</a
-                                >
-                            </h4>
+                            <h4>Système de gestion point d'accès Wifi</h4>
                             <p>
                                 Mise en place d'une gestion de point d'accès
                                 Wifi pour chaque étudiant de l'école grâce à la
@@ -35,25 +33,14 @@
                     </div>
 
                     <div
+                        style="cursor: pointer"
                         class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0"
-                        data-aos="zoom-in"
+                        data-aos="flip-left"
                         data-aos-delay="200"
                     >
                         <div class="icon-box">
-
                             <div class="icon"><i class="bx bx-layer"></i></div>
-                            <h4><a href="">Gestion d'une base de données des étudiants</a></h4>
-
-                            <div class="icon">
-                                <i class="bx bx-database"></i>
-                            </div>
-                            <h4>
-                                <a href=""
-                                    >Gestion d'une base de données des
-                                    étudiants</a
-                                >
-                            </h4>
-
+                            <h4>Gestion d'une base de données des étudiants</h4>
                             <p>
                                 Création d'une base de données communes pour
                                 tous les étudiants de chaque niveau confondu.
@@ -62,15 +49,16 @@
                     </div>
 
                     <div
+                        style="cursor: pointer"
                         class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0"
-                        data-aos="zoom-in"
+                        data-aos="flip-left"
                         data-aos-delay="300"
                     >
                         <div class="icon-box">
                             <div class="icon">
                                 <i class="bx bx-user"></i>
                             </div>
-                            <h4><a href="">Gestion des utilisateurs</a></h4>
+                            <h4>Gestion des utilisateurs</h4>
                             <p>
                                 Mise en place d'une page d'acceuil dans laquel
                                 chaque étudiant pourra accéder et se connecter
@@ -79,20 +67,22 @@
                     </div>
 
                     <div
+                        style="cursor: pointer"
                         class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0"
-                        data-aos="zoom-in"
+                        data-aos="flip-left"
                         data-aos-delay="400"
                     >
                         <div class="icon-box">
+                            <div class="icon">
+                                <i class="bx bx-desktop"></i>
+                            </div>
 
-                            <div class="icon"><i class="bx bx-desktop"></i></div>
-
-                            <div class="icon"><i class="bx bx-layer"></i></div>
-
-                            <h4><a href="">Administration des systèmes et réseaux</a></h4>
+                            <h4>Administration des systèmes et réseaux</h4>
                             <p>
-                                Gestion des utilisateurs connectés avec un tableau de bord
-                                 démontrant la liste des comptes des utilisateurs qui devraient enregistrés sur ce plateforme
+                                Gestion des utilisateurs connectés avec un
+                                tableau de bord démontrant la liste des comptes
+                                des utilisateurs qui devraient enregistrés sur
+                                ce plateforme
                             </p>
                         </div>
                     </div>
