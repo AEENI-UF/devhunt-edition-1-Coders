@@ -11,10 +11,11 @@
                     <div class="section-title">
                         <h2>Contact</h2>
                         <p>
-                            "La pépinière des élites informaticiennes Malgache." 
+                            "La pépinière des élites informaticiennes Malgache."
                         </p>
                     </div>
 
+   </div>
 
                     <div class="row">
                         <div class="col-lg-5 d-flex align-items-stretch">

@@ -38,6 +38,9 @@
                             <v-flex xs12 sm6 md6>
                             <v-select
                             xs12 sm6 md6
+                            :items="forfait"
+                            item-value="id_config"
+                            item-text="forfait"
                             v-model="editedItem.id_config"
                             label="Forfait"
                             required
@@ -57,6 +60,34 @@
                 </v-card>
             </v-dialog>
         </div>
+          <v-data-table
+
+                :search="search"
+                :headers="headers"
+                :items="data"
+                :items-per-page="5"
+                class="elevation-1"
+            >
+            <template v-slot:item.actions="{ item }">
+              <v-icon
+          small
+          class="mr-2"
+          @click="editItem(item)"
+        >
+          mdi-pen
+        </v-icon>
+        <v-icon
+          small
+          @click="deleteItem(item)"
+        >
+          mdi-delete
+        </v-icon>
+
+
+
+      </template>
+
+       </v-data-table>
 
         </v-app>
 
@@ -72,32 +103,36 @@ export default{
   return {
             search: "",
             data: [],
+            forfait: [],
             dialog : false,
             editedItem: {
+                id_niveau: '',
                 design_niveau: '',
                 id_config: '',
 
             },
             editedIndex: -1,
             defaultItem: {
+               id_niveau: '',
                 design_niveau: '',
                 id_config: '',
             },
-            columns: [
-                {
-                    text: "Id",
-                    value: "id_niveau",
-                },
-                {
-                    text: "Prénoms",
-                    value: "design-niveau",
-                },
-                {
-                    text: "Forfait",
-                    value: "forfait",
-                },
+            headers:[
 
-            ],
+      {
+        text: 'id',
+        value: 'id_niveau',
+  align: 'left',
+        sortable: false,
+
+
+      },
+      { text: 'Niveau', value: 'design_niveau' },
+      { text: 'Forfait', value: 'configurations.forfait' },
+
+        { text: 'Action', value: 'actions', sortable: false  },
+            ]
+
         };
     },
 
@@ -116,15 +151,16 @@ export default{
                 .then((res) => res.data);
         },
            async getAllConfig() {
-            this.data = await axios
-                .get("/api/niveau")
+            this.forfait = await axios
+                .get("/list-config")
                 .then((res) => res.data);
         },
 
          save () {
+            console.log(this.item);
         if (this.$refs.form.validate()) {
         if (this.editedIndex > -1) {
-            axios.put('/api/niveau/${this.params.id}', this.editedItem)
+            axios.put('/api/niveau/${this.editedItem.id_niveau}',this.editedItem)
             .then(response => {
             this.getAllNiveau();
             this.close();
@@ -135,7 +171,7 @@ export default{
 
           axios.post('/api/niveau', this.editedItem)
          .then(response => {
-            console.log(response.data);
+
             this.getAllNiveau();
             this.close();
                 }).catch(error=>{
@@ -147,6 +183,17 @@ export default{
 
       }
       },
+       editItem (item) {
+      this.editedIndex = this.data.indexOf(item)
+      this.editedItem = Object.assign({}, item)
+      this.dialog = true
+    },
+
+    deleteItem (item) {
+      const index = this.data.indexOf(item)
+      confirm('Are you sure you want to delete this item?') && this.data.splice(index, 1)
+    },
+
 
     },
     computed :{
@@ -156,6 +203,7 @@ export default{
     },
     async mounted() {
         this.getAllNiveau();
+        this.getAllConfig();
     },
 
 }
