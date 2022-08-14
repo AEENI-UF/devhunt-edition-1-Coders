@@ -32,7 +32,11 @@
                     <button class="btn btn-secondary btn-lg btn-block" type="submit"> {{ __('Se connecter') }}</button>
                   </div>
 
-                  <a class="small text-muted" href="{{ route('forget-password') }}">Mot de passe oublié ?</a>
+                  @if (Route::has('password.request'))
+                                    <a class="small text-muted" href="{{ route('password.request') }}">
+                                        {{ __('Mot de passe oublié ?') }}
+                                    </a>
+                                @endif
                   
                 </form>
               </div>
