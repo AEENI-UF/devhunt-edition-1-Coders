@@ -32,7 +32,7 @@
                     <button class="btn btn-secondary btn-lg btn-block" type="submit"> {{ __('Se connecter') }}</button>
                   </div>
 
-                  <a class="small text-muted" href="#!">Oublier votre mot de passe?</a>
+                  <a class="small text-muted" href="{{ route('forget-password') }}">Mot de passe oublié ?</a>
                   
                 </form>
               </div>
